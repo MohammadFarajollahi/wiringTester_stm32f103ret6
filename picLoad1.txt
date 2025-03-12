@@ -1,0 +1,89 @@
+//#include "SdFat.h"
+#include "SPI.h"
+#include <SD.h>
+#include <Adafruit_GFX.h>
+#include <ILI9488.h>
+
+#define TFT_CS PA3
+#define TFT_DC PA2
+#define TFT_LED PA1
+#define TFT_RST PA8
+
+#define SD_CS PA4  // پین Chip Select برای SD Card
+
+// تنظیمات نمایشگر
+ILI9488 tft = ILI9488(TFT_CS, TFT_DC, TFT_RST);
+
+// تابع خواندن و نمایش BMP از SD
+void drawBMP(const char *filename, int x, int y) {
+    File bmpFile;
+    bmpFile = SD.open(filename);
+    if (!bmpFile) {
+        Serial1.println("خطا: فایل BMP یافت نشد!");
+        return;
+    }
+
+    // خواندن هدر BMP
+    uint8_t header[54];
+    bmpFile.read(header, 54);
+
+    // بررسی نوع فایل
+    if (header[0] != 'B' || header[1] != 'M') {
+        Serial1.println("خطا: فایل BMP نامعتبر است!");
+        bmpFile.close();
+        return;
+    }
+
+    // استخراج عرض و ارتفاع تصویر از هدر
+    int bmpWidth  = *(int*)&header[18];
+    int bmpHeight = *(int*)&header[22];
+    uint16_t rowSize = (bmpWidth * 3 + 3) & ~3; // محاسبه اندازه هر ردیف
+
+    Serial1.print("BMP ابعاد: ");
+    Serial1.print(bmpWidth);
+    Serial1.print("x");
+    Serial1.println(bmpHeight);
+
+    // خواندن داده‌های تصویر
+    uint8_t sdbuffer[3 * 240]; // بافر خواندن (240 پیکسل در هر بار)
+    
+    for (int row = 0; row < bmpHeight; row++) {
+        int pos = 54 + (bmpHeight - row - 1) * rowSize; // موقعیت خواندن داده‌های ردیف
+        bmpFile.seek(pos);
+        bmpFile.read(sdbuffer, bmpWidth * 3);
+
+        for (int col = 0; col < bmpWidth; col++) {
+            uint16_t color = ((sdbuffer[col * 3 + 2] >> 3) << 11) |  // قرمز
+                             ((sdbuffer[col * 3 + 1] >> 2) << 5)  |  // سبز
+                             ((sdbuffer[col * 3] >> 3));            // آبی
+            tft.drawPixel(x + col, y + row, color);
+        }
+    }
+
+    bmpFile.close();
+    Serial1.println("BMP نمایش داده شد.");
+}
+
+// تابع راه‌اندازی
+void setup() {
+    Serial1.begin(115200);
+    Serial1.println("راه‌اندازی نمایشگر و SD Card");
+
+    // مقداردهی اولیه نمایشگر
+    tft.begin();
+    tft.fillScreen(ILI9488_BLACK);
+
+    // مقداردهی اولیه SD Card
+    if (!SD.begin(SD_CS)) {
+        Serial1.println("خطا در مقداردهی SD Card!");
+        return;
+    }
+    Serial1.println("SD Card آماده است.");
+
+    // نمایش تصویر از SD Card
+    drawBMP("test.bmp", 0, 0);
+}
+
+// حلقه اصلی
+void loop() {
+}

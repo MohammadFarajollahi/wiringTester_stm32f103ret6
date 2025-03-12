@@ -1,0 +1,42 @@
+#include <SPI.h>
+#include <SD.h>
+
+#define CS_PIN PA4  // پین Chip Select را تنظیم کنید
+
+void setup() {
+    Serial1.begin(115200);
+    while (!Serial1);
+
+    Serial1.println("در حال مقداردهی SD کارت...");
+    if (!SD.begin(CS_PIN)) {
+        Serial1.println("خطا در مقداردهی SD Card!");
+        return;
+    }
+    Serial1.println("SD Card آماده است.");
+
+    // ایجاد و نوشتن در فایل
+    File myFile = SD.open("test.txt", FILE_WRITE);
+    if (myFile) {
+        Serial1.println("در حال نوشتن روی فایل...");
+        myFile.println("سلام از STM32!");
+        myFile.close();
+        Serial1.println("نوشتن کامل شد.");
+    } else {
+        Serial1.println("خطا در باز کردن فایل برای نوشتن.");
+    }
+
+    // خواندن از فایل
+    myFile = SD.open("test.txt");
+    if (myFile) {
+        Serial1.println("محتوای فایل:");
+        while (myFile.available()) {
+            Serial1.write(myFile.read());
+        }
+        myFile.close();
+    } else {
+        Serial1.println("خطا در باز کردن فایل برای خواندن.");
+    }
+}
+
+void loop() {
+}
