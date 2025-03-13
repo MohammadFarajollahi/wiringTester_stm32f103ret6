@@ -32,6 +32,7 @@ int rele4 = PC11;
 int buzzer = PB0;
 int ingnd = PA1;
 String text;
+int mute = 0;
 
 void setup() {
   Serial1.begin(115200);
