@@ -40,7 +40,7 @@ void setup() {
   // adc_calibrate(ADC1);                        // کالیبره کردن ADC برای دقت بیشتر
   // adc_set_sample_rate(ADC1, ADC_SMPR_239_5);  // افزایش زمان نمونه‌گیری برای کاهش نویز
   pinMode(buzzer, OUTPUT);
-  pinMode(ingnd, INPUT_PULLUP);
+  pinMode(ingnd, INPUT);
   pinMode(rele1, OUTPUT);
   pinMode(rele2, OUTPUT);
   pinMode(rele3, OUTPUT);

@@ -29,7 +29,7 @@ void menu() {
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
       //logic
-      tft.setCursor(170, 165);
+      tft.setCursor(170, 160);
       tft.setTextColor(ILI9488_WHITE);
       tft.println("Logic Analyzer");
       //circle
