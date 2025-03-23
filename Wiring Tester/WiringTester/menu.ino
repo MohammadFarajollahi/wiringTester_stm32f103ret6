@@ -73,7 +73,7 @@ void menu() {
           tft.fillRect(400, 0, 480, 20, ILI9488_BLACK);
         }
         delay(300);
-      }   
+      }
       // Serial1.print("Key Pressed: ");
       // Serial1.println(key);
       delay(500);  // تاخیر برای جلوگیری از چندبار خواندن

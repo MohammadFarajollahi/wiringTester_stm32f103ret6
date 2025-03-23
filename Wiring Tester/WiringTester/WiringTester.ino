@@ -63,6 +63,10 @@ void setup() {
   tft.fillScreen(ILI9488_BLACK);
 
   Serial1.println("Start...");
+
+  // tone(buzzer, 2000);  // فرکانس 500 هرتز
+  // delay(1000);
+  // noTone(buzzer);  // خاموش کردن بازر
 }
 
 void loop() {
