@@ -12,8 +12,8 @@ ILI9488 tft = ILI9488(TFT_CS, TFT_DC, TFT_RST);
 #define ROWS 4
 #define COLS 4
 // پین‌های ردیف و ستون را مشخص کنید
-const int rowPins[ROWS] = { PC0, PC1, PC2, PC3 };  // ردیف‌ها
-const int colPins[COLS] = { PC4, PC5, PC6, PC7 };  // ستون‌ها
+const int rowPins[ROWS] = { PB1, PB2, PB3, PB4 };  // ردیف‌ها
+const int colPins[COLS] = { PB5, PB6, PB7, PB8 };  // ستون‌ها
 // نقشه‌ی دکمه‌ها مطابق با ترتیب واقعی
 char keys[ROWS][COLS] = {
   { '1', '2', '3', 'A' },
@@ -24,6 +24,8 @@ char keys[ROWS][COLS] = {
 
 int mainMenu = 1;
 int changeMenu = 1;
+int MenuSelect = 1;
+int MenuSelectChange = 1;
 
 int rele1 = PC8;
 int rele2 = PC9;
@@ -32,7 +34,22 @@ int rele4 = PC11;
 int buzzer = PB0;
 int ingnd = PA1;
 String text;
-int mute = 0;
+int mute = 1;
+int ZeroMode = 0;
+
+//analyzer
+float adc0;
+float voltageADC0;
+float average;
+float gndAdc;
+int analyzerState;
+int sampleCount = 150;
+int lcdShowCount;
+float ADCres;
+float InputVoltage;
+int ADCZero;
+#define ADC_PIN PA0  // پایه ADC (مثلاً PA0 برای اندازه‌گیری ولتاژ)
+#define VREF 3.3     // ولتاژ مرجع ADC (VDDA میکرو، مقدار را دقیق تنظیم کنید)
 
 void setup() {
   Serial1.begin(115200);

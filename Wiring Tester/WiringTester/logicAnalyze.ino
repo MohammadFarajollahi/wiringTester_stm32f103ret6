@@ -1,28 +1,29 @@
-float adc0;
-float voltageADC0;
-float average;
-float gndAdc;
-int analyzerState;
-int sampleCount = 150;
-int lcdShowCount;
-float ADCres;
-float InputVoltage;
-#define ADC_PIN PA0  // پایه ADC (مثلاً PA0 برای اندازه‌گیری ولتاژ)
-#define VREF 3.3     // ولتاژ مرجع ADC (VDDA میکرو، مقدار را دقیق تنظیم کنید)
+
 void logicAnalyze() {
+  logicKeypad();
   average = 0;
   gndAdc = 0;
+  ADCres = 0;
+  ADCZero = 0;
   for (int i = 0; i < sampleCount; i++) {
     average += analogRead(PA0);
     gndAdc += analogRead(PA1);
     ADCres += analogRead(PA4);
+    ADCZero += analogRead(PA6);
     delayMicroseconds(400);
     //delay(1);
   }
+  ADCZero /= sampleCount;
   ADCres /= sampleCount;
   gndAdc /= sampleCount;
   average /= sampleCount;
   adc0 = average;
+
+  adc0 /= 1.01340033500837520;
+  //ADCZero/=1.01340033500837520;
+  ADCres*=1.00275103163;
+  //gndAdc/=1.01340033500837520;
+  average /= 1.01340033500837520;
   //***********voltageCalibrate***************
   if (average < 1600) average /= 110.66666666;
   if (average >= 1600 && average < 1700) average /= 109.439124487;
@@ -39,6 +40,8 @@ void logicAnalyze() {
   if (average >= 2700 && average < 2800) average /= 81.081081081081081081081;
   if (average >= 2800) average /= 78;
   InputVoltage = average;
+  if (adc0 <= 200 && adc0 >= 190) InputVoltage = 0;
+  if (InputVoltage < 1.2) InputVoltage *= 1.1;
   ////////////////////////////////////////////////////////////////////////
   //*************resistaneCalibrate**********
   float resistant = (4.95e-5) * pow(ADCres, 3) - (0.258) * pow(ADCres, 2) + (453.76) * ADCres - 266740;
@@ -52,12 +55,12 @@ void logicAnalyze() {
     if (resistant >= 15000) resistant /= 1.09;
   }
   if (resistant < 0) resistant = map(resistant, -260, 0, 0, 50);
-  if (ADCres >= 1460 && ADCres < 1464) resistant = 20;
+  if (ADCres >= 1462 && ADCres < 1465) resistant = 20;
   if (resistant < 0 || ADCres < 1460) resistant = 0;
   ////////////////////////////////////////////////////////////////////////
-  if (adc0 <= 198 && adc0 >= 190) InputVoltage = 0;
-  if (InputVoltage < 1.2) InputVoltage *= 1.1;
 
+
+  //********************Nothing*********************
   if (InputVoltage == 0 && ADCres > 2620 && ADCres < 2660) {  //Nothing
     digitalWrite(buzzer, 0);
     tft.fillCircle(70, 270, 20, ILI9488_WHITE);   //gnd
@@ -67,8 +70,8 @@ void logicAnalyze() {
     tft.fillRect(0, 160, 160, 20, ILI9488_BLACK);
   }
 
-  //***********GND************
-  if (ADCres < 1460 && gndAdc < 2000) {
+  //********************GND*********************
+  if (ADCres <= 1461 && gndAdc < 2000 && ZeroMode == 0) {
     if (mute == 0) {
       digitalWrite(buzzer, 1);
     }
@@ -78,6 +81,26 @@ void logicAnalyze() {
     tft.fillCircle(410, 270, 20, ILI9488_WHITE);  //signal
   }
 
+  if (ZeroMode == 1 && ADCZero < 1000) {
+    if (mute == 0) {
+      digitalWrite(buzzer, 1);
+    }
+    tft.fillCircle(70, 270, 20, ILI9488_BLUE);    //gnd
+    tft.fillCircle(180, 270, 20, ILI9488_WHITE);  //+12v
+    tft.fillCircle(300, 270, 20, ILI9488_WHITE);  //+5v
+    tft.fillCircle(410, 270, 20, ILI9488_WHITE);  //signal
+  }
+
+  //********************+12v*********************
+  if (InputVoltage >= 11.8) {
+    if (mute == 0) digitalWrite(buzzer, !digitalRead(buzzer));
+    tft.fillCircle(70, 270, 20, ILI9488_WHITE);   //gnd
+    tft.fillCircle(180, 270, 20, ILI9488_RED);    //+12v
+    tft.fillCircle(300, 270, 20, ILI9488_WHITE);  //+5v
+    tft.fillCircle(410, 270, 20, ILI9488_WHITE);  //signal
+  }
+
+  //********************Sensor*********************
   if (InputVoltage < 5 && InputVoltage >= .1) {  // sensor
     if (mute == 0) {
       digitalWrite(buzzer, !digitalRead(buzzer));
@@ -90,6 +113,7 @@ void logicAnalyze() {
     tft.fillCircle(410, 270, 20, ILI9488_YELLOW);  //signal
   }
 
+  //********************Signal*********************
   if (InputVoltage < 11.8 && InputVoltage >= 5) {  // signal
     if (mute == 0) {
       digitalWrite(buzzer, !digitalRead(buzzer));
@@ -102,13 +126,7 @@ void logicAnalyze() {
     tft.fillCircle(410, 270, 20, ILI9488_WHITE);  //signal
   }
 
-  if (InputVoltage >= 11.8) {  // +12v
-    if (mute == 0) digitalWrite(buzzer, !digitalRead(buzzer));
-    tft.fillCircle(70, 270, 20, ILI9488_WHITE);   //gnd
-    tft.fillCircle(180, 270, 20, ILI9488_RED);    //+12v
-    tft.fillCircle(300, 270, 20, ILI9488_WHITE);  //+5v
-    tft.fillCircle(410, 270, 20, ILI9488_WHITE);  //signal
-  }
+
 
   if (gndAdc >= 2000) {  //invert voltage
     text = "Probe Warning";
@@ -131,36 +149,80 @@ void logicAnalyze() {
   // ++lcdShowCount;
   // if (lcdShowCount >= 5) {
   //   lcdShowCount = 0;
-    text = "Voltage:" + String(InputVoltage, 2) + "V";
-    tft.setTextColor(ILI9488_RED);
-    tft.fillRect(95, 195, 120, 20, ILI9488_BLACK);
-    tft.setCursor(0, 195);
-    tft.println(text);
+  text = "Voltage:" + String(InputVoltage, 2) + "V";
+  tft.setTextColor(ILI9488_RED);
+  tft.fillRect(95, 195, 120, 20, ILI9488_BLACK);
+  tft.setCursor(0, 195);
+  tft.println(text);
 
-    if (ADCres >= 2500) text = "Res: OL";
-    if (resistant >= 1000 && ADCres < 2500) text = "Res:" + String(resistant / 1000, 1) + "K";
-    if (resistant < 1000 && ADCres < 2500) text = "Res:" + String(resistant, 1) + "R";
-    tft.setTextColor(ILI9488_ORANGE);
-    tft.fillRect(250, 195, 250, 20, ILI9488_BLACK);
-    tft.setCursor(250, 195);
-    tft.println(text);
+  if (ADCres >= 2500) text = "Res: OL";
+  if (resistant >= 1000 && ADCres < 2500) text = "Res:" + String(resistant / 1000, 1) + "K";
+  if (resistant < 1000 && ADCres < 2500) text = "Res:" + String(resistant, 1) + "R";
+  tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+  tft.fillRect(250, 195, 250, 20, ILI9488_BLACK);
+  tft.setCursor(250, 195);
+  tft.println(text);
 
-    text = "ADC1:" + String(adc0, 1);
-    tft.setTextColor(ILI9488_WHITE);
-    tft.fillRect(47, 220, 120, 20, ILI9488_BLACK);
-    tft.setCursor(0, 220);
-    tft.println(text);
+  text = "ADC1:" + String(adc0, 1);
+  tft.setTextColor(ILI9488_WHITE);
+  tft.fillRect(47, 220, 120, 20, ILI9488_BLACK);
+  tft.setCursor(0, 220);
+  tft.println(text);
 
-    text = "ADC2:" + String(ADCres, 1);
-    tft.setTextColor(ILI9488_WHITE);
-    tft.fillRect(250, 220, 320, 20, ILI9488_BLACK);
-    tft.setCursor(250, 220);
-    tft.println(text);
+  text = "ADC2:" + String(ADCres, 1);
+  tft.setTextColor(ILI9488_WHITE);
+  tft.fillRect(250, 220, 320, 20, ILI9488_BLACK);
+  tft.setCursor(250, 220);
+  tft.println(text);
   //}
+  // Serial1.print("adc0:");
+  // Serial1.print(adc0);
+  // Serial1.print(" /Voltage:");
+  // Serial1.print(voltageADC0);
+  // Serial1.print("/---/gndAdc:");
+  // Serial1.println(ADCZero);
 }
-// Serial1.print("adc0:");
-// Serial1.print(adc0);
-// Serial1.print(" /Voltage:");
-// Serial1.print(voltageADC0);
-// Serial1.print("/---/gndAdc:");
-// Serial1.println(gndAdc);
+
+void logicKeypad() {
+  char key = getKey();  // خواندن کلید
+  if (key != '\0') {
+    //***********mute************
+    if (key == 'A') {
+      digitalWrite(buzzer, 1);
+      delay(200);
+      digitalWrite(buzzer, 0);
+      mute ^= 1;
+      Serial1.println(mute);
+      if (mute == 1) {
+        digitalWrite(buzzer, 0);
+        tft.setCursor(400, 0);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("MUTE");
+      }
+      if (mute == 0) {
+        tft.fillRect(400, 0, 100, 20, ILI9488_BLACK);
+      }
+      delay(100);
+    }
+
+    //***********mute************
+    if (key == 'B') {
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      ZeroMode ^= 1;
+      if (ZeroMode == 1) {
+        tft.setCursor(350, 20);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("Zero Mode");
+      }
+      if (ZeroMode == 0) {
+        tft.fillRect(350, 20, 150, 20, ILI9488_BLACK);
+      }
+      delay(100);
+    }
+    // Serial1.print("Key Pressed: ");
+    // Serial1.println(key);
+    delay(100);  // تاخیر برای جلوگیری از چندبار خواندن
+  }
+}
