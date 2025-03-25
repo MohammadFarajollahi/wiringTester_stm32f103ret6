@@ -61,7 +61,7 @@ void logicAnalyze() {
 
 
   //********************Nothing*********************
-  if (InputVoltage == 0 && ADCres > 2620 && ADCres < 2660) {  //Nothing
+  if (InputVoltage == 0 && ADCres > 2600 && ADCres < 2660) {  //Nothing
     digitalWrite(buzzer, 0);
     tft.fillCircle(70, 270, 20, ILI9488_WHITE);   //gnd
     tft.fillCircle(180, 270, 20, ILI9488_WHITE);  //+12v
