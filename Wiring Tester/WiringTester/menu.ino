@@ -27,6 +27,15 @@ void menu() {
 
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
+      if (mute == 1) {
+        digitalWrite(buzzer, 0);
+        tft.setCursor(400, 0);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("MUTE");
+      }
+      if (mute == 0) {
+        tft.fillRect(400, 0, 100, 20, ILI9488_BLACK);
+      }
     }
 
     ReadMainKeypad();
@@ -146,8 +155,44 @@ void menu() {
       tft.setTextColor(ILI9488_WHITE);
       tft.println("Sensor Simulator");
       setupPWM(myTimer4, 1, 1000, 100);
-      dutyCycle = 1;
-      pwmFrequency = 100;
+      dutyCycle = 99;
+      pwmFrequency = 2000;
+      tft.drawLine(49, 259, 423, 259, ILI9488_WHITE);
+      tft.drawLine(49, 259, 49, 290, ILI9488_WHITE);
+      tft.drawLine(49, 290, 423, 290, ILI9488_WHITE);
+      tft.drawLine(423, 259, 423, 290, ILI9488_WHITE);
+
+      tft.setTextSize(2);
+      text = "Frequency:" + String(pwmFrequency) + " HZ";
+      tft.setTextColor(ILI9488_RED);
+      tft.fillRect(0, 190, 270, 20, ILI9488_BLACK);
+      tft.setCursor(0, 190);
+      tft.println(text);
+
+      text = "Duty:" + String(dutyCycle) + " %";
+      tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+      tft.fillRect(300, 190, 250, 20, ILI9488_BLACK);
+      tft.setCursor(300, 190);
+      tft.println(text);
+
+      float readPwmVoltage = 0;
+      for (int i = 0; i <= 100; i++) {
+        readPwmVoltage += analogRead(PC1);
+        delayMicroseconds(500);
+      }
+      float PwmVoltage = readPwmVoltage /= 100;
+      float rrr = PwmVoltage;
+      PwmVoltage /= 381.5580286168521;
+      text = "Voltage:" + String(PwmVoltage) + " V";  //
+      tft.setTextColor(ILI9488_YELLOW);               //ILI9488_MAGENTA
+      tft.fillRect(0, 230, 400, 20, ILI9488_BLACK);
+      tft.setCursor(0, 230);
+      tft.println(text);
+
+
+      int pwmOut = map(dutyCycle, 1, 99, 50, 370);
+      tft.fillRect(50, 260, 370, 30, ILI9488_BLACK);
+      tft.fillRect(50, 260, pwmOut, 30, ILI9488_GREEN);
     }
     simulator();
   }
@@ -161,8 +206,26 @@ void menu() {
 void ReadMainKeypad() {
   char key = getKey();  // خواندن کلید
   if (key != '\0') {
-    Serial1.print("keyPress:");
-    Serial1.println(key);
+
+
+    //بلندگو خاموش
+    if (key == '#') {
+      digitalWrite(buzzer, 1);
+      delay(200);
+      digitalWrite(buzzer, 0);
+      mute ^= 1;
+      Serial1.println(mute);
+      if (mute == 1) {
+        digitalWrite(buzzer, 0);
+        tft.setCursor(400, 0);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("MUTE");
+      }
+      if (mute == 0) {
+        tft.fillRect(400, 0, 100, 20, ILI9488_BLACK);
+      }
+      delay(100);
+    }
     //***********Logic************
     if (key == '1') {
       tft.fillScreen(ILI9488_BLACK);
@@ -319,6 +382,15 @@ void ReadMainKeypad() {
       tft.println("D:Next menu");
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
+    }
+    if (mute == 1) {
+      digitalWrite(buzzer, 0);
+      tft.setCursor(400, 0);
+      tft.setTextColor(ILI9488_RED);
+      tft.println("MUTE");
+    }
+    if (mute == 0) {
+      tft.fillRect(400, 0, 100, 20, ILI9488_BLACK);
     }
   }
 }

@@ -16,17 +16,16 @@ void Generator() {
   tft.setTextSize(2);
   text = "Frequency:" + String(pwmFrequency) + " HZ";
   tft.setTextColor(ILI9488_RED);
-  tft.fillRect(0, 250, 200, 20, ILI9488_BLACK);
+  tft.fillRect(0, 250, 270, 20, ILI9488_BLACK);
   tft.setCursor(0, 250);
   tft.println(text);
 
   text = "Duty:" + String(dutyCycle) + " %";
   tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
-  tft.fillRect(250, 250, 250, 20, ILI9488_BLACK);
-  tft.setCursor(250, 250);
+  tft.fillRect(300, 250, 250, 20, ILI9488_BLACK);
+  tft.setCursor(300, 250);
   tft.println(text);
-  if (dutyCycle < 0) dutyCycle = 0;
-  if (pwmFrequency < 0) pwmFrequency = 0;
+
   delay(10);
 }
 
@@ -36,46 +35,44 @@ void GeneratorKeypad() {
   if (key != '\0') {
     //***********Frequency Setting************
     if (key == 'A') {
-      digitalWrite(buzzer, 1);
-      delay(10);
-      digitalWrite(buzzer, 0);
+      BuzzerBIGbig();
       if (plus100 == 0) ++pwmFrequency;
       if (plus100 == 1) pwmFrequency += 100;
+      if (pwmFrequency <= 1) pwmFrequency = 1;
+      setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
     }
 
     if (key == 'B') {
-      digitalWrite(buzzer, 1);
-      delay(10);
-      digitalWrite(buzzer, 0);
+      BuzzerBIGbig();
       if (plus100 == 0) --pwmFrequency;
       if (plus100 == 1) pwmFrequency -= 100;
+      if (pwmFrequency <= 1) pwmFrequency = 1;
+      setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
     }
 
     //***********Duty Setting************
     if (key == 'C') {
-      digitalWrite(buzzer, 1);
-      delay(10);
-      digitalWrite(buzzer, 0);
+      BuzzerBIGbig();
       ++dutyCycle;
+      if (dutyCycle <= 1) dutyCycle = 1;
+      if (dutyCycle >= 99) dutyCycle = 99;
+      setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
     }
 
     if (key == 'D') {
-      digitalWrite(buzzer, 1);
-      delay(10);
-      digitalWrite(buzzer, 0);
+      BuzzerBIGbig();
       --dutyCycle;
+      if (dutyCycle <= 1) dutyCycle = 1;
+      if (dutyCycle >= 99) dutyCycle = 99;
+      setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
     }
 
     if (key == '*') {
-      digitalWrite(buzzer, 1);
-      delay(300);
-      digitalWrite(buzzer, 0);
+      BuzzerSet();
       setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
     }
     if (key == '0') {
-      digitalWrite(buzzer, 1);
-      delay(300);
-      digitalWrite(buzzer, 0);
+      BuzzerSet();
       plus100 ^= 1;
       if (plus100 == 1) {
         tft.fillRect(370, 20, 150, 20, ILI9488_BLACK);
@@ -90,7 +87,11 @@ void GeneratorKeypad() {
         tft.setCursor(370, 20);
         tft.setTextColor(ILI9488_RED);
         tft.println("+1");
+        delay(200);
       }
     }
+    if (dutyCycle <= 1) dutyCycle = 1;
+    if (dutyCycle >= 99) dutyCycle = 99;
+    if (pwmFrequency <= 1) pwmFrequency = 1;
   }
 }

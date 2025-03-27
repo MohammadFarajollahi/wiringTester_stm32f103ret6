@@ -188,21 +188,7 @@ void logicKeypad() {
   if (key != '\0') {
     //***********mute************
     if (key == 'A') {
-      digitalWrite(buzzer, 1);
-      delay(200);
-      digitalWrite(buzzer, 0);
-      mute ^= 1;
-      Serial1.println(mute);
-      if (mute == 1) {
-        digitalWrite(buzzer, 0);
-        tft.setCursor(400, 0);
-        tft.setTextColor(ILI9488_RED);
-        tft.println("MUTE");
-      }
-      if (mute == 0) {
-        tft.fillRect(400, 0, 100, 20, ILI9488_BLACK);
-      }
-      delay(100);
+    
     }
 
     //***********mute************
