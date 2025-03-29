@@ -25,9 +25,9 @@ void logicAnalyze() {
   //gndAdc/=1.01340033500837520;
   average /= 1.01340033500837520;
   //***********voltageCalibrate***************
-  if (average < 1600) average /= 110.66666666;
-  if (average >= 1600 && average < 1700) average /= 109.439124487;
-  if (average >= 1700 && average < 1800) average /= 109.254498714;
+  if (average < 1500) average /= 110.66666666;
+  if (average >= 1500 && average < 1700) average /= 109.439124487;
+  if (average >= 1700 && average < 1800) average /= 107.747747747747747;
   if (average >= 1800 && average < 1900) average /= 108.76132930513595166;
   if (average >= 1900 && average < 2000) average /= 107.3446327683615819;
   if (average >= 2000 && average < 2100) average /= 105.82010582010582;

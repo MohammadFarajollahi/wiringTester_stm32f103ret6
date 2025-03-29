@@ -6,7 +6,7 @@ void menu() {
     if (changeMenu == 1) {
       changeMenu = 0;
       tft.setTextSize(2);
-      tft.setCursor(200, 25);
+      tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
       tft.println("*Main Menu*");
       tft.setTextSize(2);
@@ -22,8 +22,8 @@ void menu() {
       tft.println("7:Oscilloscope");
       tft.println("8:Signal Generator");
       tft.println("9:Sensor Simulator");
-      tft.setCursor(330, 125);
-      tft.println("D:Next menu");
+      // tft.setCursor(330, 125);
+      // tft.println("D:Next menu");
 
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
@@ -140,8 +140,50 @@ void menu() {
       tft.setCursor(180, 160);
       tft.setTextColor(ILI9488_WHITE);
       tft.println("Generator");
+
+      if (plus100 == 1) {
+        tft.fillRect(370, 20, 150, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(370, 20);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("+100");
+      }
+      if (plus100 == 0) {
+        tft.fillRect(370, 20, 150, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(370, 20);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("+1");
+      }
+
+      tft.setTextSize(2);
+      text = "Frequency:" + String(pwmFrequency) + " HZ";
+      tft.setTextColor(ILI9488_RED);
+      tft.fillRect(0, 250, 270, 20, ILI9488_BLACK);
+      tft.setCursor(0, 250);
+      tft.println(text);
+
+      text = "Duty:" + String(dutyCycle) + " %";
+      tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+      tft.fillRect(300, 250, 250, 20, ILI9488_BLACK);
+      tft.setCursor(300, 250);
+      tft.println(text);
     }
     Generator();
+  }
+
+  //**********Generator***********
+  if (MenuSelect == 6) {
+    if (MenuSelectChange == 1) {
+      releFrequency();
+      MenuSelectChange = 0;
+      //logic
+      tft.setTextSize(2);
+      tft.setCursor(165, 160);
+      tft.setTextColor(ILI9488_WHITE);
+      tft.println("Frequency Meter");
+    }
+    FrequencyMeter();
   }
 
   //**********simaltor***********
@@ -154,8 +196,7 @@ void menu() {
       tft.setCursor(160, 160);
       tft.setTextColor(ILI9488_WHITE);
       tft.println("Sensor Simulator");
-      setupPWM(myTimer4, 1, 1000, 100);
-      dutyCycle = 99;
+      dutyCycle = 2;
       pwmFrequency = 2000;
       tft.drawLine(49, 259, 423, 259, ILI9488_WHITE);
       tft.drawLine(49, 259, 49, 290, ILI9488_WHITE);
@@ -175,24 +216,70 @@ void menu() {
       tft.setCursor(300, 190);
       tft.println(text);
 
-      float readPwmVoltage = 0;
-      for (int i = 0; i <= 100; i++) {
-        readPwmVoltage += analogRead(PC1);
-        delayMicroseconds(500);
-      }
-      float PwmVoltage = readPwmVoltage /= 100;
-      float rrr = PwmVoltage;
-      PwmVoltage /= 381.5580286168521;
-      text = "Voltage:" + String(PwmVoltage) + " V";  //
-      tft.setTextColor(ILI9488_YELLOW);               //ILI9488_MAGENTA
-      tft.fillRect(0, 230, 400, 20, ILI9488_BLACK);
-      tft.setCursor(0, 230);
-      tft.println(text);
-
-
       int pwmOut = map(dutyCycle, 1, 99, 50, 370);
       tft.fillRect(50, 260, 370, 30, ILI9488_BLACK);
       tft.fillRect(50, 260, pwmOut, 30, ILI9488_GREEN);
+
+      if (simaulatorMode == 1) {
+        tft.setTextSize(1);
+        tft.fillRect(410, 40, 250, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(410, 40);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("LOW Mode");
+        digitalWrite(SimulatorLow, 1);
+      }
+      if (simaulatorMode == 0) {
+        tft.setTextSize(1);
+        tft.fillRect(410, 40, 250, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(410, 40);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("Hight Mode");
+        digitalWrite(SimulatorLow, 0);
+      }
+      plus100 = 2;
+      if (plus100 == 1) {
+        tft.setTextSize(2);
+        tft.fillRect(400, 20, 150, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(400, 20);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("+0.1");
+      }
+      if (plus100 == 2) {
+        tft.setTextSize(2);
+        tft.fillRect(400, 20, 150, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(400, 20);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("+1");
+      }
+      if (plus100 == 3) {
+        tft.setTextSize(2);
+        tft.fillRect(400, 20, 150, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(400, 20);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("+5");
+      }
+
+      setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
+      //*****pwm Voltage*****
+      float readPwmVoltage = 0;
+      for (int i = 0; i <= 200; i++) {
+        readPwmVoltage += analogRead(PC1);
+        delayMicroseconds(500);
+      }
+      float PwmVoltage = readPwmVoltage /= 200;
+      float rrr = PwmVoltage;
+      PwmVoltage /= 392.50443150164598632565206381362;
+      tft.setTextSize(2);
+      text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
+      tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
+      tft.fillRect(0, 230, 400, 20, ILI9488_BLACK);
+      tft.setCursor(0, 230);
+      tft.println(text);
     }
     simulator();
   }
@@ -235,7 +322,7 @@ void ReadMainKeypad() {
       delay(250);
       digitalWrite(buzzer, 0);
       tft.setTextSize(2);
-      tft.setCursor(200, 25);
+       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
       tft.println("*Main Menu*");
       tft.setTextSize(2);
@@ -251,8 +338,8 @@ void ReadMainKeypad() {
       tft.println("7:Oscilloscope");
       tft.println("8:Signal Generator");
       tft.println("9:Sensor Simulator");
-      tft.setCursor(330, 125);
-      tft.println("D:Next menu");
+      // tft.setCursor(330, 125);
+      // tft.println("D:Next menu");
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
     }
@@ -265,7 +352,7 @@ void ReadMainKeypad() {
       delay(250);
       digitalWrite(buzzer, 0);
       tft.setTextSize(2);
-      tft.setCursor(200, 25);
+       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
       tft.println("*Main Menu*");
       tft.setTextSize(2);
@@ -282,8 +369,8 @@ void ReadMainKeypad() {
       tft.println("7:Oscilloscope");
       tft.println("8:Signal Generator");
       tft.println("9:Sensor Simulator");
-      tft.setCursor(330, 125);
-      tft.println("D:Next menu");
+      // tft.setCursor(330, 125);
+      // tft.println("D:Next menu");
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
     }
@@ -297,7 +384,7 @@ void ReadMainKeypad() {
       delay(250);
       digitalWrite(buzzer, 0);
       tft.setTextSize(2);
-      tft.setCursor(200, 25);
+       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
       tft.println("*Main Menu*");
       tft.setTextSize(2);
@@ -314,8 +401,8 @@ void ReadMainKeypad() {
       tft.println("7:Oscilloscope");
       tft.println("8:Signal Generator");
       tft.println("9:Sensor Simulator");
-      tft.setCursor(330, 125);
-      tft.println("D:Next menu");
+      // tft.setCursor(330, 125);
+      // tft.println("D:Next menu");
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
     }
@@ -329,7 +416,7 @@ void ReadMainKeypad() {
       delay(250);
       digitalWrite(buzzer, 0);
       tft.setTextSize(2);
-      tft.setCursor(200, 25);
+       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
       tft.println("*Main Menu*");
       tft.setTextSize(2);
@@ -346,8 +433,40 @@ void ReadMainKeypad() {
       tft.println("8:Signal Generator");
       tft.setTextColor(ILI9488_WHITE);
       tft.println("9:Sensor Simulator");
-      tft.setCursor(330, 125);
-      tft.println("D:Next menu");
+      // tft.setCursor(330, 125);
+      // tft.println("D:Next menu");
+      //line
+      tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
+    }
+
+    //**********frequency meter************
+    if (key == '6') {
+      tft.fillScreen(ILI9488_BLACK);
+      MenuSelect = 6;
+      MenuSelectChange = 1;
+      digitalWrite(buzzer, 1);
+      delay(250);
+      digitalWrite(buzzer, 0);
+      tft.setTextSize(2);
+       tft.setCursor(330, 125);
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("*Main Menu*");
+      tft.setTextSize(2);
+      tft.setCursor(0, 0);
+      tft.setTextColor(ILI9488_WHITE);
+      tft.println("1:Logic Analyzer");
+      tft.println("2:Volt meter");
+      tft.println("3:Ampere meter");
+      tft.println("4:Ohm meter");
+      tft.println("5:Capacitor Meter");
+      tft.setTextColor(ILI9488_MAGENTA);
+      tft.println("6:Frequency Meter");
+      tft.setTextColor(ILI9488_WHITE);
+      tft.println("7:Oscilloscope");
+      tft.println("8:Signal Generator");
+      tft.println("9:Sensor Simulator");
+      // tft.setCursor(330, 125);
+      // tft.println("D:Next menu");
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
     }
@@ -361,7 +480,7 @@ void ReadMainKeypad() {
       delay(250);
       digitalWrite(buzzer, 0);
       tft.setTextSize(2);
-      tft.setCursor(200, 25);
+       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
       tft.println("*Main Menu*");
       tft.setTextSize(2);
@@ -377,9 +496,9 @@ void ReadMainKeypad() {
       tft.println("8:Signal Generator");
       tft.setTextColor(ILI9488_MAGENTA);
       tft.println("9:Sensor Simulator");
-      tft.setCursor(330, 125);
-      tft.setTextColor(ILI9488_WHITE);
-      tft.println("D:Next menu");
+      // tft.setCursor(330, 125);
+      // tft.setTextColor(ILI9488_WHITE);
+      // tft.println("D:Next menu");
       //line
       tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
     }

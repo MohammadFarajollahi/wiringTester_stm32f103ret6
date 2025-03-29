@@ -3,14 +3,16 @@
 
 void VoltMEter() {
   average = 0;
-  for (int i = 0; i < 300; i++) {
+  for (int i = 0; i < 150; i++) {
     average += analogRead(PA0);
-    delay(1);
+    // delay(1);
+    delayMicroseconds(1000);
     //delay(1);
   }
 
-  average /= 300;
+  average /= 150;
   adc0 = average;
+  average /= 1.012;
   //***********voltageCalibrate***************
   if (average < 1600) average /= 110.66666666;
   if (average >= 1600 && average < 1700) average /= 109.439124487;
@@ -32,7 +34,7 @@ void VoltMEter() {
   tft.setTextSize(5);
   text = "Voltage:" + String(InputVoltage, 2) + "V";
   tft.setTextColor(ILI9488_RED);
-  tft.fillRect(50, 240, 370, 40, ILI9488_BLACK);
+  tft.fillRect(50, 240, 500, 40, ILI9488_BLACK);
   tft.setCursor(50, 240);
   tft.println(text);
 }

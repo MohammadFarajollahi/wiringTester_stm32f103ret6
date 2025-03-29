@@ -3,7 +3,7 @@
 void BuzzerBIGbig() {
   if (mute == 0) {
     digitalWrite(buzzer, 1);
-    delay(20);
+    delay(10);
     digitalWrite(buzzer, 0);
   }
 }

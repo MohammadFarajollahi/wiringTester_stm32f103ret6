@@ -38,6 +38,8 @@ int ReleAmper = PC13;
 int Releselonoeid = PC12;
 int buzzer = PB0;
 int ingnd = PA1;
+int SimulatorLow = PC7;
+int simaulatorMode = 1;
 String text;
 int mute = 0;
 int ZeroMode = 0;
@@ -74,9 +76,16 @@ float currentRMS = 0.0;           // جریان RMS
 #define PWM_PIN2 PB6        // خروجی دوم (تایمر 4، کانال 1)
 HardwareTimer myTimer1(1);  // به جای timer1
 HardwareTimer myTimer4(4);  // به جای timer4
-int dutyCycle = 30;
+float dutyCycle = 30;
 int pwmFrequency = 100;
 int plus100;
+
+//frequency
+volatile int mon_flag;
+float freq;
+byte fq[8], pd, x;
+
+
 void setup() {
   Serial1.begin(115200);
   pinMode(PA0, INPUT);  // تنظیم پایه در حالت آنالوگ
@@ -90,6 +99,8 @@ void setup() {
   pinMode(rele4, OUTPUT);
   pinMode(ReleAmper, OUTPUT);
   pinMode(Releselonoeid, OUTPUT);
+  pinMode(SimulatorLow, OUTPUT);
+  digitalWrite(SimulatorLow, 0);
   digitalWrite(buzzer, 1);
   delay(100);
   digitalWrite(buzzer, 0);
@@ -118,6 +129,16 @@ void setup() {
   digitalWrite(PA8, LOW);  // پین را صفر کن
   myTimer4.pause();        // متوقف کردن تایمر
   digitalWrite(PB6, LOW);  // پین را صفر کن
+
+
+  ///فرکانس
+  pinMode(PA15, INPUT_PULLDOWN);  // вход частотомера
+  pinMode(PA2, INPUT_PULLUP);
+
+  RCC_BASE->APB1ENR |= (1 << 2) | (1 << 1) | (1 << 0);                         //включить тактирование tim-2,3,4
+  RCC_BASE->APB2ENR |= (1 << 3) | (1 << 11) | (1 << 2) | (1 << 0) | (1 << 4);  ////включить тактирование port-a-b-c,tim1
+  AFIO_BASE->MAPR = (1 << 8) | (1 << 6);
+  Serial1.println("Start...");
 }
 
 void loop() {
