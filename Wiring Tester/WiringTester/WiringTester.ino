@@ -86,7 +86,55 @@ float freq;
 byte fq[8], pd, x;
 
 
+//oskop
+const int analogPin = PA0;
+int sampleSize = 500;  // تعداد نمونه‌ها (یک خط کامل نمایشگر)
+uint16_t samples[5000];
+uint16_t lastSamples[5000];  // ذخیره مقادیر قبلی موج
+// مقیاس ولتاژ
+float voltageScale = 3.3 / 4095.0;
+float threshold = .1;  //200 آستانه برای تشخیص لبه2048
+// متغیرهای فرکانس
+volatile unsigned long lastEdgeTime = 0;
+volatile float frequency_ = 0;
+long debounceTime = 200;  // حداقل فاصله زمانی بین دو لبه (بر حسب میکروثانیه)
+// اندازه بخش مشخصات سیگنال
+const int signalInfoHeight = 50;
+int test_voltage;
+float readv;
+int freqFult;
+int show_fail;
+int volt_cout;
+float voltage_avg;
+float signal_calib = 1;
+float voltage;
+String TextLcd;
+float timeDiv = .1;
+bool hold = false;  // وضعیت ثابت نگه داشتن نمایش
+
+
+////temp
+#include <SoftWire.h>
+
+#define SDA_PIN PB5
+#define SCL_PIN PB7
+#define MLX90614_ADDRESS 0x5A  // آدرس سنسور
+
+SoftWire myWire(SDA_PIN, SCL_PIN);
+
+uint16_t readRegister(uint8_t reg) {
+  myWire.beginTransmission(MLX90614_ADDRESS);
+  myWire.write(reg);
+  myWire.endTransmission(false);
+  myWire.requestFrom(MLX90614_ADDRESS, (uint8_t)2);
+
+  uint16_t data = myWire.read();
+  data |= (uint16_t)myWire.read() << 8;
+  return data;
+}
+
 void setup() {
+  myWire.begin();
   Serial1.begin(115200);
   pinMode(PA0, INPUT);  // تنظیم پایه در حالت آنالوگ
   // adc_calibrate(ADC1);                        // کالیبره کردن ADC برای دقت بیشتر

@@ -48,6 +48,20 @@ void releFrequency() {
   digitalWrite(PB6, LOW);  // پین را صفر کن
 }
 
+void releOhmeter() {
+  digitalWrite(rele1, 1);
+  digitalWrite(rele2, 1);
+  digitalWrite(rele3, 1);
+  digitalWrite(rele4, 0);
+  digitalWrite(Releselonoeid, 0);
+  digitalWrite(ReleAmper, 0);
+  myTimer1.pause();        // متوقف کردن تایمر
+  digitalWrite(PA8, LOW);  // پین را صفر کن
+  myTimer4.pause();        // متوقف کردن تایمر
+  digitalWrite(PB6, LOW);  // پین را صفر کن
+}
+
+
 void releSimulator() {
   digitalWrite(rele1, 1);
   digitalWrite(rele2, 0);

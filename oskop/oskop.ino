@@ -10,15 +10,30 @@
 ILI9488 tft = ILI9488(TFT_CS, TFT_DC, TFT_RST);
 
 
+//keypad
+#define ROWS 4
+#define COLS 4
+// پین‌های ردیف و ستون را مشخص کنید
+const int rowPins[ROWS] = { PB8, PB9, PB10, PB11 };    // ردیف‌ها
+const int colPins[COLS] = { PB12, PB13, PB14, PB15 };  // ستون‌ها
+// const int rowPins[ROWS] = { PC0, PC1, PC2, PC3 };  // ردیف‌ها
+// const int colPins[COLS] = { PC4, PC5, PC6, PC7 };  // ستون‌ها
+// نقشه‌ی دکمه‌ها مطابق با ترتیب واقعی
+char keys[ROWS][COLS] = {
+  { '1', '2', '3', 'A' },
+  { '4', '5', '6', 'B' },
+  { '7', '8', '9', 'C' },
+  { '*', '0', '#', 'D' }
+};
 
 //oskop
 const int analogPin = PA0;
-int sampleSize = 1900;  // تعداد نمونه‌ها (یک خط کامل نمایشگر)
-uint16_t samples[2000];
-uint16_t lastSamples[2000];  // ذخیره مقادیر قبلی موج
+int sampleSize = 480;  // تعداد نمونه‌ها (یک خط کامل نمایشگر)
+uint16_t samples[5000];
+uint16_t lastSamples[5000];  // ذخیره مقادیر قبلی موج
 // مقیاس ولتاژ
 float voltageScale = 3.3 / 4095.0;
-int threshold = 1;  //200 آستانه برای تشخیص لبه2048
+float threshold = .1;  //200 آستانه برای تشخیص لبه2048
 // متغیرهای فرکانس
 volatile unsigned long lastEdgeTime = 0;
 volatile float frequency_ = 0;
@@ -34,18 +49,22 @@ float voltage_avg;
 float signal_calib = 1;
 float voltage;
 String TextLcd;
-
+float timeDiv = .1;
+bool hold = false;  // وضعیت ثابت نگه داشتن نمایش
 void setup() {
   Serial1.begin(115200);
   pinMode(PA0, INPUT);  // تنظیم پایه در حالت آنالوگ
   tft.begin();
   tft.setRotation(3);  // now canvas is 11x21
   tft.fillScreen(ILI9488_BLACK);
+  keyPadconfig();
   drawGrid();
 }
 
 void loop() {
-  oskop();
+  if (!hold) {
+    oskop();
+  }
 }
 
 void drawGrid() {
@@ -64,57 +83,18 @@ void drawSignalInfo(float voltage, float freq) {
 
   tft.setTextColor(ILI9488_YELLOW);
   tft.fillRect(0, 300 - signalInfoHeight, 480, 320, ILI9488_BLACK);
-
-
-  if (voltage == 0) {
-    ++test_voltage;
-    if (test_voltage >= 3) {
-      tft.fillRect(0, 300 - signalInfoHeight, 480, 320, ILI9488_BLACK);
-
-
-      test_voltage = 10;
-      tft.setCursor(200, 300 - signalInfoHeight + 10);
-      tft.print("frequency: No Signal");
-      tft.setCursor(10, 300 - signalInfoHeight + 10);
-      TextLcd = "Voltage:" + String(voltage, 2) + "V";
-      tft.print(TextLcd);
-      freqFult = 1;
-      if (show_fail == 0) {
-
-        show_fail = 1;
-      }
-    }
-  } else {
-    freqFult = 0;
-    test_voltage = 0;
-  }
-
-  if (freqFult == 0) {
-    if (voltage > 0) {
-      tft.fillRect(0, 300 - signalInfoHeight, 480, signalInfoHeight, ILI9488_BLACK);
-      tft.setCursor(200, 300 - signalInfoHeight + 10);
-      TextLcd = "frequency:" + String(freq, 2) + "HZ";
-      tft.print(TextLcd);
-
-
-
-      tft.setCursor(10, 300 - signalInfoHeight + 10);
-      TextLcd = "Voltage:" + String(voltage, 2) + "V";
-      tft.print(TextLcd);
-      // tft.printf("Voltage: %.2f V", voltage);
-    }
-    if (show_fail == 1) {
-      show_fail = 0;
-    }
-  }
-
-
+  tft.fillRect(0, 300 - signalInfoHeight, 480, signalInfoHeight, ILI9488_BLACK);
+  tft.setCursor(200, 300 - signalInfoHeight + 10);
+  TextLcd = "frequency:" + String(freq, 2) + "HZ";
+  tft.print(TextLcd);
+  tft.setCursor(10, 300 - signalInfoHeight + 10);
+  TextLcd = "Voltage:" + String(voltage, 2) + "V";
+  tft.print(TextLcd);
   tft.setCursor(10, 290);
   TextLcd = "voltageScale:" + String(signal_calib, 2);
   tft.print(TextLcd);
-
   tft.setCursor(260, 290);
-  TextLcd = "threshold:" + String(sampleSize) ;
+  TextLcd = "threshold:" + String(sampleSize);
   tft.print(TextLcd);
 }
 
@@ -145,6 +125,7 @@ void oskop() {
   // خواندن نمونه‌ها
   for (int i = 0; i < sampleSize; i++) {
     samples[i] = analogRead(analogPin);
+    delayMicroseconds(timeDiv * 10);  // تأثیر Time/Div بر روی سرعت نمونه‌برداری
     samples[i] *= signal_calib;
     // تشخیص لبه‌ها برای محاسبه فرکانس
     static bool lastSignalState = false;
@@ -170,12 +151,88 @@ void oskop() {
   voltage *= 6.833333;
   voltage_avg += voltage;
   ++volt_cout;
-  if (volt_cout >= 3) {
+  if (volt_cout >= 1) {
     voltage_avg /= 3;
     voltage = voltage_avg;
     voltage_avg = 0;
-    volt_cout = 0;
+    volt_cout = 1;
     drawSignalInfo(voltage, frequency_);
   }
- // delay(10);
+
+  char key = getKey();  // خواندن کلید
+  if (key != '\0') {
+    //بلندگو خاموش
+    if (key == 'A') {
+      sampleSize += 100;
+      delay(20);
+    }
+
+    if (key == 'B') {
+      sampleSize -= 100;
+      delay(20);
+    }
+
+    if (key == '1') {
+      timeDiv += .1;
+      delay(1);
+    }
+
+    if (key == '2') {
+      timeDiv -= .1;
+      delay(1);
+    }
+
+    if (key == 'C') {
+      signal_calib += .1;
+      delay(50);
+    }
+
+    if (key == 'D') {
+      signal_calib -= .1;
+      delay(50);
+    }
+
+    if (key == '#') {
+      hold = !hold;
+      delay(100);
+    }
+  }
+  // delay(10);
+}
+
+
+
+void keyPadconfig() {
+  // تنظیم ردیف‌ها به خروجی
+  for (int i = 0; i < ROWS; i++) {
+    pinMode(rowPins[i], OUTPUT);
+    delay(1);
+    digitalWrite(rowPins[i], HIGH);
+  }
+
+  // تنظیم ستون‌ها به ورودی با پول‌آپ داخلی
+  for (int j = 0; j < COLS; j++) {
+    pinMode(colPins[j], INPUT_PULLUP);
+    delay(1);
+  }
+}
+
+// تابع برای خواندن کلیدها
+char getKey() {
+  for (int i = 0; i < ROWS; i++) {
+    digitalWrite(rowPins[i], LOW);  // ردیف موردنظر را LOW کن
+    delayMicroseconds(1);
+
+    for (int j = 0; j < COLS; j++) {
+      if (digitalRead(colPins[j]) == LOW) {  // اگر ستونی LOW شد، یعنی کلید فشرده شده
+        //  (digitalRead(colPins[j]) == LOW)
+        //   ;                              // صبر کن تا رها شود
+        digitalWrite(rowPins[i], HIGH);  // ردیف را دوباره HIGH کن
+        return keys[i][j];               // مقدار کلید را برگردان
+      }
+    }
+
+    digitalWrite(rowPins[i], HIGH);  // بعد از چک کردن، ردیف را HIGH کن
+  }
+  return '\0';  // اگر کلیدی فشرده نشد، مقدار خالی برگردان
 }

@@ -21,7 +21,7 @@ void logicAnalyze() {
 
   adc0 /= 1.01340033500837520;
   //ADCZero/=1.01340033500837520;
-  ADCres*=1.00275103163;
+  ADCres *= 1.00275103163;
   //gndAdc/=1.01340033500837520;
   average /= 1.01340033500837520;
   //***********voltageCalibrate***************
@@ -56,7 +56,7 @@ void logicAnalyze() {
   }
   if (resistant < 0) resistant = map(resistant, -260, 0, 0, 50);
   if (ADCres >= 1462 && ADCres < 1465) resistant = 20;
-  if (resistant < 0 || ADCres < 1460) resistant = 0;
+  //if (resistant < 0 || ADCres < 1460) resistant = 0;
   ////////////////////////////////////////////////////////////////////////
 
 
@@ -146,22 +146,43 @@ void logicAnalyze() {
 
 
 
-  // ++lcdShowCount;
-  // if (lcdShowCount >= 5) {
-  //   lcdShowCount = 0;
   text = "Voltage:" + String(InputVoltage, 2) + "V";
   tft.setTextColor(ILI9488_RED);
   tft.fillRect(95, 195, 120, 20, ILI9488_BLACK);
   tft.setCursor(0, 195);
   tft.println(text);
 
-  if (ADCres >= 2500) text = "Res: OL";
-  if (resistant >= 1000 && ADCres < 2500) text = "Res:" + String(resistant / 1000, 1) + "K";
-  if (resistant < 1000 && ADCres < 2500) text = "Res:" + String(resistant, 1) + "R";
-  tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
-  tft.fillRect(250, 195, 250, 20, ILI9488_BLACK);
-  tft.setCursor(250, 195);
-  tft.println(text);
+  // if (ADCres >= 2500) text = "Res: OL";
+  // if (resistant >= 1000 && ADCres < 2500) text = "Res:" + String(resistant / 1000, 1) + "K";
+  // if (resistant < 1000 && ADCres < 2500) text = "Res:" + String(resistant, 1) + "R";
+  // tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+  // tft.fillRect(250, 195, 250, 20, ILI9488_BLACK);
+  // tft.setCursor(250, 195);
+  // tft.println(text);
+
+  ///////////////////////////new/////////////////////////
+  if (ADCres > 1470) {
+    resistant *= 1.06;
+    if (ADCres >= 2500) text = "Res: OL";
+    if (resistant >= 1000 && ADCres < 2500) text = "Res:" + String(resistant / 1000, 1) + "K";
+    if (resistant < 1000 && ADCres < 2500) text = "Res:" + String(resistant, 1) + "R";
+    tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+    tft.fillRect(250, 195, 250, 20, ILI9488_BLACK);
+    tft.setCursor(250, 195);
+    tft.println(text);
+  }
+
+  if (ADCres <= 1470) {
+    resistant = map(ADCres, 1452, 1468, 0, 100);
+    if (resistant < 0) resistant = 0;
+    text = "Res:" + String(resistant, 1) + "R";
+    tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+    tft.fillRect(250, 195, 250, 20, ILI9488_BLACK);
+    tft.setCursor(250, 195);
+    tft.println(text);
+  }
+
+  ///////////////////////////////////////////////
 
   text = "ADC1:" + String(adc0, 1);
   tft.setTextColor(ILI9488_WHITE);
@@ -188,7 +209,6 @@ void logicKeypad() {
   if (key != '\0') {
     //***********mute************
     if (key == 'A') {
-    
     }
 
     //***********mute************
