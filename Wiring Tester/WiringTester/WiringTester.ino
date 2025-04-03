@@ -79,6 +79,7 @@ HardwareTimer myTimer4(4);  // به جای timer4
 float dutyCycle = 30;
 int pwmFrequency = 100;
 int plus100;
+int SensorPulsePin = PB1;
 
 //frequency
 volatile int mon_flag;
@@ -148,6 +149,7 @@ void setup() {
   pinMode(ReleAmper, OUTPUT);
   pinMode(Releselonoeid, OUTPUT);
   pinMode(SimulatorLow, OUTPUT);
+  pinMode(SensorPulsePin, OUTPUT);
   digitalWrite(SimulatorLow, 0);
   digitalWrite(buzzer, 1);
   delay(100);

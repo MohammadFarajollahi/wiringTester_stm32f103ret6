@@ -44,6 +44,7 @@ void menu() {
   //**********Logic Analyzer***********
   if (MenuSelect == 1) {
     if (MenuSelectChange == 1) {
+      digitalWrite(SensorPulsePin, 0);
       releAnalyzer();
       tft.setTextSize(2);
       MenuSelectChange = 0;
@@ -211,11 +212,14 @@ void menu() {
     if (MenuSelectChange == 1) {
       releGenerator();
       MenuSelectChange = 0;
+      dutyCycle = 10;
+      pwmFrequency = 200;
       //logic
       tft.setTextSize(2);
       tft.setCursor(180, 160);
       tft.setTextColor(ILI9488_WHITE);
       tft.println("Generator");
+      plus100 = 1;
 
       if (plus100 == 1) {
         tft.fillRect(370, 20, 150, 20, ILI9488_BLACK);
@@ -244,6 +248,8 @@ void menu() {
       tft.fillRect(300, 250, 250, 20, ILI9488_BLACK);
       tft.setCursor(300, 250);
       tft.println(text);
+
+      setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
     }
     Generator();
   }
@@ -252,6 +258,7 @@ void menu() {
   //**********simaltor***********
   if (MenuSelect == 9) {
     if (MenuSelectChange == 1) {
+      digitalWrite(SensorPulsePin, 1);
       releSimulator();
       MenuSelectChange = 0;
       //Sensor Simulator
