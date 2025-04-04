@@ -1,0 +1,18 @@
+#define RX_PIN PC4  // پایه‌ی ورودی گیرنده رادیویی
+
+void setup() {
+  Serial1.begin(115200);
+  pinMode(RX_PIN, INPUT);
+}
+
+void loop() {
+  unsigned long pulseHigh = pulseIn(RX_PIN, HIGH);
+  unsigned long pulseLow = pulseIn(RX_PIN, LOW);
+  
+  Serial1.print("HIGH: ");
+  Serial1.print(pulseHigh);
+  Serial1.print(" µs, LOW: ");
+  Serial1.println(pulseLow);
+
+  delay(100);
+}

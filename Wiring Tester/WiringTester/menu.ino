@@ -258,8 +258,9 @@ void menu() {
   //**********simaltor***********
   if (MenuSelect == 9) {
     if (MenuSelectChange == 1) {
-      digitalWrite(SensorPulsePin, 1);
       releSimulator();
+      delay(100);
+      digitalWrite(SensorPulsePin, 1);
       MenuSelectChange = 0;
       //Sensor Simulator
       tft.setTextSize(2);
@@ -335,6 +336,7 @@ void menu() {
       }
 
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
+      delay(500);
       //*****pwm Voltage*****
       float readPwmVoltage = 0;
       for (int i = 0; i <= 200; i++) {

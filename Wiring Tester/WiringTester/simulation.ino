@@ -4,7 +4,7 @@ float map2(float x, float in_min, float in_max, float out_min, float out_max) {
 }
 
 //****************pwm creat***************
-void setupPWM(HardwareTimer &timer, uint8_t channel, uint32_t freq, float duty) {
+void setupPWM(HardwareTimer &timer, uint8_t channel, uint32_t freq, float duty) {  // setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
   timer.pause();
   timer.setPrescaleFactor(72);
   uint32_t period = 1000000 / freq;

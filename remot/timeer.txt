@@ -1,0 +1,25 @@
+#define RX_PIN PC4 // پایه‌ی گیرنده
+volatile unsigned long pulseCount = 0;
+
+// تعریف تابع اینتراپت بدون IRAM_ATTR
+void countPulse() {
+  pulseCount++;
+}
+
+void setup() {
+  Serial1.begin(115200);
+  pinMode(RX_PIN, INPUT);
+  attachInterrupt(digitalPinToInterrupt(RX_PIN), countPulse, CHANGE);
+}
+
+void loop() {
+  pulseCount = 0;
+  delay(1);  // شمارش پالس‌ها به مدت 1 میلی‌ثانیه
+  unsigned long freq = pulseCount * 1000;  // تبدیل به Hz
+
+  Serial1.print("Frequency: ");
+  Serial1.print(freq);
+  Serial1.println(" Hz");
+
+  delay(500);
+}
