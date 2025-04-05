@@ -170,7 +170,7 @@ void setup() {
 
   pinMode(ACS712_PIN, INPUT_ANALOG);
   Serial1.println("Start...");
-  mute = 1;
+  mute = 0;
 
   //generator
   pinMode(PWM_PIN1, PWM);

@@ -173,7 +173,7 @@ void logicAnalyze() {
   }
 
   if (ADCres <= 1470) {
-    resistant = map(ADCres, 1452, 1468, 0, 100);
+    resistant = map(ADCres, 1460, 1468, 0, 100);
     if (resistant < 0) resistant = 0;
     text = "Res:" + String(resistant, 1) + "R";
     tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA

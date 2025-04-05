@@ -8,7 +8,7 @@ void menu() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_MAGENTA);
@@ -397,7 +397,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_MAGENTA);
@@ -427,7 +427,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_WHITE);
@@ -459,7 +459,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_WHITE);
@@ -491,7 +491,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_WHITE);
@@ -523,7 +523,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_WHITE);
@@ -555,7 +555,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_WHITE);
@@ -599,7 +599,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_WHITE);
@@ -632,7 +632,7 @@ void ReadMainKeypad() {
       tft.setTextSize(2);
       tft.setCursor(330, 125);
       tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
+      tft.println("*PAVAN*");
       tft.setTextSize(2);
       tft.setCursor(0, 0);
       tft.setTextColor(ILI9488_WHITE);

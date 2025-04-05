@@ -37,7 +37,7 @@ void OhmMeter() {
   }
 
   if (ADCres <= 1465) {
-    resistant = map(ADCres, 1445, 1465, 0, 100);
+    resistant = map(ADCres, 1450, 1465, 0, 100);
     if(resistant<0)resistant=0;
     text = "Res:" + String(resistant, 1) + "R";
     tft.setTextSize(5);
