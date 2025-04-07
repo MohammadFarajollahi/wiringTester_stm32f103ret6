@@ -60,6 +60,7 @@ void menu2() {
           if (ExitToMenu == 1) {
             ExitToMenu = 0;
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
             break;
           }
         }
@@ -75,8 +76,68 @@ void menu2() {
         while (1) {
           VoltMEter();
           if (ExitToMenu == 1) {
-            ExitToMenu = 0;        
+            ExitToMenu = 0;
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+
+      //**********Amper Meter***********
+      if (MenuSelect == 3) {
+        releCurrent();
+        //logic
+        tft.setCursor(90, 50);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println("Amper Meter");
+        tft.fillRect(0, 75, 140, 20, ILI9488_BLACK);
+        tft.setCursor(0, 75);
+        digitalWrite(buzzer, 0);
+        tft.setTextColor(ILI9488_CYAN);
+        tft.println("Dc Mode");
+        DCMode = 1;
+        float sum = 0;
+        for (int i = 0; i < 200; i++) {
+          sum += analogRead(ACS712_PIN);
+          delay(1);
+        }
+        offset = (sum / 200.0) * VREF / 4095.0;  // میانگین‌گیری برای حذف نویز
+        while (1) {
+          AmpereMeter();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+      //**********OHM Meter***********
+      if (MenuSelect == 4) {
+        releCurrent();
+        //logic
+        tft.setCursor(90, 50);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println("OHM Meter");
+        tft.fillRect(0, 75, 140, 20, ILI9488_BLACK);
+        tft.setCursor(0, 75);
+        digitalWrite(buzzer, 0);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("Dc Mode");
+        DCMode = 1;
+        float sum = 0;
+        for (int i = 0; i < 200; i++) {
+          sum += analogRead(ACS712_PIN);
+          delay(1);
+        }
+        offset = (sum / 200.0) * VREF / 4095.0;  // میانگین‌گیری برای حذف نویز
+        while (1) {
+          AmpereMeter();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
             break;
           }
         }

@@ -14,24 +14,22 @@ void AmpereMeter() {
     // اعمال مقدار اولیه Offset برای دقت بهتر
     float current = (voltage - offset) / SENSITIVITY;
     current *= 1.65;
-    tft.setTextSize(5);
+    tft.setTextSize(3);
     text = "Current:" + String(current, 2) + " A";
     tft.setTextColor(ILI9488_CYAN);
-    tft.fillRect(240, 230, 450, 50, ILI9488_BLACK);
-    // /tft.fillRect(20, 240, 450, 40, ILI9488_BLACK);
-    tft.setCursor(10, 240);
+    tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
+    tft.setCursor(0, 170);
     tft.println(text);
   }
 
   if (DCMode == 0) {
     currentRMS = measureCurrentRMS();
     float current = currentRMS;
-    tft.setTextSize(5);
+    tft.setTextSize(3);
     text = "Current:" + String(current, 2) + " A";
     tft.setTextColor(ILI9488_CYAN);
-    tft.fillRect(240, 230, 450, 50, ILI9488_BLACK);
-    // /tft.fillRect(20, 240, 450, 40, ILI9488_BLACK);
-    tft.setCursor(10, 240);
+    tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
+    tft.setCursor(0, 170);
     tft.println(text);
   }
 }
@@ -63,8 +61,12 @@ float measureCurrentRMS() {
 void CurrentKeypad() {
   char key = getKey();  // خواندن کلید
   if (key != '\0') {
-    //***********AC************
-    if (key == 'B') {
+    if (key == '#') {
+      ExitToMenu = 1;
+      BuzzerBIGbig();
+    }
+    //***********AC / DC************
+    if (key == '0') {
 
       digitalWrite(buzzer, 1);
       delay(100);
@@ -73,9 +75,9 @@ void CurrentKeypad() {
       DCMode ^= 1;
       tft.setTextSize(2);
       if (DCMode == 1) {
-        tft.fillRect(370, 20, 150, 20, ILI9488_BLACK);
+        tft.fillRect(0, 75, 140, 20, ILI9488_BLACK);
+        tft.setCursor(0, 75);
         digitalWrite(buzzer, 0);
-        tft.setCursor(370, 20);
         tft.setTextColor(ILI9488_RED);
         tft.println("Dc Mode");
         float sum = 0;
@@ -86,14 +88,13 @@ void CurrentKeypad() {
         offset = (sum / 200.0) * VREF / 4095.0;  // میانگین‌گیری برای حذف نویز
       }
       if (DCMode == 0) {
-        tft.fillRect(370, 20, 150, 20, ILI9488_BLACK);
-        tft.setCursor(370, 20);
+        tft.fillRect(0, 75, 140, 20, ILI9488_BLACK);
+        tft.setCursor(0, 75);
         tft.setTextColor(ILI9488_RED);
         tft.println("AC Mode");
         //*******adc******
         offsetVoltage = calibrateOffset();  // محاسبه آفست اولیه سنسور
       }
     }
-    delay(100);  // تاخیر برای جلوگیری از چندبار خواندن
   }
 }

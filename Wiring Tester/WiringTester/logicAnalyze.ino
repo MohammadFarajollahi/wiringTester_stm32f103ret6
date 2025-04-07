@@ -209,8 +209,26 @@ void logicKeypad() {
   char key = getKey();  // خواندن کلید
   if (key != '\0') {
     //***********mute************
-    if (key == 'A') {
+    //بلندگو خاموش
+    if (key == 'C') {
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      mute ^= 1;
+      Serial1.println(mute);
+      if (mute == 1) {
+        tft.setTextSize(1);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(0, 26);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("MUTE");
+      }
+      if (mute == 0) {
+        tft.fillRect(0, 26, 50, 7, ILI9488_BLACK);
+      }
+      delay(100);
     }
+
 
     if (key == '#') {
       ExitToMenu = 1;
@@ -218,7 +236,7 @@ void logicKeypad() {
     }
 
     //***********mute************
-    if (key == 'B') {
+    if (key == '0') {
       digitalWrite(buzzer, 1);
       delay(100);
       digitalWrite(buzzer, 0);
