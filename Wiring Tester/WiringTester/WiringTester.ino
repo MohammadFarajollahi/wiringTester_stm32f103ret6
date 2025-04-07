@@ -7,8 +7,10 @@
 #define TFT_LED PA1
 #define TFT_RST PA8
 ILI9488 tft = ILI9488(TFT_CS, TFT_DC, TFT_RST);
-
-
+//#include <Fonts/FreeSansOblique9pt7b.h>
+#include "logo.h"
+#include "mainmenu.h"
+#include "help.h"
 //keypad
 #define ROWS 4
 #define COLS 4
@@ -55,6 +57,7 @@ int lcdShowCount;
 float ADCres;
 float InputVoltage;
 int ADCZero;
+int ExitToMenu;
 #define ADC_PIN PA0  // پایه ADC (مثلاً PA0 برای اندازه‌گیری ولتاژ)
 #define VREF 3.3     // ولتاژ مرجع ADC (VDDA میکرو، مقدار را دقیق تنظیم کنید)
 
@@ -112,7 +115,7 @@ float voltage;
 String TextLcd;
 float timeDiv = .1;
 bool hold = false;  // وضعیت ثابت نگه داشتن نمایش
-
+int mainMenuChange;
 
 ////temp
 #include <SoftWire.h>
@@ -134,6 +137,21 @@ uint16_t readRegister(uint8_t reg) {
   return data;
 }
 
+
+void drawImage(int x, int y, const int imgWidth, const int imgHeight, const uint16_t file[]) {  // const uint16_t epd_bitmap_main1 [] PROGMEM = {
+  int index = 0;
+  for (int j = 0; j < imgHeight; j++) {
+    for (int i = 0; i < imgWidth; i++) {
+      tft.drawPixel(x + i, y + j, file[index++]);
+    }
+  }
+}
+
+
+/**********************************************Setup****************************************************/
+/**********************************************Setup****************************************************/
+/**********************************************Setup****************************************************/
+/**********************************************Setup****************************************************/
 void setup() {
   myWire.begin();
   Serial1.begin(115200);
@@ -165,12 +183,12 @@ void setup() {
   digitalWrite(ReleAmper, 0);
   keyPadconfig();
   tft.begin();
+  //tft.setFont(&FreeSansOblique9pt7b);
   tft.setRotation(3);  // now canvas is 11x21
   tft.fillScreen(ILI9488_BLACK);
 
   pinMode(ACS712_PIN, INPUT_ANALOG);
   Serial1.println("Start...");
-  mute = 0;
 
   //generator
   pinMode(PWM_PIN1, PWM);
@@ -189,8 +207,17 @@ void setup() {
   RCC_BASE->APB2ENR |= (1 << 3) | (1 << 11) | (1 << 2) | (1 << 0) | (1 << 4);  ////включить тактирование port-a-b-c,tim1
   AFIO_BASE->MAPR = (1 << 8) | (1 << 6);
   Serial1.println("Start...");
+  //first Config//
+  mute = 1;
+  changeMenu = 1;  //taaqir menu
+  MenuSelect = 1;  //option Select
+  mainMenu = 1;    //main menu Select
+  mainMenuChange = 1;
+  tft.fillScreen(ILI9488_BLACK);
+  drawImage(120, 0, 175, 41, epd_bitmap_logo);  // نمایش در مختصات (60,60)
+  drawImage(315, 0, 159, 41, epd_bitmap_help);  // نمایش در مختصات (60,60)
 }
 
 void loop() {
-  menu();
+  menu2();
 }

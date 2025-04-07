@@ -31,10 +31,29 @@ void VoltMEter() {
   InputVoltage = average;
   if (adc0 <= 200 && adc0 >= 190) InputVoltage = 0;
   if (InputVoltage < 1.2) InputVoltage *= 1.1;
-  tft.setTextSize(5);
+  tft.setTextSize(3);
   text = "Voltage:" + String(InputVoltage, 2) + "V";
   tft.setTextColor(ILI9488_RED);
-  tft.fillRect(50, 240, 500, 40, ILI9488_BLACK);
-  tft.setCursor(50, 240);
+  tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
+  tft.setCursor(0, 170);
   tft.println(text);
+
+KeypadVoltage();
+}
+
+
+
+void KeypadVoltage() {
+  char key = getKey();  // خواندن کلید
+  if (key != '\0') {
+    //***********mute************
+    if (key == 'A') {
+    }
+
+    if (key == '#') {
+      ExitToMenu = 1;
+      BuzzerBIGbig();
+    }
+    delay(100);  // تاخیر برای جلوگیری از چندبار خواندن
+  }
 }
