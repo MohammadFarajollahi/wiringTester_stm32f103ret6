@@ -249,6 +249,7 @@ void setup() {
   tft.fillScreen(ILI9488_BLACK);
   drawImage(120, 0, 175, 41, epd_bitmap_logo);  // نمایش در مختصات (60,60)
   drawImage(315, 0, 159, 41, epd_bitmap_help);  // نمایش در مختصات (60,60)
+  releAnalyzer();
 }
 
 void loop() {

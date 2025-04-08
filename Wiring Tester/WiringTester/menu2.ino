@@ -215,19 +215,77 @@ void menu2() {
       //**********Selonoei***********
       if (MenuSelect == 8) {
         releGenerator();
-        //logic
-        tft.setCursor(90, 50);
+        tft.setTextSize(2);
+        tft.setCursor(70, 50);
         tft.setTextColor(ILI9488_WHITE);
-        tft.println(" Selonoeid Tester ");
+        tft.println("solenoid Tester ");
 
-        text = "Press *";
-        tft.setTextSize(3);
+        dutyCycle = 10;
+        pwmFrequency = 200;
+        plus100 = 1;
+
+        if (plus100 == 1) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 300, 150, 20, ILI9488_BLACK);
+          digitalWrite(buzzer, 0);
+          tft.setCursor(0, 300);
+          tft.setTextColor(ILI9488_WHITE);
+          tft.println("D: Pulse Count -> +100");
+        }
+        if (plus100 == 0) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 300, 150, 20, ILI9488_BLACK);
+          digitalWrite(buzzer, 0);
+          tft.setCursor(0, 300);
+          tft.setTextColor(ILI9488_YELLOW);
+          tft.println("D: Pulse Count -> +1");
+        }
+
+        tft.setTextSize(2);
+        text = "Frequency:" + String(pwmFrequency) + " HZ";
         tft.setTextColor(ILI9488_YELLOW);
-        tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
-        tft.setCursor(0, 170);
+        tft.fillRect(0, 100, 270, 20, ILI9488_BLACK);
+        tft.setCursor(0, 100);
         tft.println(text);
+
+        text = "Duty:" + String(dutyCycle) + " %";
+        tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+        tft.fillRect(0, 130, 250, 20, ILI9488_BLACK);
+        tft.setCursor(0, 130);
+        tft.println(text);
+
+        setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
+
+
+
+        tft.setTextSize(1);
+        tft.fillRect(0, 280, 150, 20, ILI9488_BLACK);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(0, 280);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println("2,8: Frequency Control  4,6:Duty Control");
         while (1) {
-          Thermometer();
+          Generator();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+
+        //**********Signal Generator***********
+      if (MenuSelect == 6) {
+        releAnalyzer();
+        //logic
+        tft.setCursor(70, 50);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println("Signal Generator");
+
+      
+        while (1) {
+          SignalGenerator();
           if (ExitToMenu == 1) {
             ExitToMenu = 0;
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
