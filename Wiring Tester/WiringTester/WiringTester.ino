@@ -242,8 +242,8 @@ void setup() {
   Serial1.println("Start...");
   //first Config//
   mute = 1;
-  changeMenu = 0;  //taaqir menu
-  MenuSelect = 1;  //option Select
+  changeMenu = 1;  //taaqir menu
+  MenuSelect = 9;  //option Select
   mainMenu = 1;    //main menu Select
   mainMenuChange = 1;
   tft.fillScreen(ILI9488_BLACK);

@@ -213,6 +213,7 @@ void menu2() {
       }
 
       //**********Selonoei***********
+      //**********Selonoei***********
       if (MenuSelect == 8) {
         releGenerator();
         tft.setTextSize(2);
@@ -256,8 +257,6 @@ void menu2() {
 
         setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
 
-
-
         tft.setTextSize(1);
         tft.fillRect(0, 280, 150, 20, ILI9488_BLACK);
         digitalWrite(buzzer, 0);
@@ -275,17 +274,105 @@ void menu2() {
         }
       }
 
-        //**********Signal Generator***********
-      if (MenuSelect == 6) {
-        releAnalyzer();
-        //logic
-        tft.setCursor(70, 50);
+      //**********Signal Generator***********
+      //**********Signal Generator***********
+      if (MenuSelect == 9) {
+        releSimulator();
+        digitalWrite(SensorPulsePin, 0);
+        digitalWrite(SimulatorLow, 1);
+        tft.setTextSize(2);
+        tft.setCursor(17, 50);
         tft.setTextColor(ILI9488_WHITE);
-        tft.println("Signal Generator");
+        tft.println("Square Signal Generator");
 
-      
+        dutyCycle = 99;
+        pwmFrequency = 2000;
+
+        tft.setTextSize(2);
+        text = "Frequency:" + String(pwmFrequency) + " HZ";
+        tft.setTextColor(ILI9488_RED);
+        tft.fillRect(0, 100, 270, 20, ILI9488_BLACK);
+        tft.setCursor(0, 100);
+        tft.println(text);
+
+        text = "Duty:" + String(dutyCycle) + " %";
+        tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+        tft.fillRect(0, 130, 250, 20, ILI9488_BLACK);
+        tft.setCursor(0, 130);
+        tft.println(text);
+
+        tft.drawLine(10, 259, 250, 259, ILI9488_WHITE);
+        tft.drawLine(10, 259, 10, 290, ILI9488_WHITE);
+        tft.drawLine(10, 290, 250, 290, ILI9488_WHITE);
+        tft.drawLine(250, 259, 250, 290, ILI9488_WHITE);
+
+        int pwmOut = map(dutyCycle, 1, 99, 50, 237);
+        tft.fillRect(11, 260, 237, 30, ILI9488_BLACK);
+        tft.fillRect(11, 260, pwmOut, 30, ILI9488_GREEN);
+
+        setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
+        delay(50);
+        //*****pwm Voltage*****
+        float readPwmVoltage = 0;
+        for (int i = 0; i <= 200; i++) {
+          readPwmVoltage += analogRead(PC1);
+          delayMicroseconds(500);
+        }
+        float PwmVoltage = readPwmVoltage /= 200;
+        float rrr = PwmVoltage;
+        PwmVoltage /= 392.50443150164598632565206381362;
+        tft.setTextSize(2);
+        text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
+        tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
+        tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 230);
+        tft.println(text);
+
+        //**************low Voltage Mode****************
+        if (simaulatorMode == 1) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
+          tft.setCursor(0, 180);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("LOW VOLTAGE Mode: 3.3v");
+          digitalWrite(SimulatorLow, 1);
+        }
+        if (simaulatorMode == 0) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
+          tft.setCursor(0, 180);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Hight VOLTAGE Mode: 5V");
+          digitalWrite(SimulatorLow, 0);
+        }
+
+        ////////////////////pulse100///////////////////////
+        plus100 = 2;
+        if (plus100 == 1) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+          tft.setCursor(0, 200);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Pulse Count:+0.1");
+        }
+        if (plus100 == 2) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+          tft.setCursor(0, 200);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Pulse Count:+1");
+        }
+        if (plus100 == 3) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+          tft.setCursor(0, 200);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Pulse Count:+5");
+        }
+
+
         while (1) {
-          SignalGenerator();
+          SquarSignalGenerator();
           if (ExitToMenu == 1) {
             ExitToMenu = 0;
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);

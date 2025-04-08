@@ -269,10 +269,6 @@ void menu() {
       tft.println("Sensor Simulator");
       dutyCycle = 2;
       pwmFrequency = 2000;
-      tft.drawLine(49, 259, 423, 259, ILI9488_WHITE);
-      tft.drawLine(49, 259, 49, 290, ILI9488_WHITE);
-      tft.drawLine(49, 290, 423, 290, ILI9488_WHITE);
-      tft.drawLine(423, 259, 423, 290, ILI9488_WHITE);
 
       tft.setTextSize(2);
       text = "Frequency:" + String(pwmFrequency) + " HZ";
@@ -286,6 +282,11 @@ void menu() {
       tft.fillRect(300, 190, 250, 20, ILI9488_BLACK);
       tft.setCursor(300, 190);
       tft.println(text);
+	  
+	  tft.drawLine(49, 259, 423, 259, ILI9488_WHITE);
+      tft.drawLine(49, 259, 49, 290, ILI9488_WHITE);
+      tft.drawLine(49, 290, 423, 290, ILI9488_WHITE);
+      tft.drawLine(423, 259, 423, 290, ILI9488_WHITE);
 
       int pwmOut = map(dutyCycle, 1, 99, 50, 370);
       tft.fillRect(50, 260, 370, 30, ILI9488_BLACK);

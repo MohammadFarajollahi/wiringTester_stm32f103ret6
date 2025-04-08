@@ -1,19 +1,4 @@
 
-float map2(float x, float in_min, float in_max, float out_min, float out_max) {
-  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
-
-//****************pwm creat***************
-void setupPWM(HardwareTimer &timer, uint8_t channel, uint32_t freq, float duty) {  // setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
-  timer.pause();
-  timer.setPrescaleFactor(72);
-  uint32_t period = 1000000 / freq;
-  timer.setOverflow(period);
-  uint32_t pulse = (period * duty) / 100;
-  timer.setCompare(channel, pulse);
-  timer.resume();
-}
-
 
 
 void simulator() {
