@@ -8,15 +8,27 @@ void FrequencyMeter() {
     hz = 0;
     freq /= 1000;
   }
-  if (hz == 1) text = "Frequency:" + String(freq) + "HZ";
-  if (hz == 0) text = "Frequency:" + String(freq) + "KHz";
+  if (hz == 1) text = "Frequency:" + String(freq) + " HZ";
+  if (hz == 0) text = "Frequency:" + String(freq) + " KHz";
 
-  tft.setTextSize(4);
+  tft.setTextSize(2);
   tft.setTextColor(ILI9488_CYAN);
-  tft.fillRect(10, 240, 500, 40, ILI9488_BLACK);
-  tft.setCursor(10, 240);
+  tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
+  tft.setCursor(0, 170);
   tft.println(text);
+  keyFreq();
 }
+
+void keyFreq() {
+  char key = getKey();  // خواندن کلید
+  if (key != '\0') {
+    if (key == '#') {
+      ExitToMenu = 1;
+      BuzzerBIGbig();
+    }
+  }
+}
+
 void freq_meter() {  // http://arduino.ru/forum/proekty/generator-s-reguliruemoei-chastotoi-na-arduino#comment-296530
   __asm volatile("cpsid i");
   /// Timer2 счёт младших 16 бит

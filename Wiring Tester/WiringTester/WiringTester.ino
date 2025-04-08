@@ -119,13 +119,10 @@ int mainMenuChange;
 
 ////temp
 #include <SoftWire.h>
-
 #define SDA_PIN PB5
 #define SCL_PIN PB7
 #define MLX90614_ADDRESS 0x5A  // آدرس سنسور
-
 SoftWire myWire(SDA_PIN, SCL_PIN);
-
 uint16_t readRegister(uint8_t reg) {
   myWire.beginTransmission(MLX90614_ADDRESS);
   myWire.write(reg);
@@ -135,6 +132,42 @@ uint16_t readRegister(uint8_t reg) {
   uint16_t data = myWire.read();
   data |= (uint16_t)myWire.read() << 8;
   return data;
+}
+
+//ohmeter
+#define ADS1115_ADDRESS 0x48  // آدرس پیش فرض
+#define R_REF 10000           // مقاومت مرجع (10KΩ دقیق)
+void writeRegister(uint8_t reg, uint16_t value) {
+  myWire.beginTransmission(ADS1115_ADDRESS);
+  myWire.write(reg);
+  myWire.write(value >> 8);
+  myWire.write(value & 0xFF);
+  myWire.endTransmission();
+}
+int16_t readADC() {
+  myWire.beginTransmission(ADS1115_ADDRESS);
+  myWire.write(0x00);  // آدرس رجیستر دیتا
+  myWire.endTransmission();
+  myWire.requestFrom(ADS1115_ADDRESS, (uint8_t)2);
+  int16_t result = ((int16_t)myWire.read() << 8) | myWire.read();
+  return result;
+}
+void configADS() {
+  // کانفیگ: ورودی AIN0 نسبت به GND
+  // PGA = ±4.096V, MODE = Single Shot
+  writeRegister(0x01, 0xC283);
+}
+
+float readVoltage() {
+  configADS();
+  myWire.beginTransmission(ADS1115_ADDRESS);
+  myWire.write(0x00);
+  myWire.endTransmission();
+  delay(10);
+  int16_t raw = readADC();
+  float voltage = (raw * 4.096) / 32768.0;
+  if (voltage < 0) voltage = 0;  // از نوسان نویز جلوگیری کن
+  return voltage;
 }
 
 
@@ -201,7 +234,7 @@ void setup() {
 
   ///فرکانس
   pinMode(PA15, INPUT_PULLDOWN);  // вход частотомера
-  pinMode(PA2, INPUT_PULLUP);
+  //pinMode(PA2, INPUT_PULLUP);
 
   RCC_BASE->APB1ENR |= (1 << 2) | (1 << 1) | (1 << 0);                         //включить тактирование tim-2,3,4
   RCC_BASE->APB2ENR |= (1 << 3) | (1 << 11) | (1 << 2) | (1 << 0) | (1 << 4);  ////включить тактирование port-a-b-c,tim1
@@ -209,7 +242,7 @@ void setup() {
   Serial1.println("Start...");
   //first Config//
   mute = 1;
-  changeMenu = 1;  //taaqir menu
+  changeMenu = 0;  //taaqir menu
   MenuSelect = 1;  //option Select
   mainMenu = 1;    //main menu Select
   mainMenuChange = 1;

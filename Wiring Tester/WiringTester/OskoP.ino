@@ -1,93 +1,60 @@
 
 int OutOskop;
 void OskoP() {
-  while (1) {
+  //while (1) {
     if (!hold) {
       oSkop();
     }
 
     KeyPad();
-    if (OutOskop == 1) {
-      MenuSelectChange = 1;
-      MenuSelect = 1;
-      tft.fillScreen(ILI9488_BLACK);
-      MenuSelect = 1;
-      MenuSelectChange = 1;
-      digitalWrite(buzzer, 1);
-      delay(250);
-      digitalWrite(buzzer, 0);
-      tft.setTextSize(2);
-      tft.setCursor(330, 125);
-      tft.setTextColor(ILI9488_GREEN);
-      tft.println("*Main Menu*");
-      tft.setTextSize(2);
-      tft.setCursor(0, 0);
-      tft.setTextColor(ILI9488_MAGENTA);
-      tft.println("1:Logic Analyzer");
-      tft.setTextColor(ILI9488_WHITE);
-      tft.println("2:Volt meter");
-      tft.println("3:Ampere meter");
-      tft.println("4:Ohm meter");
-      tft.println("5:Thermometer");
-      tft.println("6:Frequency Meter");
-      tft.println("7:Oscilloscope");
-      tft.println("8:Signal Generator");
-      tft.println("9:Sensor Simulator");
-      // tft.setCursor(330, 125);
-      // tft.println("D:Next menu");
-      //line
-      tft.drawLine(0, 150, 480, 150, ILI9488_WHITE);
-      break;
-    }
-  }
+  //}
 }
-
-
 void KeyPad() {
   char key = getKey();  // خواندن کلید
   if (key != '\0') {
     //بلندگو خاموش
-    if (key == 'A') {
+    if (key == 'C') {
       sampleSize += 100;
       BuzzerBIGbig();
       delay(5);
     }
 
-    if (key == 'B') {
+    if (key == 'D') {
       sampleSize -= 100;
       if (sampleSize < 100) sampleSize = 100;
       BuzzerBIGbig();
     }
 
-    if (key == '1') {
+    if (key == '6') {
       timeDiv += .1;
       BuzzerBIGbig();
     }
 
-    if (key == '2') {
+    if (key == '4') {
       timeDiv -= .1;
       BuzzerBIGbig();
       if (timeDiv < 0) timeDiv = 0;
     }
 
-    if (key == 'C') {
+    if (key == '2') {
       signal_calib += .1;
       BuzzerBIGbig();
     }
 
-    if (key == 'D') {
+    if (key == '8') {
       signal_calib -= .1;
 
       BuzzerBIGbig();
     }
 
-    if (key == '#') {
+    if (key == '*') {
       hold = !hold;
       BuzzerSet();
     }
 
-    if (key == '*') {
-      OutOskop = 1;
+    if (key == '#') {
+      ExitToMenu = 1;
+      BuzzerBIGbig();
     }
   }
 }

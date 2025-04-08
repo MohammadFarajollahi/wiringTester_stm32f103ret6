@@ -69,7 +69,6 @@ void menu2() {
       //**********volt Meter***********
       if (MenuSelect == 2) {
         releAnalyzer();
-        //logic
         tft.setCursor(90, 50);
         tft.setTextColor(ILI9488_WHITE);
         tft.println("Volt Meter");
@@ -87,14 +86,13 @@ void menu2() {
       //**********Amper Meter***********
       if (MenuSelect == 3) {
         releCurrent();
-        //logic
         tft.setCursor(90, 50);
-        tft.setTextColor(ILI9488_WHITE);
+        tft.setTextColor(ILI9488_CYAN);
         tft.println("Amper Meter");
         tft.fillRect(0, 75, 140, 20, ILI9488_BLACK);
         tft.setCursor(0, 75);
         digitalWrite(buzzer, 0);
-        tft.setTextColor(ILI9488_CYAN);
+        tft.setTextColor(ILI9488_MAGENTA);
         tft.println("Dc Mode");
         DCMode = 1;
         float sum = 0;
@@ -115,25 +113,121 @@ void menu2() {
       }
       //**********OHM Meter***********
       if (MenuSelect == 4) {
-        releCurrent();
+        releOhmeter();
+        tft.setCursor(90, 50);
+        tft.setTextColor(ILI9488_YELLOW);
+        tft.println("OHM Meter");
+        // tft.fillRect(0, 75, 140, 20, ILI9488_BLACK);
+        // tft.setCursor(0, 75);
+        // digitalWrite(buzzer, 0);
+        // tft.setTextColor(ILI9488_RED);
+        // tft.println("Dc Mode");
+        while (1) {
+          ohMmeter();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+
+      //**********Frequency Meter***********
+      if (MenuSelect == 5) {
+        releFrequency();
+        tft.setCursor(72, 50);
+        tft.setTextColor(ILI9488_YELLOW);
+        tft.println("Frequency Meter");
+        while (1) {
+          FrequencyMeter();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+
+      //**********thermometer***********
+      if (MenuSelect == 6) {
+        releAnalyzer();
         //logic
         tft.setCursor(90, 50);
         tft.setTextColor(ILI9488_WHITE);
-        tft.println("OHM Meter");
-        tft.fillRect(0, 75, 140, 20, ILI9488_BLACK);
-        tft.setCursor(0, 75);
-        digitalWrite(buzzer, 0);
-        tft.setTextColor(ILI9488_RED);
-        tft.println("Dc Mode");
-        DCMode = 1;
-        float sum = 0;
-        for (int i = 0; i < 200; i++) {
-          sum += analogRead(ACS712_PIN);
-          delay(1);
-        }
-        offset = (sum / 200.0) * VREF / 4095.0;  // میانگین‌گیری برای حذف نویز
+        tft.println(" Thermometer ");
+
+        text = "Press *";
+        tft.setTextSize(3);
+        tft.setTextColor(ILI9488_YELLOW);
+        tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
+        tft.setCursor(0, 170);
+        tft.println(text);
         while (1) {
-          AmpereMeter();
+          Thermometer();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+      //**********Oskop***********
+      if (MenuSelect == 7) {
+        tft.fillScreen(ILI9488_BLACK);
+        releAnalyzer();
+        drawGrid();
+        OutOskop = 0;
+        tft.setTextSize(1);
+        tft.setCursor(1, 1);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("Oscilloscope");
+        tft.setCursor(1, 20);
+        tft.setTextColor(ILI9488_CYAN);
+        tft.println("# -> Exit");
+        tft.setCursor(200, 1);
+        tft.println("4 & 6 -> Time/DIV");
+        tft.setCursor(320, 1);
+        tft.println("C & D -> THreshold");
+        tft.setCursor(200, 20);
+        tft.println("2 & 8 -> VoltSale");
+        tft.setCursor(320, 20);
+        tft.println("* -> Pause");
+        while (1) {
+          OskoP();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            changeMenu = 0;  //taaqir menu
+            MenuSelect = 1;  //option Select
+            mainMenu = 1;    //main menu Select
+            mainMenuChange = 1;
+            tft.fillScreen(ILI9488_BLACK);
+            drawImage(120, 0, 175, 41, epd_bitmap_logo);  // نمایش در مختصات (60,60)
+            drawImage(315, 0, 159, 41, epd_bitmap_help);  // نمایش در مختصات (60,60)
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+
+      //**********Selonoei***********
+      if (MenuSelect == 8) {
+        releGenerator();
+        //logic
+        tft.setCursor(90, 50);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println(" Selonoeid Tester ");
+
+        text = "Press *";
+        tft.setTextSize(3);
+        tft.setTextColor(ILI9488_YELLOW);
+        tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
+        tft.setCursor(0, 170);
+        tft.println(text);
+        while (1) {
+          Thermometer();
           if (ExitToMenu == 1) {
             ExitToMenu = 0;
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
@@ -145,7 +239,6 @@ void menu2() {
       ///////////main Menu1
     }
   }
-
   ReadMainKeypad2();
 }
 
