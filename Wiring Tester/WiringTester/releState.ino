@@ -70,3 +70,12 @@ void releSimulator() {
   digitalWrite(Releselonoeid, 0);
   digitalWrite(ReleAmper, 0);
 }
+
+void ReleWater() {
+  digitalWrite(rele1, 1);
+  digitalWrite(rele2, 1);
+  digitalWrite(rele3, 1);
+  digitalWrite(rele4, 1);
+  digitalWrite(Releselonoeid, 0);
+  digitalWrite(ReleAmper, 0);
+}

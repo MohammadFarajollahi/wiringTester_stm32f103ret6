@@ -48,7 +48,7 @@ void menu2() {
       tft.drawLine(308, 40, 308, 320, ILI9488_WHITE);
       drawImage(320, 50, 130, 260, epd_bitmap_mainmenu2);  // نمایش در مختصات (60,60)
       tft.setTextSize(2);
-      tft.setCursor(452, 58);  //58 //88
+      tft.setCursor(452, 88);  //58 //88
       tft.setTextColor(ILI9488_GREEN);
       tft.println("<-");
       if (mute == 1) {
@@ -424,7 +424,124 @@ void menu2() {
     }
 
     if (mainMenu == 2) {
+      //**********Sensor Oxigen***********
+      //**********Sensor Oxigen***********
+      if (MenuSelect == 1) {
+        releSimulator();
+        digitalWrite(SensorPulsePin, 1);
+        digitalWrite(SimulatorLow, 1);
+        tft.setTextSize(2);
+        tft.setCursor(60, 50);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println("Water Sensor");
 
+        dutyCycle = 2;
+        pwmFrequency = 2000;
+        plus100 = 2;
+
+        tft.drawLine(10, 259, 250, 259, ILI9488_WHITE);
+        tft.drawLine(10, 259, 10, 290, ILI9488_WHITE);
+        tft.drawLine(10, 290, 250, 290, ILI9488_WHITE);
+        tft.drawLine(250, 259, 250, 290, ILI9488_WHITE);
+
+        int pwmOut = map(dutyCycle, 1, 99, 50, 237);
+        tft.fillRect(11, 260, 237, 30, ILI9488_BLACK);
+        tft.fillRect(11, 260, pwmOut, 30, ILI9488_GREEN);
+
+        setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
+        delay(50);
+        //*****pwm Voltage*****
+        float readPwmVoltage = 0;
+        for (int i = 0; i <= 200; i++) {
+          readPwmVoltage += analogRead(PC1);
+          delayMicroseconds(500);
+        }
+        float PwmVoltage = readPwmVoltage /= 200;
+        float rrr = PwmVoltage;
+        PwmVoltage /= 392.50443150164598632565206381362;
+        tft.setTextSize(2);
+        text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
+        tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
+        tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 230);
+        tft.println(text);
+
+        tft.setTextSize(2);
+        tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 180);
+        tft.setTextColor(ILI9488_GREEN);
+        tft.println("4 , 6 --> Oxygen Setting");
+        while (1) {
+          SensorOxigen();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+
+      //**********Sensor Water***********
+      //**********Sensor Water***********
+      if (MenuSelect == 2) {
+        ReleWater();
+        digitalWrite(SensorPulsePin, 1);
+        digitalWrite(SimulatorLow, 1);
+        tft.setTextSize(2);
+        tft.setCursor(60, 50);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println("Water Sensor");
+
+        dutyCycle = 2;
+        pwmFrequency = 2000;
+        plus100 = 2;
+
+        tft.drawLine(10, 259, 250, 259, ILI9488_WHITE);
+        tft.drawLine(10, 259, 10, 290, ILI9488_WHITE);
+        tft.drawLine(10, 290, 250, 290, ILI9488_WHITE);
+        tft.drawLine(250, 259, 250, 290, ILI9488_WHITE);
+
+        int pwmOut = map(dutyCycle, 1, 99, 50, 237);
+        tft.fillRect(11, 260, 237, 30, ILI9488_BLACK);
+        tft.fillRect(11, 260, pwmOut, 30, ILI9488_GREEN);
+
+        setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
+        delay(50);
+        //*****pwm Voltage*****
+        float readPwmVoltage = 0;
+        for (int i = 0; i <= 200; i++) {
+          readPwmVoltage += analogRead(PC1);
+          delayMicroseconds(500);
+        }
+        float PwmVoltage = readPwmVoltage /= 200;
+        float rrr = PwmVoltage;
+        PwmVoltage /= 392.50443150164598632565206381362;
+        tft.setTextSize(2);
+        text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
+        tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
+        tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 230);
+        tft.println(text);
+
+        tft.setTextSize(2);
+        tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 180);
+        tft.setTextColor(ILI9488_GREEN);
+        tft.println("4 , 6 --> Water Setting");
+        digitalWrite(SimulatorLow, 1);
+
+
+        while (1) {
+          WaterSensor();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
       //**********Signal Generator***********
       //**********Signal Generator***********
       if (MenuSelect == 9) {

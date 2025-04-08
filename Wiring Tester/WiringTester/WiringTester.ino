@@ -243,7 +243,7 @@ void setup() {
   Serial1.println("Start...");
   //first Config//
   mute = 0;
-  changeMenu = 1;  //taaqir menu
+  changeMenu = 0;  //taaqir menu
   MenuSelect = 1;  //option Select
   mainMenu = 1;    //main menu Select
   mainMenuChange = 1;
