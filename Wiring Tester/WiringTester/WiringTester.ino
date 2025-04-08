@@ -10,6 +10,7 @@ ILI9488 tft = ILI9488(TFT_CS, TFT_DC, TFT_RST);
 //#include <Fonts/FreeSansOblique9pt7b.h>
 #include "logo.h"
 #include "mainmenu.h"
+#include "mainmenu2.h"
 #include "help.h"
 //keypad
 #define ROWS 4
@@ -241,9 +242,9 @@ void setup() {
   AFIO_BASE->MAPR = (1 << 8) | (1 << 6);
   Serial1.println("Start...");
   //first Config//
-  mute = 1;
+  mute = 0;
   changeMenu = 1;  //taaqir menu
-  MenuSelect = 9;  //option Select
+  MenuSelect = 1;  //option Select
   mainMenu = 1;    //main menu Select
   mainMenuChange = 1;
   tft.fillScreen(ILI9488_BLACK);

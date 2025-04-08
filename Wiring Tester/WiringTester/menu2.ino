@@ -4,10 +4,49 @@ void menu2() {
 
   if (mainMenuChange == 1) {
     mainMenuChange = 0;
+    /////*****Main Menu1******/////
     if (mainMenu == 1) {
+      tft.fillRect(452, 58, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 88, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 116, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 145, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 174, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 204, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 234, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 262, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 290, 480, 15, ILI9488_BLACK);
       tft.drawLine(0, 40, 480, 40, ILI9488_WHITE);
       tft.drawLine(308, 40, 308, 320, ILI9488_WHITE);
       drawImage(320, 50, 130, 260, epd_bitmap_main1);  // نمایش در مختصات (60,60)
+      tft.setTextSize(2);
+      tft.setCursor(452, 58);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      if (mute == 1) {
+        tft.setTextSize(1);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(0, 26);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("MUTE");
+      }
+      if (mute == 0) {
+        tft.fillRect(0, 26, 50, 7, ILI9488_BLACK);
+      }
+    }
+    /////*****Main Menu2******/////
+    if (mainMenu == 2) {
+      tft.fillRect(452, 58, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 88, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 116, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 145, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 174, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 204, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 234, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 262, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 290, 480, 15, ILI9488_BLACK);
+      tft.drawLine(0, 40, 480, 40, ILI9488_WHITE);
+      tft.drawLine(308, 40, 308, 320, ILI9488_WHITE);
+      drawImage(320, 50, 130, 260, epd_bitmap_mainmenu2);  // نمایش در مختصات (60,60)
       tft.setTextSize(2);
       tft.setCursor(452, 58);  //58 //88
       tft.setTextColor(ILI9488_GREEN);
@@ -285,7 +324,7 @@ void menu2() {
         tft.setTextColor(ILI9488_WHITE);
         tft.println("Square Signal Generator");
 
-        dutyCycle = 99;
+        dutyCycle = 2;
         pwmFrequency = 2000;
 
         tft.setTextSize(2);
@@ -383,8 +422,121 @@ void menu2() {
       }
       ///////////main Menu1
     }
+
+    if (mainMenu == 2) {
+
+      //**********Signal Generator***********
+      //**********Signal Generator***********
+      if (MenuSelect == 9) {
+        releSimulator();
+        digitalWrite(SensorPulsePin, 1);
+        digitalWrite(SimulatorLow, 1);
+        tft.setTextSize(2);
+        tft.setCursor(17, 50);
+        tft.setTextColor(ILI9488_WHITE);
+        tft.println("Square Signal Generator");
+
+        dutyCycle = 2;
+        pwmFrequency = 2000;
+
+        tft.setTextSize(2);
+        text = "Frequency:" + String(pwmFrequency) + " HZ";
+        tft.setTextColor(ILI9488_RED);
+        tft.fillRect(0, 100, 270, 20, ILI9488_BLACK);
+        tft.setCursor(0, 100);
+        tft.println(text);
+
+        text = "Duty:" + String(dutyCycle) + " %";
+        tft.setTextColor(ILI9488_CYAN);  //ILI9488_MAGENTA
+        tft.fillRect(0, 130, 250, 20, ILI9488_BLACK);
+        tft.setCursor(0, 130);
+        tft.println(text);
+
+        tft.drawLine(10, 259, 250, 259, ILI9488_WHITE);
+        tft.drawLine(10, 259, 10, 290, ILI9488_WHITE);
+        tft.drawLine(10, 290, 250, 290, ILI9488_WHITE);
+        tft.drawLine(250, 259, 250, 290, ILI9488_WHITE);
+
+        int pwmOut = map(dutyCycle, 1, 99, 50, 237);
+        tft.fillRect(11, 260, 237, 30, ILI9488_BLACK);
+        tft.fillRect(11, 260, pwmOut, 30, ILI9488_GREEN);
+
+        setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
+        delay(50);
+        //*****pwm Voltage*****
+        float readPwmVoltage = 0;
+        for (int i = 0; i <= 200; i++) {
+          readPwmVoltage += analogRead(PC1);
+          delayMicroseconds(500);
+        }
+        float PwmVoltage = readPwmVoltage /= 200;
+        float rrr = PwmVoltage;
+        PwmVoltage /= 392.50443150164598632565206381362;
+        tft.setTextSize(2);
+        text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
+        tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
+        tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 230);
+        tft.println(text);
+
+        //**************low Voltage Mode****************
+        if (simaulatorMode == 1) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
+          tft.setCursor(0, 180);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("LOW VOLTAGE Mode: 3.3v");
+          digitalWrite(SimulatorLow, 1);
+        }
+        if (simaulatorMode == 0) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
+          tft.setCursor(0, 180);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Hight VOLTAGE Mode: 5V");
+          digitalWrite(SimulatorLow, 0);
+        }
+
+        ////////////////////pulse100///////////////////////
+        plus100 = 2;
+        if (plus100 == 1) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+          tft.setCursor(0, 200);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Pulse Count:+0.1");
+        }
+        if (plus100 == 2) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+          tft.setCursor(0, 200);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Pulse Count:+1");
+        }
+        if (plus100 == 3) {
+          tft.setTextSize(1);
+          tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+          tft.setCursor(0, 200);
+          tft.setTextColor(ILI9488_GREEN);
+          tft.println("Pulse Count:+5");
+        }
+
+
+        while (1) {
+          SimulationManual();
+          if (ExitToMenu == 1) {
+            ExitToMenu = 0;
+            tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+            releAnalyzer();
+            break;
+          }
+        }
+      }
+      ///////////main menu2
+    }
   }
-  ReadMainKeypad2();
+  if (mainMenu == 1) KeyPad1();
+  if (mainMenu == 2) KeyPad2();
 }
 
 
@@ -392,7 +544,7 @@ void menu2() {
 //**********************************************menu Select********************************************
 //**********************************************menu Select********************************************
 //**********************************************menu Select********************************************
-void ReadMainKeypad2() {
+void KeyPad1() {
   char key = getKey();  // خواندن کلید
   if (key != '\0') {
     BuzzerBIGbig();
@@ -429,7 +581,18 @@ void ReadMainKeypad2() {
     }
 
     if (key == 'A') {
+      digitalWrite(buzzer, 1);
+      delay(200);
+      digitalWrite(buzzer, 0);
       mainMenu++;
+      mainMenuChange = 1;
+    }
+
+    if (key == 'B') {
+      digitalWrite(buzzer, 1);
+      delay(200);
+      digitalWrite(buzzer, 0);
+      mainMenu--;
       mainMenuChange = 1;
     }
 
@@ -500,6 +663,133 @@ void ReadMainKeypad2() {
       tft.setCursor(452, 290);  //58 //88
       tft.setTextColor(ILI9488_GREEN);
       tft.println("<-");
+      MenuSelect = 9;
+    }
+    delay(250);
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void KeyPad2() {
+  char key = getKey();  // خواندن کلید
+  if (key != '\0') {
+    BuzzerBIGbig();
+    if ((key == '1') || (key == '2') || (key == '3') || (key == '4') || (key == '5') || (key == '6') || (key == '7') || (key == '8') || (key == '9')) {
+      tft.fillRect(452, 58, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 88, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 116, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 145, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 174, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 204, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 234, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 262, 480, 15, ILI9488_BLACK);
+      tft.fillRect(452, 290, 480, 15, ILI9488_BLACK);
+    }
+
+    //بلندگو خاموش
+    if (key == 'C') {
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      mute ^= 1;
+      Serial1.println(mute);
+      if (mute == 1) {
+        tft.setTextSize(1);
+        digitalWrite(buzzer, 0);
+        tft.setCursor(0, 26);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("MUTE");
+      }
+      if (mute == 0) {
+        tft.fillRect(0, 26, 50, 7, ILI9488_BLACK);
+      }
+      delay(100);
+    }
+
+    if (key == 'A') {
+      digitalWrite(buzzer, 1);
+      delay(200);
+      digitalWrite(buzzer, 0);
+      mainMenu++;
+      mainMenuChange = 1;
+    }
+
+    if (key == 'B') {
+      digitalWrite(buzzer, 1);
+      delay(200);
+      digitalWrite(buzzer, 0);
+      mainMenu--;
+      mainMenuChange = 1;
+    }
+
+    if (key == '*') {
+      changeMenu = 1;
+    }
+
+    if (key == '1') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 88);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 1;
+    }
+    if (key == '2') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 116);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 2;
+    }
+    if (key == '3') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 145);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 3;
+    }
+    if (key == '4') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 174);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 4;
+    }
+
+    if (key == '5') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 204);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 5;
+    }
+
+    if (key == '6') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 234);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 6;
+    }
+    if (key == '7') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 262);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 7;
+    }
+    if (key == '8') {
+      tft.setTextSize(2);
+      tft.setCursor(452, 290);  //58 //88
+      tft.setTextColor(ILI9488_GREEN);
+      tft.println("<-");
+      MenuSelect = 8;
+    }
+
+    if (key == '9') {
+      // tft.setTextSize(2);
+      // tft.setCursor(452, 290);  //58 //88
+      // tft.setTextColor(ILI9488_GREEN);
+      // tft.println("<-");
       MenuSelect = 9;
     }
     delay(250);
