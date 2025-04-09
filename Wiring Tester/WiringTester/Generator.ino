@@ -14,7 +14,7 @@ void GeneratorKeypad() {
       BuzzerBIGbig();
     }
     //***********Frequency Setting************
-    if (key == '6') {
+    if (key == '2') {
       BuzzerBIGbig();
       if (plus100 == 0) pwmFrequency += 1;
       if (plus100 == 1) pwmFrequency += 100;
@@ -22,7 +22,7 @@ void GeneratorKeypad() {
       delay(50);
     }
 
-    if (key == '4') {
+    if (key == '8') {
       BuzzerBIGbig();
       if (plus100 == 0) pwmFrequency -= 1;
       if (plus100 == 1) pwmFrequency -= 100;
@@ -31,7 +31,7 @@ void GeneratorKeypad() {
     }
 
     //***********Duty Setting************
-    if (key == '2') {
+    if (key == '6') {
       BuzzerBIGbig();
       ++dutyCycle;
       if (dutyCycle <= 1) dutyCycle = 1;
@@ -40,7 +40,7 @@ void GeneratorKeypad() {
       delay(50);
     }
 
-    if (key == '8') {
+    if (key == '4') {
       BuzzerBIGbig();
       --dutyCycle;
       if (dutyCycle <= 1) dutyCycle = 1;

@@ -9,7 +9,7 @@ void SensorOxigen() {
   float PwmVoltage = readPwmVoltage /= 100;
   float rrr = PwmVoltage;
   PwmVoltage /= 392.50443150164598632565206381362;
-  if (PwmVoltage >= 5) {
+  if (PwmVoltage >= 12) {
     releAnalyzer();
     text = "Probe Warning";
     tft.setTextColor(ILI9488_RED);
@@ -35,6 +35,34 @@ void OxigenKey() {
     if (key == '#') {
       ExitToMenu = 1;
       BuzzerBIGbig();
+    }
+
+    //////////////pulse1000/////////
+    if (key == 'B') {
+      BuzzerSet();
+      plus100 += 1;
+      if (plus100 >= 4) plus100 = 1;
+      if (plus100 == 1) {
+        tft.setTextSize(1);
+        tft.fillRect(0, 70, 150, 20, ILI9488_BLACK);
+        tft.setCursor(0, 70);
+        tft.setTextColor(ILI9488_GREEN);
+        tft.println("Pulse Count:+0.1");
+      }
+      if (plus100 == 2) {
+        tft.setTextSize(1);
+        tft.fillRect(0, 70, 150, 20, ILI9488_BLACK);
+        tft.setCursor(0, 70);
+        tft.setTextColor(ILI9488_GREEN);
+        tft.println("Pulse Count:+1");
+      }
+      if (plus100 == 3) {
+        tft.setTextSize(1);
+        tft.fillRect(0, 70, 150, 20, ILI9488_BLACK);
+        tft.setCursor(0, 70);
+        tft.setTextColor(ILI9488_GREEN);
+        tft.println("Pulse Count:+5");
+      }
     }
 
     //***********Duty Setting************

@@ -25,7 +25,7 @@ void SquarSignalGenerator() {
   float PwmVoltage = readPwmVoltage /= 100;
   float rrr = PwmVoltage;
   PwmVoltage /= 392.50443150164598632565206381362;
-  if (PwmVoltage >= 5) {
+  if (PwmVoltage >= 12) {
     releAnalyzer();
     text = "Probe Warning";
     tft.setTextColor(ILI9488_RED);
@@ -55,7 +55,7 @@ void signalGenKey() {
     /////////////////
 
     //***********Frequency Setting************
-    if (key == '6') {
+    if (key == '2') {
       BuzzerBIGbig();
       if (plus100 == 1) pwmFrequency += 1;
       if (plus100 == 2) pwmFrequency += 10;
@@ -64,7 +64,7 @@ void signalGenKey() {
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
     }
 
-    if (key == '4') {
+    if (key == '8') {
       BuzzerBIGbig();
       if (plus100 == 1) pwmFrequency -= 1;
       if (plus100 == 2) pwmFrequency -= 10;
@@ -75,7 +75,7 @@ void signalGenKey() {
     }
 
     //***********Duty Setting************
-    if (key == '2') {
+    if (key == '6') {
       BuzzerBIGbig();
       if (plus100 == 1) dutyCycle += 0.1;
       if (plus100 == 2) dutyCycle += 1;
@@ -86,7 +86,7 @@ void signalGenKey() {
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
     }
 
-    if (key == '8') {
+    if (key == '4') {
       BuzzerBIGbig();
       if (plus100 == 1) dutyCycle -= 0.1;
       if (plus100 == 2) dutyCycle -= 1;

@@ -5,7 +5,7 @@ void ohMmeter() {
   float Vout = readVoltage();
   float Vin = 3.3;  // ولتاژ مرجع تغذیه
 
-  if (Vout >= 3.29) {  ///Vin
+  if (Vout >= 3.27) {  ///Vin
     Serial1.println("Overrange!");
     tft.setTextSize(3);
     text = "RES: OL";

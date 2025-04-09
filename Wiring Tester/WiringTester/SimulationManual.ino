@@ -38,7 +38,7 @@ void SimKey() {
     /////////////////
 
     //***********Frequency Setting************
-    if (key == '6') {
+    if (key == '2') {
       BuzzerBIGbig();
       if (plus100 == 1) pwmFrequency += 1;
       if (plus100 == 2) pwmFrequency += 10;
@@ -47,7 +47,7 @@ void SimKey() {
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
     }
 
-    if (key == '4') {
+    if (key == '8') {
       BuzzerBIGbig();
       if (plus100 == 1) pwmFrequency -= 1;
       if (plus100 == 2) pwmFrequency -= 10;
@@ -58,7 +58,7 @@ void SimKey() {
     }
 
     //***********Duty Setting************
-    if (key == '2') {
+    if (key == '6') {
       BuzzerBIGbig();
       if (plus100 == 1) dutyCycle += 0.1;
       if (plus100 == 2) dutyCycle += 1;
@@ -69,7 +69,7 @@ void SimKey() {
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
     }
 
-    if (key == '8') {
+    if (key == '4') {
       BuzzerBIGbig();
       if (plus100 == 1) dutyCycle -= 0.1;
       if (plus100 == 2) dutyCycle -= 1;

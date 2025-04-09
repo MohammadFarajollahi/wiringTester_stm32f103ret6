@@ -308,6 +308,7 @@ void menu2() {
             ExitToMenu = 0;
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
             releAnalyzer();
+            delay(500);
             break;
           }
         }
@@ -317,8 +318,8 @@ void menu2() {
       //**********Signal Generator***********
       if (MenuSelect == 9) {
         releSimulator();
-        digitalWrite(SensorPulsePin, 0);
-        digitalWrite(SimulatorLow, 1);
+        digitalWrite(SensorPulsePin, 0);  // square wave
+        digitalWrite(SimulatorLow, 1);    // Low Voltage
         tft.setTextSize(2);
         tft.setCursor(17, 50);
         tft.setTextColor(ILI9488_WHITE);
@@ -437,7 +438,7 @@ void menu2() {
 
         dutyCycle = 2;
         pwmFrequency = 2000;
-        plus100 = 2;
+        plus100 = 1;
 
         tft.drawLine(10, 259, 250, 259, ILI9488_WHITE);
         tft.drawLine(10, 259, 10, 290, ILI9488_WHITE);
@@ -471,6 +472,12 @@ void menu2() {
         tft.setCursor(0, 180);
         tft.setTextColor(ILI9488_GREEN);
         tft.println("4 , 6 --> Oxygen Setting");
+
+        tft.setTextSize(1);
+        tft.fillRect(0, 70, 150, 15, ILI9488_BLACK);
+        tft.setCursor(0, 70);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("Pulse Count:+1");
         while (1) {
           SensorOxigen();
           if (ExitToMenu == 1) {
@@ -485,7 +492,8 @@ void menu2() {
       //**********Sensor Water***********
       //**********Sensor Water***********
       if (MenuSelect == 2) {
-        ReleWater();
+        releSimulator();
+        WaterVoltMode = 1;
         digitalWrite(SensorPulsePin, 1);
         digitalWrite(SimulatorLow, 1);
         tft.setTextSize(2);
@@ -506,7 +514,7 @@ void menu2() {
         tft.fillRect(11, 260, 237, 30, ILI9488_BLACK);
         tft.fillRect(11, 260, pwmOut, 30, ILI9488_GREEN);
 
-        setupPWM(myTimer4, 1, pwmFrequency, dutyCycle);
+        setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
         delay(50);
         //*****pwm Voltage*****
         float readPwmVoltage = 0;
@@ -524,14 +532,34 @@ void menu2() {
         tft.setCursor(0, 230);
         tft.println(text);
 
+        tft.setTextSize(1);
+        tft.fillRect(0, 70, 150, 15, ILI9488_BLACK);
+        tft.setCursor(0, 70);
+        tft.setTextColor(ILI9488_RED);
+        tft.println("Pulse Count:+1");
+
         tft.setTextSize(2);
-        tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
-        tft.setCursor(0, 180);
+        tft.fillRect(0, 100, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 100);
         tft.setTextColor(ILI9488_GREEN);
-        tft.println("4 , 6 --> Water Setting");
-        digitalWrite(SimulatorLow, 1);
+        tft.println("  1:Voltage   2:Res");
 
+        tft.setTextSize(2);
+        tft.fillRect(0, 130, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 130);
+        tft.setTextColor(ILI9488_CYAN);
+        if (WaterVoltMode == 1) tft.println("Vlotage Mode");
+        if (WaterVoltMode == 0) tft.println("RES Mode");
 
+        tft.setTextSize(2);
+        tft.fillRect(0, 160, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 160);
+        tft.setTextColor(ILI9488_GREEN);
+        tft.println("4 , 6 --> Duty Setting");
+        tft.fillRect(0, 190, 300, 20, ILI9488_BLACK);
+        tft.setCursor(0, 190);
+        tft.setTextColor(ILI9488_GREEN);
+        tft.println("7 , 9 --> Fr Setting");
         while (1) {
           WaterSensor();
           if (ExitToMenu == 1) {
@@ -713,6 +741,8 @@ void KeyPad1() {
       mainMenuChange = 1;
     }
 
+    if (mainMenu < 1) mainMenu = 1;
+
     if (key == '*') {
       changeMenu = 1;
     }
@@ -838,6 +868,8 @@ void KeyPad2() {
       mainMenu--;
       mainMenuChange = 1;
     }
+
+    if (mainMenu > 2) mainMenu = 2;
 
     if (key == '*') {
       changeMenu = 1;

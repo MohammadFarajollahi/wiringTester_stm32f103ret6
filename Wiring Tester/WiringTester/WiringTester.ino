@@ -41,7 +41,7 @@ int ReleAmper = PC13;
 int Releselonoeid = PC12;
 int buzzer = PB0;
 int ingnd = PA1;
-int SimulatorLow = PC7;
+int SimulatorLow = PC7;  // Low Voltage
 int simaulatorMode = 1;
 String text;
 int mute = 0;
@@ -83,7 +83,7 @@ HardwareTimer myTimer4(4);  // به جای timer4
 float dutyCycle = 30;
 int pwmFrequency = 100;
 int plus100;
-int SensorPulsePin = PB1;
+int SensorPulsePin = PB1;  //square wave
 
 //frequency
 volatile int mon_flag;
@@ -134,7 +134,7 @@ uint16_t readRegister(uint8_t reg) {
   data |= (uint16_t)myWire.read() << 8;
   return data;
 }
-
+int WaterVoltMode = 1;
 //ohmeter
 #define ADS1115_ADDRESS 0x48  // آدرس پیش فرض
 #define R_REF 10000           // مقاومت مرجع (10KΩ دقیق)
