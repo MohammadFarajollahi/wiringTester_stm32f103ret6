@@ -1,0 +1,13 @@
+Change Component Comment : Designator=10k Old Comment=10k New Comment=10k6
+Change Component Designator: OldDesignator=10k NewDesignator=10k6
+Added Pin To Net: NetName=Net10k6_1 Pin=10k6-1
+Added Pin To Net: NetName=Net10k6_1 Pin=BC824-1
+Added Net: Name=Net10k6_1
+Added Member To Class: ClassName=WireTest Member=Component 10k6
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k

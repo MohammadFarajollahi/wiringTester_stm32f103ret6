@@ -37,6 +37,8 @@ int rele1 = PC8;
 int rele2 = PC9;
 int rele3 = PC10;
 int rele4 = PC11;
+int rele5 = PC5;
+int releSelf = PC6;
 int ReleAmper = PC13;
 int Releselonoeid = PC12;
 int buzzer = PB0;
@@ -198,6 +200,8 @@ void setup() {
   pinMode(rele2, OUTPUT);
   pinMode(rele3, OUTPUT);
   pinMode(rele4, OUTPUT);
+  pinMode(rele5, OUTPUT);
+  pinMode(releSelf, OUTPUT);
   pinMode(ReleAmper, OUTPUT);
   pinMode(Releselonoeid, OUTPUT);
   pinMode(SimulatorLow, OUTPUT);

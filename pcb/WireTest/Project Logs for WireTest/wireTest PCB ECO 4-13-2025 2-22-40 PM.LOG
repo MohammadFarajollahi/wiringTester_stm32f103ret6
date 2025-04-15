@@ -1,0 +1,27 @@
+Change Component Comment : Designator=K? Old Comment=Relay New Comment=rele1A
+Change Component Comment : Designator=K? Old Comment=Relay New Comment=rele1B
+Change Component Comment : Designator=K? Old Comment=Relay New Comment=rele2A
+Change Component Comment : Designator=K? Old Comment=Relay New Comment=rele2B
+Change Component Comment : Designator=K? Old Comment=V23105A5301A201 New Comment=rele3
+Change Component Comment : Designator=K? Old Comment=V23105A5301A201 New Comment=rele4
+Change Component Comment : Designator=K? Old Comment=V23105A5301A201 New Comment=rele5
+Change Component Comment : Designator=K? Old Comment=V23105A5301A201 New Comment=rele6
+Change Component Comment : Designator=K? Old Comment=V23105A5301A201 New Comment=rele7
+Change Component Designator: OldDesignator=K? NewDesignator=rele1A
+Change Component Designator: OldDesignator=K? NewDesignator=rele1B
+Change Component Designator: OldDesignator=K? NewDesignator=rele2A
+Change Component Designator: OldDesignator=K? NewDesignator=rele2B
+Change Component Designator: OldDesignator=K? NewDesignator=rele3
+Change Component Designator: OldDesignator=K? NewDesignator=rele4
+Change Component Designator: OldDesignator=K? NewDesignator=rele5
+Change Component Designator: OldDesignator=K? NewDesignator=rele6
+Change Component Designator: OldDesignator=K? NewDesignator=rele7
+Added Member To Class: ClassName=WireTest Member=Component rele1A
+Added Member To Class: ClassName=WireTest Member=Component rele1B
+Added Member To Class: ClassName=WireTest Member=Component rele2A
+Added Member To Class: ClassName=WireTest Member=Component rele2B
+Added Member To Class: ClassName=WireTest Member=Component rele4
+Added Member To Class: ClassName=WireTest Member=Component rele5
+Added Member To Class: ClassName=WireTest Member=Component rele6
+Added Member To Class: ClassName=WireTest Member=Component rele7
+Added Room: Name=WireTest

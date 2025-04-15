@@ -1,0 +1,75 @@
+Added Component: Designator=2596(LM2576 SMD)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part.No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "LM2576-ADJ"; VariantName = "[No Variations]"
+Added Component: Designator=In+12(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=K?(Relay 15.40x12.10x13.10)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Company"; Value = "E.P.I.L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design_Date"; Value = "2011/10/31"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Component: Designator=K?(Relay 15.40x12.10x13.10)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Company"; Value = "E.P.I.L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design_Date"; Value = "2011/10/31"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Component: Designator=K?(Relay 15.40x12.10x13.10)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Company"; Value = "E.P.I.L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design_Date"; Value = "2011/10/31"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Component: Designator=K?(Relay 15.40x12.10x13.10)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Company"; Value = "E.P.I.L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design_Date"; Value = "2011/10/31"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Component: Designator=K?(RELAY_9-1393792-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "V23105-A5301-A201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=K?(RELAY_9-1393792-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "V23105-A5301-A201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=K?(RELAY_9-1393792-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "V23105-A5301-A201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=K?(RELAY_9-1393792-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "V23105-A5301-A201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=WireTest Member=Component 2596
+Added Member To Class: ClassName=WireTest Member=Component In+12 in+12
+Added Member To Class: ClassName=WireTest Member=Component K? Relay
+Added Member To Class: ClassName=WireTest Member=Component K? Relay
+Added Member To Class: ClassName=WireTest Member=Component K? Relay
+Added Member To Class: ClassName=WireTest Member=Component K? Relay
+Added Member To Class: ClassName=WireTest Member=Component K? V23105A5301A201
+Added Member To Class: ClassName=WireTest Member=Component K? V23105A5301A201
+Added Member To Class: ClassName=WireTest Member=Component K? V23105A5301A201
+Added Member To Class: ClassName=WireTest Member=Component K? V23105A5301A201
+Added Room: Name=WireTest

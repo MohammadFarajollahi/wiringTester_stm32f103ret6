@@ -10,6 +10,14 @@ void WaterSensor() {
     float PwmVoltage = readPwmVoltage /= 100;
     float rrr = PwmVoltage;
     PwmVoltage /= 392.50443150164598632565206381362;
+    ////namayesh
+    tft.setTextSize(2);
+    text = "Voltage:" + String(PwmVoltage, 2) + " V Du:" + String(dutyCycle);  //  adc:" + String(rrr);  //
+    tft.setTextColor(ILI9488_YELLOW);                                          //ILI9488_MAGENTA
+    tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
+    tft.setCursor(0, 230);
+    tft.println(text);
+    ////////
     if (PwmVoltage >= 12) {
       releAnalyzer();
       text = "Probe Warning";
@@ -22,8 +30,6 @@ void WaterSensor() {
         delay(20);
       }
       delay(200);
-      // digitalWrite(buzzer, 1);
-      // delay(10);
       digitalWrite(buzzer, 0);
     }
   }
@@ -99,13 +105,32 @@ void WaterKey() {
     ///////////////////////**********************************Volt Mode*********************************************///////////////////////
     ///////////////////////**********************************Volt Mode*********************************************///////////////////////
     if (WaterVoltMode == 1) {
+      //***********Frequency Setting************
+      if (key == '9') {
+        BuzzerBIGbig();
+        if (plus100 == 1) pwmFrequency += 1;
+        if (plus100 == 2) pwmFrequency += 10;
+        if (plus100 == 3) pwmFrequency += 100;
+        if (pwmFrequency <= 1) pwmFrequency = 1;
+        setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
+      }
+
+      if (key == '7') {
+        BuzzerBIGbig();
+        if (plus100 == 1) pwmFrequency -= 1;
+        if (plus100 == 2) pwmFrequency -= 10;
+        if (plus100 == 3) pwmFrequency -= 100;
+
+        if (pwmFrequency <= 1) pwmFrequency = 1;
+        setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
+      }
       //***********Duty Setting************
       if (key == '6') {
         BuzzerBIGbig();
         if (plus100 == 1) dutyCycle += 0.1;
         if (plus100 == 2) dutyCycle += 1;
         if (plus100 == 3) dutyCycle += 5;
-        if (dutyCycle < 0) dutyCycle = 1;
+        if (dutyCycle < .1) dutyCycle = .1;
         if (dutyCycle >= 99) dutyCycle = 99;
         delay(10);
         setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
@@ -116,7 +141,7 @@ void WaterKey() {
         if (plus100 == 1) dutyCycle -= 0.1;
         if (plus100 == 2) dutyCycle -= 1;
         if (plus100 == 3) dutyCycle -= 5;
-        if (dutyCycle < 0) dutyCycle = 1;
+        if (dutyCycle < .1) dutyCycle = .1;
         if (dutyCycle >= 99) dutyCycle = 99;
         delay(10);
         setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
@@ -141,8 +166,8 @@ void WaterKey() {
       float rrr = PwmVoltage;
       PwmVoltage /= 392.50443150164598632565206381362;
       tft.setTextSize(2);
-      text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
-      tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
+      text = "Voltage:" + String(PwmVoltage, 2) + " V Du:" + String(dutyCycle);  //  adc:" + String(rrr);  //
+      tft.setTextColor(ILI9488_YELLOW);                                          //ILI9488_MAGENTA
       tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
       tft.setCursor(0, 230);
       tft.println(text);

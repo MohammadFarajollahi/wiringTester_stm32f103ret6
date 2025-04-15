@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=10k NewDesignator=10k7
+Added Pin To Net: NetName=Net10k7_1 Pin=10k7-1
+Added Pin To Net: NetName=Net10k7_1 Pin=BC819-1
+Added Net: Name=Net10k7_1
+Added Member To Class: ClassName=WireTest Member=Component 10k7 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k

@@ -5,6 +5,7 @@ void releCurrent() {
   digitalWrite(rele2, 0);
   digitalWrite(rele3, 0);
   digitalWrite(rele4, 0);
+    digitalWrite(rele5, 0);
   digitalWrite(Releselonoeid, 0);
   digitalWrite(ReleAmper, 1);
   myTimer1.pause();        // متوقف کردن تایمر
@@ -18,6 +19,7 @@ void releAnalyzer() {
   digitalWrite(rele2, 0);
   digitalWrite(rele3, 0);
   digitalWrite(rele4, 0);
+  digitalWrite(rele5, 0);
   digitalWrite(Releselonoeid, 0);
   digitalWrite(ReleAmper, 0);
   myTimer1.pause();        // متوقف کردن تایمر
@@ -31,6 +33,7 @@ void releGenerator() {
   digitalWrite(rele2, 0);
   digitalWrite(rele3, 0);
   digitalWrite(rele4, 0);
+  digitalWrite(rele5, 0);
   digitalWrite(Releselonoeid, 1);
   digitalWrite(ReleAmper, 0);
 }
@@ -40,6 +43,7 @@ void releFrequency() {
   digitalWrite(rele2, 1);
   digitalWrite(rele3, 0);
   digitalWrite(rele4, 0);
+  digitalWrite(rele5, 0);
   digitalWrite(Releselonoeid, 0);
   digitalWrite(ReleAmper, 0);
   myTimer1.pause();        // متوقف کردن تایمر
@@ -53,6 +57,7 @@ void releOhmeter() {
   digitalWrite(rele2, 1);
   digitalWrite(rele3, 1);
   digitalWrite(rele4, 0);
+  digitalWrite(rele5, 0);
   digitalWrite(Releselonoeid, 0);
   digitalWrite(ReleAmper, 0);
   myTimer1.pause();        // متوقف کردن تایمر
@@ -67,6 +72,7 @@ void releSimulator() {
   digitalWrite(rele2, 0);
   digitalWrite(rele3, 0);
   digitalWrite(rele4, 0);
+  digitalWrite(rele5, 0);
   digitalWrite(Releselonoeid, 0);
   digitalWrite(ReleAmper, 0);
 }
@@ -76,6 +82,7 @@ void ReleWater() {
   digitalWrite(rele2, 1);
   digitalWrite(rele3, 1);
   digitalWrite(rele4, 1);
+  digitalWrite(rele5, 0);
   digitalWrite(Releselonoeid, 0);
   digitalWrite(ReleAmper, 0);
 }

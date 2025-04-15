@@ -431,6 +431,7 @@ void menu2() {
         releSimulator();
         digitalWrite(SensorPulsePin, 1);
         digitalWrite(SimulatorLow, 1);
+        digitalWrite(releSelf, 1);
         tft.setTextSize(2);
         tft.setCursor(60, 50);
         tft.setTextColor(ILI9488_WHITE);
@@ -482,6 +483,7 @@ void menu2() {
           SensorOxigen();
           if (ExitToMenu == 1) {
             ExitToMenu = 0;
+            digitalWrite(SensorPulsePin, 0);
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
             releAnalyzer();
             break;
@@ -496,6 +498,7 @@ void menu2() {
         WaterVoltMode = 1;
         digitalWrite(SensorPulsePin, 1);
         digitalWrite(SimulatorLow, 1);
+        digitalWrite(releSelf, 1);
         tft.setTextSize(2);
         tft.setCursor(60, 50);
         tft.setTextColor(ILI9488_WHITE);
@@ -564,6 +567,8 @@ void menu2() {
           WaterSensor();
           if (ExitToMenu == 1) {
             ExitToMenu = 0;
+            digitalWrite(SensorPulsePin, 0);
+            digitalWrite(releSelf, 0);
             tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
             releAnalyzer();
             break;
