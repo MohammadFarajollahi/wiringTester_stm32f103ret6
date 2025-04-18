@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=P7-1
+Removed Pin From Net: NetName=VCC Pin=P7-4
+Removed Pin From Net: NetName=GND Pin=P8-1
+Removed Pin From Net: NetName=VCC Pin=P8-4
+Added Pin To Net: NetName=VCC Pin=P7-1
+Added Pin To Net: NetName=GND Pin=P7-4
+Added Pin To Net: NetName=VCC Pin=P8-1
+Added Pin To Net: NetName=GND Pin=P8-4
+Added Member To Class: ClassName=WireTest Member=Component BC12 BC807
+Added Room: Name=WireTest

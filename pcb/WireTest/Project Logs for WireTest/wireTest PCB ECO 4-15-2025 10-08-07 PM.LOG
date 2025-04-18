@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=pa8 Pin=U3-41
+Added Member To Class: ClassName=WireTest Member=Component U2 TC4420
+Added Room: Name=WireTest

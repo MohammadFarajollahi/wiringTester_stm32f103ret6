@@ -1,0 +1,334 @@
+Change Component Comment : Designator=10k6 Old Comment=10k6 New Comment=2k2
+Change Component Comment : Designator=10k2 Old Comment=10k New Comment=2k2
+Change Component Comment : Designator=10k3 Old Comment=10k New Comment=2k2
+Change Component Comment : Designator=10k4 Old Comment=10k New Comment=2k2
+Change Component Comment : Designator=10k5 Old Comment=10k New Comment=2k2
+Change Component Comment : Designator=10k7 Old Comment=10k New Comment=2k2
+Change Component Comment : Designator=10k Old Comment=10k New Comment=2k2
+Change Component Designator: OldDesignator= NewDesignator=9
+Change Component Designator: OldDesignator=4k7 NewDesignator=28
+Change Component Designator: OldDesignator=4k8 NewDesignator=30
+Change Component Designator: OldDesignator=10k2 NewDesignator=22
+Change Component Designator: OldDesignator=10k3 NewDesignator=23
+Change Component Designator: OldDesignator=10k4 NewDesignator=24
+Change Component Designator: OldDesignator=10k5 NewDesignator=25
+Change Component Designator: OldDesignator=10k6 NewDesignator=26
+Change Component Designator: OldDesignator=10k7 NewDesignator=21
+Change Component Designator: OldDesignator=10k NewDesignator=20
+Change Component Designator: OldDesignator=10kt1 NewDesignator=29
+Change Component Designator: OldDesignator=10kt2 NewDesignator=27
+Change Component Designator: OldDesignator=100NA NewDesignator=5
+Change Component Designator: OldDesignator=100NL2 NewDesignator=1
+Change Component Designator: OldDesignator=100NL NewDesignator=10
+Change Component Designator: OldDesignator=100UH NewDesignator=3
+Change Component Designator: OldDesignator=1000UA NewDesignator=4
+Change Component Designator: OldDesignator=1000Ul NewDesignator=2
+Change Component Designator: OldDesignator=2596 NewDesignator=6
+Change Component Designator: OldDesignator=ams NewDesignator=ams1
+Change Component Designator: OldDesignator=BC807 NewDesignator=BC8
+Change Component Designator: OldDesignator=BC817 NewDesignator=BC9
+Change Component Designator: OldDesignator=BC818 NewDesignator=BC1
+Change Component Designator: OldDesignator=BC819 NewDesignator=BC2
+Change Component Designator: OldDesignator=BC820 NewDesignator=BC3
+Change Component Designator: OldDesignator=BC821 NewDesignator=BC4
+Change Component Designator: OldDesignator=BC822 NewDesignator=BC5
+Change Component Designator: OldDesignator=BC823 NewDesignator=BC6
+Change Component Designator: OldDesignator=BC824 NewDesignator=BC7
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=Din NewDesignator=Din1
+Change Component Designator: OldDesignator=In+12 NewDesignator=In+1
+Change Component Designator: OldDesignator=Inbutton NewDesignator=Inbutton1
+Change Component Designator: OldDesignator=pinIN NewDesignator=pinIN1
+Change Component Designator: OldDesignator=Q NewDesignator=Q1
+Change Component Designator: OldDesignator=rele1A NewDesignator=rele1
+Change Component Designator: OldDesignator=rele1B NewDesignator=rele2
+Change Component Designator: OldDesignator=rele2A NewDesignator=rele3
+Change Component Designator: OldDesignator=rele2B NewDesignator=rele4
+Change Component Designator: OldDesignator=rele3 NewDesignator=rele5
+Change Component Designator: OldDesignator=rele4 NewDesignator=rele6
+Change Component Designator: OldDesignator=rele5 NewDesignator=rele7
+Change Component Designator: OldDesignator=rele6 NewDesignator=rele8
+Change Component Designator: OldDesignator=rele7 NewDesignator=rele9
+Change Component Designator: OldDesignator=ss14L NewDesignator=ss1
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Added Component: Designator=7(CAPC3413X12N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "CAP SMD 0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=8(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=11(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=12(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=13(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=14(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=15(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=16(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=17(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=18(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=19(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=D1(LED_SMD_0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "150080BS75000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Wavelength"; Value = "465 nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published Date"; Value = "Jan 2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Component: Designator=D2(LED_SMD_0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "150080BS75000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Wavelength"; Value = "465 nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published Date"; Value = "Jan 2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Component: Designator=D3(DIOM4325X250N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SS14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D4(LED_SMD_0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Forward Voltage"; Value = "3.2 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "150080BS75000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Wavelength"; Value = "465 nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published Date"; Value = "Jan 2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Component: Designator=DZ1(SOD80, LL-34)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "DIODE GEN ZENER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DO 35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-1-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART.NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-1-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "12V"; VariantName = "[No Variations]"
+Added Component: Designator=DZ2(SOD80, LL-34)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "DIODE GEN ZENER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DO 35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-1-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART.NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-1-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "12V"; VariantName = "[No Variations]"
+Added Component: Designator=DZ3(SOD80, LL-34)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "DIODE GEN ZENER"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DO 35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-1-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PART.NO"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-1-12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "12V"; VariantName = "[No Variations]"
+Added Component: Designator=U1(SOIC127P599X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LM358DRG3/Texas+Instruments/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM358DRG3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-8 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM358DRG3/Texas+Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=7-1
+Added Pin To Net: NetName=GND Pin=7-2
+Added Pin To Net: NetName=GND Pin=11-1
+Added Pin To Net: NetName=VCC Pin=15-2
+Added Pin To Net: NetName=GND Pin=16-2
+Added Pin To Net: NetName=VCC Pin=19-1
+Added Pin To Net: NetName=VCC Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=GND Pin=D4-1
+Added Pin To Net: NetName=GND Pin=DZ1-1
+Added Pin To Net: NetName=GND Pin=DZ2-1
+Added Pin To Net: NetName=GND Pin=DZ3-1
+Added Pin To Net: NetName=GND Pin=rele5-11
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=VCC Pin=U1-8
+Change Net Name : Old Net Name=Net4k7_1 New Net Name=Net28_1
+Change Net Name : Old Net Name=Net4k7_2 New Net Name=Net27_1
+Change Net Name : Old Net Name=Net4k8_1 New Net Name=Net30_1
+Change Net Name : Old Net Name=Net10k2_1 New Net Name=Net22_1
+Change Net Name : Old Net Name=Net10k3_1 New Net Name=Net23_1
+Change Net Name : Old Net Name=Net10k4_1 New Net Name=Net24_1
+Change Net Name : Old Net Name=Net10k5_1 New Net Name=Net25_1
+Change Net Name : Old Net Name=Net10k6_1 New Net Name=Net26_1
+Change Net Name : Old Net Name=Net10k7_1 New Net Name=Net21_1
+Change Net Name : Old Net Name=Net10k_1 New Net Name=Net20_1
+Change Net Name : Old Net Name=Net10kt1_2 New Net Name=Net29_2
+Change Net Name : Old Net Name=Net100UH_1 New Net Name=Net3_1
+Change Net Name : Old Net Name=Net_1 New Net Name=Net9_1
+Change Net Name : Old Net Name=Net_3 New Net Name=Net9_3
+Change Net Name : Old Net Name=NetBC818_3 New Net Name=NetBC1_3
+Change Net Name : Old Net Name=NetBC819_3 New Net Name=NetBC2_3
+Change Net Name : Old Net Name=NetBC820_3 New Net Name=NetBC3_3
+Change Net Name : Old Net Name=NetBC821_3 New Net Name=NetBC4_3
+Change Net Name : Old Net Name=NetBC822_3 New Net Name=NetBC5_3
+Change Net Name : Old Net Name=NetBC823_3 New Net Name=NetBC6_3
+Change Net Name : Old Net Name=NetBC824_3 New Net Name=NetBC7_3
+Change Net Name : Old Net Name=NetDin_1 New Net Name=NetDin1_1
+Change Net Name : Old Net Name=NetIn+12_1 New Net Name=NetIn+1_1
+Change Net Name : Old Net Name=NetpinIN_2 New Net Name=NetpinIN1_2
+Change Net Name : Old Net Name=Netrele1A_2 New Net Name=Netrele1_2
+Change Net Name : Old Net Name=Netrele1A_3 New Net Name=Netrele1_3
+Change Net Name : Old Net Name=Netrele2B_2 New Net Name=Netrele4_2
+Change Net Name : Old Net Name=Netrele3_9 New Net Name=Netrele5_9
+Change Net Name : Old Net Name=Netrele4_8 New Net Name=Netrele6_8
+Change Net Name : Old Net Name=Netrele4_9 New Net Name=Netrele6_9
+Change Net Name : Old Net Name=Netrele5_8 New Net Name=Netrele7_8
+Change Net Name : Old Net Name=Netrele5_9 New Net Name=Netrele7_9
+Change Net Name : Old Net Name=Netrele6_8 New Net Name=Netrele8_8
+Change Net Name : Old Net Name=Netrele6_9 New Net Name=Netrele8_9
+Added Pin To Net: NetName=+ Pin=rele3-2
+Added Pin To Net: NetName=+ Pin=rele5-4
+Added Pin To Net: NetName=+ Pin=rele5-8
+Added Pin To Net: NetName=+ Pin=rele6-4
+Added Net: Name=+
+Added Pin To Net: NetName=in1 Pin=12-2
+Added Pin To Net: NetName=in1 Pin=18-2
+Added Pin To Net: NetName=in1 Pin=rele5-6
+Added Net: Name=in1
+Added Pin To Net: NetName=Net8_2 Pin=8-2
+Added Pin To Net: NetName=Net8_2 Pin=D1-1
+Added Net: Name=Net8_2
+Added Pin To Net: NetName=Net13_2 Pin=13-2
+Added Pin To Net: NetName=Net13_2 Pin=D2-2
+Added Net: Name=Net13_2
+Added Pin To Net: NetName=Net14_1 Pin=14-1
+Added Pin To Net: NetName=Net14_1 Pin=17-1
+Added Pin To Net: NetName=Net14_1 Pin=U1-7
+Added Net: Name=Net14_1
+Added Pin To Net: NetName=Net15_1 Pin=15-1
+Added Pin To Net: NetName=Net15_1 Pin=16-1
+Added Pin To Net: NetName=Net15_1 Pin=U1-5
+Added Net: Name=Net15_1
+Added Pin To Net: NetName=Net17_2 Pin=17-2
+Added Pin To Net: NetName=Net17_2 Pin=D4-2
+Added Net: Name=Net17_2
+Added Pin To Net: NetName=Net18_1 Pin=18-1
+Added Pin To Net: NetName=Net18_1 Pin=D3-C
+Added Pin To Net: NetName=Net18_1 Pin=DZ3-2
+Added Net: Name=Net18_1
+Added Pin To Net: NetName=Net19_2 Pin=19-2
+Added Pin To Net: NetName=Net19_2 Pin=D3-A
+Added Pin To Net: NetName=Net19_2 Pin=U1-6
+Added Net: Name=Net19_2
+Added Pin To Net: NetName=pa0 Pin=11-2
+Added Pin To Net: NetName=pa0 Pin=12-1
+Added Pin To Net: NetName=pa0 Pin=DZ1-2
+Added Pin To Net: NetName=pa0 Pin=U1-3
+Added Net: Name=pa0
+Added Pin To Net: NetName=pa1 Pin=14-2
+Added Pin To Net: NetName=pa1 Pin=DZ2-2
+Added Net: Name=pa1
+Added Pin To Net: NetName=pa6 Pin=8-1
+Added Pin To Net: NetName=pa6 Pin=13-1
+Added Pin To Net: NetName=pa6 Pin=U1-1
+Added Net: Name=pa6
+Added Member To Class: ClassName=WireTest Member=Component 1 100NL2
+Added Member To Class: ClassName=WireTest Member=Component 2 1000Ul
+Added Member To Class: ClassName=WireTest Member=Component 3 100UH
+Added Member To Class: ClassName=WireTest Member=Component 4 1000UA
+Added Member To Class: ClassName=WireTest Member=Component 5 100NA
+Added Member To Class: ClassName=WireTest Member=Component 7 100N
+Added Member To Class: ClassName=WireTest Member=Component 8 1k
+Added Member To Class: ClassName=WireTest Member=Component 9 CURRENT-ACS712ELCTR-05B-T(SOIC8-5X4MM)
+Added Member To Class: ClassName=WireTest Member=Component 10 100NL
+Added Member To Class: ClassName=WireTest Member=Component 11 4k7
+Added Member To Class: ClassName=WireTest Member=Component 12 47k
+Added Member To Class: ClassName=WireTest Member=Component 13 1k
+Added Member To Class: ClassName=WireTest Member=Component 14 1k
+Added Member To Class: ClassName=WireTest Member=Component 15 4k7
+Added Member To Class: ClassName=WireTest Member=Component 16 2k2
+Added Member To Class: ClassName=WireTest Member=Component 17 1k
+Added Member To Class: ClassName=WireTest Member=Component 18 2k2
+Added Member To Class: ClassName=WireTest Member=Component 19 10k
+Added Member To Class: ClassName=WireTest Member=Component 20 2k2
+Added Member To Class: ClassName=WireTest Member=Component 21 2k2
+Added Member To Class: ClassName=WireTest Member=Component 22 2k2
+Added Member To Class: ClassName=WireTest Member=Component 23 2k2
+Added Member To Class: ClassName=WireTest Member=Component 24 2k2
+Added Member To Class: ClassName=WireTest Member=Component 25 2k2
+Added Member To Class: ClassName=WireTest Member=Component 26 2k2
+Added Member To Class: ClassName=WireTest Member=Component 27 10k
+Added Member To Class: ClassName=WireTest Member=Component 29 10k
+Added Member To Class: ClassName=WireTest Member=Component ams1 ams
+Added Member To Class: ClassName=WireTest Member=Component BC1 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC2 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC3 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC4 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC5 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC6 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC7 BC817
+Added Member To Class: ClassName=WireTest Member=Component C1 1uF
+Added Member To Class: ClassName=WireTest Member=Component D1 led-
+Added Member To Class: ClassName=WireTest Member=Component D2 led+
+Added Member To Class: ClassName=WireTest Member=Component D3 SS14
+Added Member To Class: ClassName=WireTest Member=Component D4 led_r
+Added Member To Class: ClassName=WireTest Member=Component Din1 Din
+Added Member To Class: ClassName=WireTest Member=Component DZ1 3.3v
+Added Member To Class: ClassName=WireTest Member=Component DZ2 3.3v
+Added Member To Class: ClassName=WireTest Member=Component DZ3 3.3v
+Added Member To Class: ClassName=WireTest Member=Component Inbutton1 Inbutton
+Added Member To Class: ClassName=WireTest Member=Component ss1 ss14L
+Added Member To Class: ClassName=WireTest Member=Component U1 LM358
+Added Room: Name=WireTest

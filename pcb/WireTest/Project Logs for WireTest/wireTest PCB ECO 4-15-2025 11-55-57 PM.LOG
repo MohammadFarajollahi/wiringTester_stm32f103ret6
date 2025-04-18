@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+ Pin=rele3-2
+Removed Pin From Net: NetName=+ Pin=rele5-4
+Added Pin To Net: NetName=Netrele3_2 Pin=rele3-2
+Added Pin To Net: NetName=Netrele3_2 Pin=rele5-4
+Added Net: Name=Netrele3_2
+Added Room: Name=WireTest

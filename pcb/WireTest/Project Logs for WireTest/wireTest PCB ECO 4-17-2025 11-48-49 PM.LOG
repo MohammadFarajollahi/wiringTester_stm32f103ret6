@@ -1,0 +1,305 @@
+Removed Member From Class: ClassName=WireTest Member=D?
+Change Component Designator: OldDesignator=1 NewDesignator=3
+Change Component Designator: OldDesignator=3 NewDesignator=4
+Change Component Designator: OldDesignator=4 NewDesignator=7
+Change Component Designator: OldDesignator=5 NewDesignator=8
+Change Component Designator: OldDesignator=6 NewDesignator=9
+Change Component Designator: OldDesignator=7 NewDesignator=10
+Change Component Designator: OldDesignator=8 NewDesignator=11
+Change Component Designator: OldDesignator=9 NewDesignator=12
+Change Component Designator: OldDesignator=10 NewDesignator=13
+Change Component Designator: OldDesignator=11 NewDesignator=14
+Change Component Designator: OldDesignator=12 NewDesignator=15
+Change Component Designator: OldDesignator=13 NewDesignator=16
+Change Component Designator: OldDesignator=14 NewDesignator=17
+Change Component Designator: OldDesignator=15 NewDesignator=18
+Change Component Designator: OldDesignator=16 NewDesignator=19
+Change Component Designator: OldDesignator=17 NewDesignator=20
+Change Component Designator: OldDesignator=18 NewDesignator=21
+Change Component Designator: OldDesignator=19 NewDesignator=22
+Change Component Designator: OldDesignator=20 NewDesignator=23
+Change Component Designator: OldDesignator=21 NewDesignator=24
+Change Component Designator: OldDesignator=22 NewDesignator=25
+Change Component Designator: OldDesignator=23 NewDesignator=26
+Change Component Designator: OldDesignator=24 NewDesignator=27
+Change Component Designator: OldDesignator=25 NewDesignator=28
+Change Component Designator: OldDesignator=26 NewDesignator=29
+Change Component Designator: OldDesignator=27 NewDesignator=30
+Change Component Designator: OldDesignator=28 NewDesignator=31
+Change Component Designator: OldDesignator=29 NewDesignator=32
+Change Component Designator: OldDesignator=30 NewDesignator=33
+Change Component Designator: OldDesignator=31 NewDesignator=34
+Change Component Designator: OldDesignator=32 NewDesignator=35
+Change Component Designator: OldDesignator=33 NewDesignator=36
+Change Component Designator: OldDesignator=34 NewDesignator=37
+Change Component Designator: OldDesignator=35 NewDesignator=39
+Change Component Designator: OldDesignator=36 NewDesignator=40
+Change Component Designator: OldDesignator=37 NewDesignator=41
+Change Component Designator: OldDesignator=38 NewDesignator=42
+Change Component Designator: OldDesignator=39 NewDesignator=43
+Change Component Designator: OldDesignator=40 NewDesignator=44
+Change Component Designator: OldDesignator=41 NewDesignator=46
+Change Component Designator: OldDesignator=42 NewDesignator=48
+Change Component Designator: OldDesignator=43 NewDesignator=49
+Change Component Designator: OldDesignator=44 NewDesignator=50
+Change Component Designator: OldDesignator=45 NewDesignator=51
+Change Component Designator: OldDesignator=46 NewDesignator=52
+Change Component Designator: OldDesignator=47 NewDesignator=53
+Change Component Designator: OldDesignator=48 NewDesignator=54
+Change Component Designator: OldDesignator=49 NewDesignator=55
+Change Component Designator: OldDesignator=BC1 NewDesignator=BC2
+Change Component Designator: OldDesignator=BC2 NewDesignator=BC3
+Change Component Designator: OldDesignator=BC3 NewDesignator=BC4
+Change Component Designator: OldDesignator=BC4 NewDesignator=BC5
+Change Component Designator: OldDesignator=BC5 NewDesignator=BC6
+Change Component Designator: OldDesignator=BC6 NewDesignator=BC7
+Change Component Designator: OldDesignator=BC7 NewDesignator=BC8
+Change Component Designator: OldDesignator=BC8 NewDesignator=BC9
+Change Component Designator: OldDesignator=BC9 NewDesignator=BC10
+Change Component Designator: OldDesignator=BC10 NewDesignator=BC11
+Change Component Designator: OldDesignator=BC11 NewDesignator=BC12
+Change Component Designator: OldDesignator=BC12 NewDesignator=BC13
+Change Component Designator: OldDesignator=BC13 NewDesignator=BC14
+Change Component Designator: OldDesignator=BC14 NewDesignator=BC15
+Change Component Designator: OldDesignator=D5 NewDesignator=D6
+Change Component Designator: OldDesignator=D? NewDesignator=D5
+Change Component Designator: OldDesignator=P1 NewDesignator=P3
+Change Component Designator: OldDesignator=P2 NewDesignator=P4
+Change Component Description : Designator=U2 Old Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP New Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP | Microchip Technology Inc. TC4420CPA
+Added Component: Designator=1(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=5(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=6(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=38(CAPC3413X12N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "CAP SMD 0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=45(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=47(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=56(CAPC3413X12N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "CAP SMD 0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=57(CAPC3413X12N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "CAP SMD 0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=58(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=59(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=ams2(MP04A_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_IPC"; Value = "SOT223-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-261-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "LM1117 Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.national.com/ds/LM/LM1117.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "LM1117 Web Page"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.national.com/pf/LM/LM1117.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "MP04A Package Page"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.national.com/packaging/folders/mp04a.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "CompType"; Value = "LDO IC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Apr-2006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "National Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Molded SOT-223, 6.50 x 3.56 x 1.6mm Body, 4 Lead, 2.3mm Pitch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "MP04A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageTopMarking"; Value = "XYTT*N05B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "revB, Apr-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "LM1117IMP-3.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PinCount"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PowerWise"; Value = "N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "4-Dec-2008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "7614123"; VariantName = "[No Variations]"
+Added Component: Designator=BC1(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=C2(Cap1206_(3216X18L)Size A)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part. No"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VALUE"; Value = "1uF"; VariantName = "[No Variations]"
+Added Component: Designator=P1(HDR1X10)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR1X4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Y1(My_Crystal)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC Pin=1-2
+Added Pin To Net: NetName=GND Pin=6-2
+Added Pin To Net: NetName=GND Pin=38-2
+Added Pin To Net: NetName=GND Pin=56-1
+Added Pin To Net: NetName=GND Pin=57-1
+Added Pin To Net: NetName=VCC Pin=58-2
+Added Pin To Net: NetName=VCC Pin=59-2
+Added Pin To Net: NetName=GND Pin=ams2-1
+Added Pin To Net: NetName=+5v Pin=ams2-3
+Added Pin To Net: NetName=GND Pin=BC1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P2-1
+Added Pin To Net: NetName=GND Pin=rele7-11
+Added Pin To Net: NetName=GND Pin=rele8-11
+Added Pin To Net: NetName=pa9 Pin=U3-42
+Added Pin To Net: NetName=pa13 Pin=U3-46
+Added Pin To Net: NetName=pa14 Pin=U3-49
+Change Net Name : Old Net Name=Net3_1 New Net Name=Net4_1
+Change Net Name : Old Net Name=Net8_2 New Net Name=Net11_2
+Change Net Name : Old Net Name=Net9_1 New Net Name=Net12_1
+Change Net Name : Old Net Name=Net9_3 New Net Name=Net12_3
+Change Net Name : Old Net Name=Net9_6 New Net Name=Net12_6
+Change Net Name : Old Net Name=Net13_2 New Net Name=Net16_2
+Change Net Name : Old Net Name=Net14_1 New Net Name=Net17_1
+Change Net Name : Old Net Name=Net15_1 New Net Name=Net18_1
+Change Net Name : Old Net Name=Net17_2 New Net Name=Net20_2
+Change Net Name : Old Net Name=Net18_1 New Net Name=Net21_1
+Change Net Name : Old Net Name=Net19_2 New Net Name=Net22_2
+Change Net Name : Old Net Name=Net20_1 New Net Name=Net23_1
+Change Net Name : Old Net Name=Net21_1 New Net Name=Net24_1
+Change Net Name : Old Net Name=Net22_1 New Net Name=Net25_1
+Change Net Name : Old Net Name=Net23_1 New Net Name=Net26_1
+Change Net Name : Old Net Name=Net24_1 New Net Name=Net27_1
+Change Net Name : Old Net Name=Net25_1 New Net Name=Net28_1
+Change Net Name : Old Net Name=Net26_1 New Net Name=Net29_1
+Change Net Name : Old Net Name=Net27_1 New Net Name=Net30_1
+Change Net Name : Old Net Name=Net28_2 New Net Name=Net31_2
+Change Net Name : Old Net Name=Net29_1 New Net Name=Net32_1
+Change Net Name : Old Net Name=Net30_2 New Net Name=Net33_2
+Change Net Name : Old Net Name=Net31_1 New Net Name=Net34_1
+Change Net Name : Old Net Name=Net32_1 New Net Name=Net35_1
+Change Net Name : Old Net Name=Net33_2 New Net Name=Net36_2
+Change Net Name : Old Net Name=Net34_2 New Net Name=Net37_2
+Change Net Name : Old Net Name=Net35_1 New Net Name=Net39_1
+Change Net Name : Old Net Name=Net36_2 New Net Name=Net40_2
+Change Net Name : Old Net Name=Net37_1 New Net Name=Net41_1
+Change Net Name : Old Net Name=Net38_2 New Net Name=Net42_2
+Change Net Name : Old Net Name=Net39_2 New Net Name=Net43_2
+Change Net Name : Old Net Name=Net40_2 New Net Name=Net44_2
+Change Net Name : Old Net Name=Net41_1 New Net Name=Net46_1
+Change Net Name : Old Net Name=Net46_1 New Net Name=Net52_1
+Change Net Name : Old Net Name=Net47_1 New Net Name=Net53_1
+Change Net Name : Old Net Name=Net48_2 New Net Name=Net54_2
+Change Net Name : Old Net Name=Net49_2 New Net Name=Net55_2
+Change Net Name : Old Net Name=NetBC1_3 New Net Name=NetBC2_3
+Change Net Name : Old Net Name=NetBC2_3 New Net Name=NetBC3_3
+Change Net Name : Old Net Name=NetBC3_3 New Net Name=NetBC4_3
+Change Net Name : Old Net Name=NetBC4_3 New Net Name=NetBC5_3
+Change Net Name : Old Net Name=NetBC5_3 New Net Name=NetBC6_3
+Change Net Name : Old Net Name=NetBC6_3 New Net Name=NetBC7_3
+Change Net Name : Old Net Name=NetBC7_3 New Net Name=NetBC8_3
+Change Net Name : Old Net Name=NetBC9_3 New Net Name=NetBC10_3
+Change Net Name : Old Net Name=NetD5_A New Net Name=NetD6_A
+Added Pin To Net: NetName=3.3ads Pin=38-1
+Added Pin To Net: NetName=3.3ads Pin=47-1
+Added Pin To Net: NetName=3.3ads Pin=ams2-2
+Added Pin To Net: NetName=3.3ads Pin=ams2-4
+Added Pin To Net: NetName=3.3ads Pin=C2-1
+Added Pin To Net: NetName=3.3ads Pin=P1-1
+Added Pin To Net: NetName=3.3ads Pin=P2-2
+Added Net: Name=3.3ads
+Added Pin To Net: NetName=ads Pin=45-2
+Added Pin To Net: NetName=ads Pin=47-2
+Added Pin To Net: NetName=ads Pin=rele8-6
+Added Net: Name=ads
+Added Pin To Net: NetName=freq Pin=5-2
+Added Pin To Net: NetName=freq Pin=rele7-6
+Added Net: Name=freq
+Added Pin To Net: NetName=Net5_1 Pin=5-1
+Added Pin To Net: NetName=Net5_1 Pin=6-1
+Added Pin To Net: NetName=Net5_1 Pin=BC1-1
+Added Net: Name=Net5_1
+Added Pin To Net: NetName=Net45_1 Pin=45-1
+Added Pin To Net: NetName=Net45_1 Pin=P1-7
+Added Net: Name=Net45_1
+Added Pin To Net: NetName=Net56_2 Pin=56-2
+Added Pin To Net: NetName=Net56_2 Pin=U3-5
+Added Pin To Net: NetName=Net56_2 Pin=Y1-2
+Added Net: Name=Net56_2
+Added Pin To Net: NetName=Net57_2 Pin=57-2
+Added Pin To Net: NetName=Net57_2 Pin=U3-6
+Added Pin To Net: NetName=Net57_2 Pin=Y1-1
+Added Net: Name=Net57_2
+Added Pin To Net: NetName=p10 Pin=U3-43
+Added Net: Name=p10
+Added Pin To Net: NetName=pa15 Pin=1-1
+Added Pin To Net: NetName=pa15 Pin=BC1-3
+Added Pin To Net: NetName=pa15 Pin=U3-50
+Added Net: Name=pa15
+Added Pin To Net: NetName=scl Pin=58-1
+Added Pin To Net: NetName=scl Pin=P1-3
+Added Pin To Net: NetName=scl Pin=P2-3
+Added Pin To Net: NetName=scl Pin=U3-57
+Added Net: Name=scl
+Added Pin To Net: NetName=sda Pin=59-1
+Added Pin To Net: NetName=sda Pin=P1-4
+Added Pin To Net: NetName=sda Pin=P2-4
+Added Pin To Net: NetName=sda Pin=U3-59
+Added Net: Name=sda
+Added Member To Class: ClassName=WireTest Member=Component 50 10k
+Added Member To Class: ClassName=WireTest Member=Component 51 10k
+Added Member To Class: ClassName=WireTest Member=Component 52 1k
+Added Member To Class: ClassName=WireTest Member=Component 53 10k
+Added Member To Class: ClassName=WireTest Member=Component 54 1k
+Added Member To Class: ClassName=WireTest Member=Component 55 1k
+Added Member To Class: ClassName=WireTest Member=Component 56 22P
+Added Member To Class: ClassName=WireTest Member=Component 57 22P
+Added Member To Class: ClassName=WireTest Member=Component 58 4k7
+Added Member To Class: ClassName=WireTest Member=Component 59 4k7
+Added Member To Class: ClassName=WireTest Member=Component ams2
+Added Member To Class: ClassName=WireTest Member=Component BC15 BC817
+Added Member To Class: ClassName=WireTest Member=Component C2 1uF
+Added Member To Class: ClassName=WireTest Member=Component D6 SS14
+Added Member To Class: ClassName=WireTest Member=Component P3 Program
+Added Member To Class: ClassName=WireTest Member=Component P4 Uart
+Added Member To Class: ClassName=WireTest Member=Component Y1 6 MHz
+Added Room: Name=WireTest

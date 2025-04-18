@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=+5v Pin=rele10-4
+Removed Pin From Net: NetName=NetBC9_3 Pin=rele10-5
+Added Component: Designator=D?(Diode 1n4148 SMD)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetBC9_3 Pin=D?-1
+Added Pin To Net: NetName=+5v Pin=D?-2
+Added Pin To Net: NetName=NetBC9_3 Pin=rele10-4
+Added Pin To Net: NetName=+5v Pin=rele10-5
+Added Member To Class: ClassName=WireTest Member=Component D? 1N4148
+Added Room: Name=WireTest
