@@ -1,0 +1,59 @@
+Change Component Comment : Designator=45 Old Comment=1k New Comment=2r
+Change Component Designator: OldDesignator=51 NewDesignator=52
+Change Component Designator: OldDesignator=52 NewDesignator=53
+Change Component Designator: OldDesignator=53 NewDesignator=55
+Change Component Designator: OldDesignator=54 NewDesignator=56
+Change Component Designator: OldDesignator=55 NewDesignator=57
+Change Component Designator: OldDesignator=56 NewDesignator=58
+Change Component Designator: OldDesignator=57 NewDesignator=59
+Change Component Designator: OldDesignator=58 NewDesignator=60
+Change Component Designator: OldDesignator=59 NewDesignator=61
+Change Component Designator: OldDesignator=60 NewDesignator=62
+Change Component Designator: OldDesignator=61 NewDesignator=63
+Change Component Designator: OldDesignator=62 NewDesignator=64
+Change Component Designator: OldDesignator=63 NewDesignator=65
+Change Component Designator: OldDesignator=64 NewDesignator=66
+Change Component Designator: OldDesignator=65 NewDesignator=67
+Change Component Designator: OldDesignator=66 NewDesignator=68
+Change Component Designator: OldDesignator=67 NewDesignator=69
+Change Component Designator: OldDesignator=68 NewDesignator=70
+Change Component Designator: OldDesignator=69 NewDesignator=71
+Change Component Designator: OldDesignator=70 NewDesignator=72
+Change Component Designator: OldDesignator=71 NewDesignator=73
+Change Component Description : Designator=U2 Old Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP New Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP | Microchip Technology Inc. TC4420CPA
+Added Component: Designator=51(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=54(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12in Pin=51-1
+Added Pin To Net: NetName=GND Pin=54-1
+Change Net Name : Old Net Name=Net51_1 New Net Name=Net52_1
+Change Net Name : Old Net Name=Net52_1 New Net Name=Net53_1
+Change Net Name : Old Net Name=Net55_2 New Net Name=Net57_2
+Change Net Name : Old Net Name=Net56_2 New Net Name=Net58_2
+Change Net Name : Old Net Name=Net57_2 New Net Name=Net59_2
+Change Net Name : Old Net Name=Net58_1 New Net Name=Net60_1
+Change Net Name : Old Net Name=Net59_2 New Net Name=Net61_2
+Change Net Name : Old Net Name=Net61_1 New Net Name=Net63_1
+Change Net Name : Old Net Name=Net63_1 New Net Name=Net65_1
+Change Net Name : Old Net Name=Net63_2 New Net Name=Net65_2
+Change Net Name : Old Net Name=Net64_1 New Net Name=Net66_1
+Change Net Name : Old Net Name=Net64_2 New Net Name=Net66_2
+Change Net Name : Old Net Name=Net66_1 New Net Name=Net68_1
+Change Net Name : Old Net Name=Net67_1 New Net Name=Net69_1
+Change Net Name : Old Net Name=Net69_1 New Net Name=Net71_1
+Change Net Name : Old Net Name=Net69_2 New Net Name=Net71_2
+Change Net Name : Old Net Name=Net71_1 New Net Name=Net73_1
+Added Pin To Net: NetName=Net51_2 Pin=51-2
+Added Pin To Net: NetName=Net51_2 Pin=54-2
+Added Pin To Net: NetName=Net51_2 Pin=U3-10
+Added Net: Name=Net51_2
+Added Member To Class: ClassName=WireTest Member=Component 72 100p
+Added Member To Class: ClassName=WireTest Member=Component 73 10k
+Added Room: Name=WireTest

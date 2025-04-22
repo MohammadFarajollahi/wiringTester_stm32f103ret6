@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Net58_2 Pin=U3-4
+Added Pin To Net: NetName=NetU3_4 Pin=U3-4
+Added Net: Name=NetU3_4
+Added Room: Name=WireTest

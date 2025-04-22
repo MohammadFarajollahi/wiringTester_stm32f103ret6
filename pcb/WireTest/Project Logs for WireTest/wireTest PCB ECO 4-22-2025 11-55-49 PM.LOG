@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=+5v Pin=D12-2
+Added Pin To Net: NetName=+5v Pin=rele10-16
+Added Member To Class: ClassName=WireTest Member=Component 31 2k2
+Added Member To Class: ClassName=WireTest Member=Component BC9 BC817
+Added Room: Name=WireTest

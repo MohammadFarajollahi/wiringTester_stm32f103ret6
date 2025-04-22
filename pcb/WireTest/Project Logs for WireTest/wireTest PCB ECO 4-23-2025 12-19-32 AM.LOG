@@ -1,0 +1,4 @@
+Change Component Description : Designator=U2 Old Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP New Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP | Microchip Technology Inc. TC4420CPA
+Added Pin To Net: NetName=NetU3_38 Pin=U3-38
+Added Net: Name=NetU3_38
+Added Room: Name=WireTest

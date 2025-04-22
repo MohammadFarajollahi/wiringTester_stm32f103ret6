@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : F:\ELECTRONIC\sherkat\stm32ret6\pcb\WireTest\wireTest.PcbDoc
+Date         : 4/23/2025
+Time         : 12:27:33 AM
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100.00%
+    Connections, 341
+    Connections routed, 341
+    Connections remaining, 0
+count : 4
