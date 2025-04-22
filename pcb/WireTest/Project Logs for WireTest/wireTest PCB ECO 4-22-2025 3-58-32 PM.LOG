@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=+12in Pin=D5-2
+Removed Pin From Net: NetName=+12in Pin=D6-2
+Removed Pin From Net: NetName=+12in Pin=D7-2
+Removed Pin From Net: NetName=+12in Pin=D8-2
+Removed Pin From Net: NetName=+12in Pin=D9-2
+Removed Pin From Net: NetName=+12in Pin=D10-2
+Removed Pin From Net: NetName=+12in Pin=D11-2
+Removed Pin From Net: NetName=+12in Pin=rele1-5
+Removed Pin From Net: NetName=+12in Pin=rele2-5
+Removed Pin From Net: NetName=+12in Pin=rele3-5
+Removed Pin From Net: NetName=+12in Pin=rele4-5
+Removed Pin From Net: NetName=+12in Pin=rele5-16
+Removed Pin From Net: NetName=+12in Pin=rele6-16
+Removed Pin From Net: NetName=+12in Pin=rele7-16
+Removed Pin From Net: NetName=+12in Pin=rele8-16
+Removed Pin From Net: NetName=+12in Pin=rele9-16
+Change Component Comment : Designator=buzzer2 Old Comment=buzzer New Comment=CAN
+Change Component Comment : Designator=Q1 Old Comment=IRF3205PBF New Comment=IRF3205
+Added Pin To Net: NetName=+5v Pin=D5-2
+Added Pin To Net: NetName=+5v Pin=D6-2
+Added Pin To Net: NetName=+5v Pin=D7-2
+Added Pin To Net: NetName=+5v Pin=D8-2
+Added Pin To Net: NetName=+5v Pin=D9-2
+Added Pin To Net: NetName=+5v Pin=D10-2
+Added Pin To Net: NetName=+5v Pin=D11-2
+Added Pin To Net: NetName=+5v Pin=rele1-5
+Added Pin To Net: NetName=+5v Pin=rele2-5
+Added Pin To Net: NetName=+5v Pin=rele3-5
+Added Pin To Net: NetName=+5v Pin=rele4-5
+Added Pin To Net: NetName=+5v Pin=rele5-16
+Added Pin To Net: NetName=+5v Pin=rele6-16
+Added Pin To Net: NetName=+5v Pin=rele7-16
+Added Pin To Net: NetName=+5v Pin=rele8-16
+Added Pin To Net: NetName=+5v Pin=rele9-16
+Added Room: Name=WireTest
