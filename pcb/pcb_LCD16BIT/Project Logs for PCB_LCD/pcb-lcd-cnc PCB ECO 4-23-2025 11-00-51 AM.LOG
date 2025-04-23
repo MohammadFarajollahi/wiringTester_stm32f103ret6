@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=VCC Pin=R11-2
+Added Pin To Net: NetName=VCC Pin=R12-2
+Added Pin To Net: NetName=VCC Pin=R13-2
+Added Room: Name=lcd_pin

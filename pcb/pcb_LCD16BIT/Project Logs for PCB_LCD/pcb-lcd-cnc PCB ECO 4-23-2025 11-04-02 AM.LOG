@@ -1,0 +1,44 @@
+Change Component Designator: OldDesignator=J NewDesignator=J1
+Change Component Designator: OldDesignator=P? NewDesignator=P2
+Added Component: Designator=R14(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=R15(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=R16(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=R11-2
+Added Pin To Net: NetName=VCC Pin=R12-2
+Added Pin To Net: NetName=VCC Pin=R13-2
+Added Pin To Net: NetName=GND Pin=R14-2
+Added Pin To Net: NetName=GND Pin=R15-2
+Added Pin To Net: NetName=GND Pin=R16-2
+Change Net Name : Old Net Name=NetJ_14 New Net Name=NetJ1_14
+Change Net Name : Old Net Name=NetJ_15 New Net Name=NetJ1_15
+Change Net Name : Old Net Name=NetJ_34 New Net Name=NetJ1_34
+Change Net Name : Old Net Name=NetJ_35 New Net Name=NetJ1_35
+Change Net Name : Old Net Name=NetJ_36 New Net Name=NetJ1_36
+Added Pin To Net: NetName=NetJ1_38 Pin=J1-38
+Added Pin To Net: NetName=NetJ1_38 Pin=R11-1
+Added Pin To Net: NetName=NetJ1_38 Pin=R14-1
+Added Net: Name=NetJ1_38
+Added Pin To Net: NetName=NetJ1_39 Pin=J1-39
+Added Pin To Net: NetName=NetJ1_39 Pin=R12-1
+Added Pin To Net: NetName=NetJ1_39 Pin=R15-1
+Added Net: Name=NetJ1_39
+Added Pin To Net: NetName=NetJ1_40 Pin=J1-40
+Added Pin To Net: NetName=NetJ1_40 Pin=R13-1
+Added Pin To Net: NetName=NetJ1_40 Pin=R16-1
+Added Net: Name=NetJ1_40
+Added Member To Class: ClassName=lcd_pin Member=Component R14 1K
+Added Member To Class: ClassName=lcd_pin Member=Component R15 1K
+Added Member To Class: ClassName=lcd_pin Member=Component R16 1K
+Added Room: Name=lcd_pin
