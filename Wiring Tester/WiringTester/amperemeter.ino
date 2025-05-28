@@ -14,6 +14,8 @@ void AmpereMeter() {
     // اعمال مقدار اولیه Offset برای دقت بهتر
     float current = (voltage - offset) / SENSITIVITY;
     current *= 1.65;
+    current *= 2.551724137931034;  // FOR 30A
+    current *= amperCalib;
     tft.setTextSize(3);
     text = "Current:" + String(current, 2) + " A";
     tft.setTextColor(ILI9488_CYAN);
@@ -25,6 +27,7 @@ void AmpereMeter() {
   if (DCMode == 0) {
     currentRMS = measureCurrentRMS();
     float current = currentRMS;
+    current *= amperCalib;
     tft.setTextSize(3);
     text = "Current:" + String(current, 2) + " A";
     tft.setTextColor(ILI9488_CYAN);
@@ -94,6 +97,65 @@ void CurrentKeypad() {
         tft.println("AC Mode");
         //*******adc******
         offsetVoltage = calibrateOffset();  // محاسبه آفست اولیه سنسور
+      }
+    }
+
+    if (key == 'D') {
+      ++eepromReset;
+      digitalWrite(buzzer, 1);
+      delay(500);
+      digitalWrite(buzzer, 0);
+      if (eepromReset >= 5) {
+        eepromReset = 0;
+        tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+        tft.setTextSize(2);
+        tft.setTextColor(ILI9488_CYAN);
+        text = "Claibration";
+        tft.setCursor(0, 100);
+        tft.println(text);
+        tft.setCursor(0, 140);
+        text = "4:Down   6:Up";
+        tft.println(text);
+        tft.setCursor(0, 170);
+        tft.setTextSize(1);
+        text = "# : Save and Exit to menu";
+        tft.println(text);
+        tft.setTextSize(2);
+        text = "AMPER Calibrate:" + String(amperCalib, 3);
+        tft.setTextColor(ILI9488_WHITE);  //ILI9488_MAGENTA
+        tft.fillRect(0, 75, 290, 20, ILI9488_BLACK);
+        tft.setCursor(0, 75);
+        tft.println(text);
+        while (1) {
+          delay(10);
+          tft.setTextSize(2);
+          text = "AMPER Calibrate:" + String(amperCalib, 3);
+          tft.setTextColor(ILI9488_WHITE);  //ILI9488_MAGENTA
+          tft.fillRect(0, 75, 290, 20, ILI9488_BLACK);
+          tft.setCursor(0, 75);
+          tft.println(text);
+          char key = getKey();  // خواندن کلید
+          if (key != '\0') {
+
+            if (key == '6') {
+              BuzzerBIGbig();
+              amperCalib += 0.001;
+            }
+            if (key == '4') {
+              BuzzerBIGbig();
+              amperCalib -= 0.001;
+            }
+            if (key == '#') {
+              digitalWrite(buzzer, 1);
+              delay(1000);
+              digitalWrite(buzzer, 0);
+              EEPROMwrite(20, String(amperCalib, 3));  //volt
+              ExitToMenu = 1;
+              break;
+            }
+            delay(50);
+          }
+        }
       }
     }
   }

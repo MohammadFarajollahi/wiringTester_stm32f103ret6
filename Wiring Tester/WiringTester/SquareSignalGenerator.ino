@@ -42,6 +42,14 @@ void SquarSignalGenerator() {
     digitalWrite(buzzer, 0);
   }
 
+
+  // tft.setTextSize(2);
+  // text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
+  // tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
+  // tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
+  // tft.setCursor(0, 230);
+  // tft.println(text);
+
   signalGenKey();
 }
 
@@ -97,53 +105,31 @@ void signalGenKey() {
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
     }
 
-    //*****************LOW Mode*****************
-    if (key == 'A') {
-      BuzzerSet();
-      setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
-      simaulatorMode ^= 1;
-      if (simaulatorMode == 1) {
-        tft.setTextSize(1);
-        tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
-        tft.setCursor(0, 180);
-        tft.setTextColor(ILI9488_GREEN);
-        tft.println("LOW VOLTAGE Mode: 3.3v");
-        digitalWrite(SimulatorLow, 1);
-      }
-      if (simaulatorMode == 0) {
-        tft.setTextSize(1);
-        tft.fillRect(0, 180, 300, 20, ILI9488_BLACK);
-        tft.setCursor(0, 180);
-        tft.setTextColor(ILI9488_GREEN);
-        tft.println("Hight VOLTAGE Mode: 5V");
-        digitalWrite(SimulatorLow, 0);
-      }
-    }
     //////////////pulse1000/////////
-    if (key == 'B') {
+    if (key == 'D') {
       BuzzerSet();
       plus100 += 1;
       if (plus100 >= 4) plus100 = 1;
       if (plus100 == 1) {
-        tft.setTextSize(1);
-        tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+        tft.setTextSize(2);
+        tft.fillRect(0, 200, 250, 20, ILI9488_BLACK);
         tft.setCursor(0, 200);
         tft.setTextColor(ILI9488_GREEN);
-        tft.println("Pulse Count:+0.1");
+        tft.println("F4:Pulse Count:+0.1");
       }
       if (plus100 == 2) {
-        tft.setTextSize(1);
-        tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+        tft.setTextSize(2);
+        tft.fillRect(0, 200, 250, 20, ILI9488_BLACK);
         tft.setCursor(0, 200);
         tft.setTextColor(ILI9488_GREEN);
-        tft.println("Pulse Count:+1");
+        tft.println("F4:Pulse Count:+1");
       }
       if (plus100 == 3) {
-        tft.setTextSize(1);
-        tft.fillRect(0, 200, 150, 20, ILI9488_BLACK);
+        tft.setTextSize(2);
+        tft.fillRect(0, 200, 250, 20, ILI9488_BLACK);
         tft.setCursor(0, 200);
         tft.setTextColor(ILI9488_GREEN);
-        tft.println("Pulse Count:+5");
+        tft.println("F4:Pulse Count:+5");
       }
     }
     tft.setTextSize(2);
@@ -169,21 +155,5 @@ void signalGenKey() {
     tft.fillRect(11, 260, pwmOut, 30, ILI9488_GREEN);
 
     setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
-    delay(10);
-    //*****pwm Voltage*****
-    float readPwmVoltage = 0;
-    for (int i = 0; i <= 200; i++) {
-      readPwmVoltage += analogRead(PC1);
-      delayMicroseconds(500);
-    }
-    float PwmVoltage = readPwmVoltage /= 200;
-    float rrr = PwmVoltage;
-    PwmVoltage /= 392.50443150164598632565206381362;
-    tft.setTextSize(2);
-    text = "Voltage:" + String(PwmVoltage, 2) + " V";  //  adc:" + String(rrr);  //
-    tft.setTextColor(ILI9488_YELLOW);                  //ILI9488_MAGENTA
-    tft.fillRect(0, 230, 300, 20, ILI9488_BLACK);
-    tft.setCursor(0, 230);
-    tft.println(text);
   }
 }

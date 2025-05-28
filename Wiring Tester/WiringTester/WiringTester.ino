@@ -1,4 +1,5 @@
 //lcd
+#include <EEPROM.h>
 #include "SPI.h"
 #include <Adafruit_GFX.h>
 #include <ILI9488.h>
@@ -12,6 +13,10 @@ ILI9488 tft = ILI9488(TFT_CS, TFT_DC, TFT_RST);
 #include "mainmenu.h"
 #include "mainmenu2.h"
 #include "help.h"
+#include "startlogo.h"
+#include "wirecheckpic.h"
+#include "sensorhelp.h"
+//#include "mainhelp.h"
 //keypad
 #define ROWS 4
 #define COLS 4
@@ -27,6 +32,11 @@ char keys[ROWS][COLS] = {
   { '7', '8', '9', 'C' },
   { '*', '0', '#', 'D' }
 };
+
+
+//****eeprom****
+const int addressEEPROM_min = 0;  // Specify the address restrictions you want to use.
+const int addressEEPROM_max = 90;
 
 int mainMenu = 1;
 int changeMenu = 1;
@@ -71,11 +81,11 @@ int ExitToMenu;
 float offset = 0;          // مقدار اولیه
 int DCMode = 1;
 #include "ACS712.h"
-#define SENSOR_PIN PC0            // پایه ADC که خروجی سنسور به آن متصل است
-#define SAMPLES 3000              // تعداد نمونه‌گیری برای محاسبه RMS
-#define SENSOR_SENSITIVITY 0.185  // حساسیت سنسور (ACS712-58A = 0.185V/A) (ACS712-30A = 0.06V/A)
-float offsetVoltage = 0.0;        // مقدار ولتاژ آفست سنسور
-float currentRMS = 0.0;           // جریان RMS
+#define SENSOR_PIN PC0           // پایه ADC که خروجی سنسور به آن متصل است
+#define SAMPLES 3000             // تعداد نمونه‌گیری برای محاسبه RMS
+#define SENSOR_SENSITIVITY 0.06  // حساسیت سنسور (ACS712-58A = 0.185V/A) (ACS712-30A = 0.06V/A)
+float offsetVoltage = 0.0;       // مقدار ولتاژ آفست سنسور
+float currentRMS = 0.0;          // جریان RMS
 
 //*****generator****
 #define PWM_PIN1 PA8        // خروجی اول (تایمر 1، کانال 1)
@@ -183,7 +193,13 @@ void drawImage(int x, int y, const int imgWidth, const int imgHeight, const uint
   }
 }
 
-
+int eepromReset;
+float voltCalib;
+float resAnalizerCalib;
+float amperCalib;
+float ohmeterCalib;
+float tempCalib;
+float voltSensorCalib;
 /**********************************************Setup****************************************************/
 /**********************************************Setup****************************************************/
 /**********************************************Setup****************************************************/
@@ -251,11 +267,16 @@ void setup() {
   MenuSelect = 1;  //option Select
   mainMenu = 1;    //main menu Select
   mainMenuChange = 1;
+
+  tft.fillScreen(ILI9488_BLACK);
+  drawImage(100, 50, 250, 200, epd_bitmap_start);  // نمایش در مختصات (60,60)
+  delay(2000);
   tft.fillScreen(ILI9488_BLACK);
   drawImage(120, 0, 175, 41, epd_bitmap_logo);  // نمایش در مختصات (60,60)
   drawImage(315, 0, 159, 41, epd_bitmap_help);  // نمایش در مختصات (60,60)
+  //drawImage(10, 45, 240, 300, epd_bitmap_mainHelp);  // نمایش در مختصات (60,60)
   releAnalyzer();
-  
+  readEEprom();
 }
 
 void loop() {

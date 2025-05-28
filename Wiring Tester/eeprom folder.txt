@@ -1,0 +1,1 @@
+C:\Users\pavan\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2022.9.26\libraries\EEPROM
