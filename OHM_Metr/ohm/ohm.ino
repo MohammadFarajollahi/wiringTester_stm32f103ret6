@@ -1,8 +1,6 @@
 #include <SoftWire.h>
-
-#define SDA_PIN PB5
-#define SCL_PIN PB7
-
+#define SDA_PIN PB7
+#define SCL_PIN PB5
 #define ADS1115_ADDRESS 0x48  // آدرس پیش فرض
 #define R_REF 10000           // مقاومت مرجع (10KΩ دقیق)
 
