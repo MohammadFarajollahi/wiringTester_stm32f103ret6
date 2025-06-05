@@ -1,5 +1,5 @@
 
-
+float CarrentAlram;
 void AmpereMeter() {
   CurrentKeypad();
   if (DCMode == 1) {
@@ -13,6 +13,7 @@ void AmpereMeter() {
     float voltage = (adcValue * VREF) / 4095.0;
     // اعمال مقدار اولیه Offset برای دقت بهتر
     float current = (voltage - offset) / SENSITIVITY;
+    CarrentAlram = current;
     current *= 1.65;
     current *= 2.551724137931034;  // FOR 30A
     current *= amperCalib;
@@ -28,12 +29,42 @@ void AmpereMeter() {
     currentRMS = measureCurrentRMS();
     float current = currentRMS;
     current *= amperCalib;
+    CarrentAlram = current;
     tft.setTextSize(3);
     text = "Current:" + String(current, 2) + " A";
     tft.setTextColor(ILI9488_CYAN);
     tft.fillRect(0, 170, 300, 40, ILI9488_BLACK);
     tft.setCursor(0, 170);
     tft.println(text);
+  }
+
+  if (CarrentAlram >= 15) {
+    tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+    releAnalyzer();
+    tft.setTextSize(2);
+    text = "OVER Current Warning";
+    tft.setTextColor(ILI9488_RED);
+    tft.fillRect(0, 100, 300, 40, ILI9488_BLACK);
+    tft.setCursor(0, 100);
+    tft.println(text);
+    digitalWrite(buzzer, 1);
+    delay(100);
+    digitalWrite(buzzer, 0);
+    delay(100);
+    digitalWrite(buzzer, 1);
+    delay(100);
+    digitalWrite(buzzer, 0);
+    delay(100);
+    digitalWrite(buzzer, 1);
+    delay(100);
+    digitalWrite(buzzer, 0);
+    delay(100);
+    digitalWrite(buzzer, 1);
+    delay(100);
+    digitalWrite(buzzer, 0);
+    delay(2000);
+    ExitToMenu = 1;
+    BuzzerBIGbig();
   }
 }
 

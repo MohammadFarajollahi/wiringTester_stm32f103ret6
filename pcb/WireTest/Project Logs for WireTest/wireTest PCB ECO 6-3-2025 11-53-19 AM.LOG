@@ -1,0 +1,15 @@
+Change Component Comment : Designator=26 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=27 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=28 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=29 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=30 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=31 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=32 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=33 Old Comment=2k2 New Comment=1k
+Change Component Comment : Designator=22 Old Comment=2k2 New Comment=4K7
+Change Component Comment : Designator=Y1 Old Comment=6 MHz New Comment=8MHz
+Change Component Comment : Designator=U4 Old Comment=TJA1051 New Comment=TJA1051T/3
+Change Component Description : Designator=U2 Old Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP New Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP | Microchip Technology Inc. TC4420CPA
+Added Member To Class: ClassName=WireTest Member=Component 54 10k
+Added Member To Class: ClassName=WireTest Member=Component 55 1k
+Added Room: Name=WireTest

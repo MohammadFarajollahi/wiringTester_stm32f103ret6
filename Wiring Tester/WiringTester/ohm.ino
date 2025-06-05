@@ -19,31 +19,32 @@ void ohMmeter() {
 
   // فرمول مقاومت:
   float RX = R_REF * (Vout / (Vin - Vout));
+  RX *= 1.1;
   float Res = Res;
 
   Serial1.print("Vout: ");
   Serial1.print(Vout, 6);
   Serial1.println(" V");
   Serial1.print("Resistance: ");
-  if (Vout >= 0.01) {
-    if (RX >= 200000) Res = RX * 1.12;
-    if (RX < 200000 && RX >= 80000) Res = RX * 1.036269430051813471502;
-    if (RX < 800000 && RX >= 20000) Res = RX * 1.008;
-    if (RX < 20000 && RX >= 950) Res = RX * 1;
-    if (RX < 950 && RX >= 500) Res = RX / 1.014705882352941176;
-    if (RX < 500 && RX >= 200) Res = RX / 1.075757575757575757575;
-    if (RX < 200 && RX >= 150) Res = RX / 1.14573459715639810;
-    if (RX < 150 && RX >= 90) Res = RX / 1.25;
-    if (RX < 90 && RX >= 60) Res = RX / 1.0882352941176;
-    if (RX < 60 && RX >= 40) Res = RX / 2.181818181818181818;
-    if (RX < 40 && RX >= 28) Res = RX / 3.86;
-    if (Vout <= 0.009) Res = 0;
-  }
+  // if (Vout >= 0.01) {
+  if (RX >= 200000) Res = RX * 1.12;
+  if (RX < 200000 && RX >= 80000) Res = RX * 1.036269430051813471502;
+  if (RX < 800000 && RX >= 20000) Res = RX * 1.008;
+  if (RX < 20000 && RX >= 950) Res = RX * 1;
+  if (RX < 950 && RX >= 500) Res = RX / 1.014705882352941176;
+  if (RX < 500 && RX >= 200) Res = RX / 1.075757575757575757575;
+  if (RX < 200 && RX >= 150) Res = RX / 1.14573459715639810;
+  if (RX < 150 && RX >= 90) Res = RX / 1.25;
+  if (RX < 90 ) Res = RX / 1.008;
+  //if (RX < 60) Res = RX / 2.181818181818181818;
+  //if (RX < 40 && RX >= 20) Res = RX / 2.5;
+  //if (Vout <= 0.009) Res = 0;
+  //}
 
-  if (Vout < 0.01) {
-    Res = RX / 6.5;
-    if (Vout <= 0.009) Res = 0;
-  }
+  // if (Vout < 0.01) {
+  //   Res = RX / 5.5;
+  //   if (Vout <= 0.009) Res = 0;
+  // }
 
 
   // delay(200);

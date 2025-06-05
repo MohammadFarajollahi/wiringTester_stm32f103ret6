@@ -270,7 +270,7 @@ void setup() {
 
   tft.fillScreen(ILI9488_BLACK);
   drawImage(100, 50, 250, 200, epd_bitmap_start);  // نمایش در مختصات (60,60)
-  delay(2000);
+  delay(1400);
   tft.fillScreen(ILI9488_BLACK);
   drawImage(120, 0, 175, 41, epd_bitmap_logo);  // نمایش در مختصات (60,60)
   drawImage(315, 0, 159, 41, epd_bitmap_help);  // نمایش در مختصات (60,60)

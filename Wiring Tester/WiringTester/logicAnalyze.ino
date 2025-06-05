@@ -41,7 +41,7 @@ void logicAnalyze() {
   if (average >= 2800) average /= 78;
   InputVoltage = average;
   InputVoltage *= voltCalib;
-  if (adc0 <= 200 && adc0 >= 180) InputVoltage = 0;
+  if (adc0 <= 210 && adc0 >= 160) InputVoltage = 0;
   if (InputVoltage < 1.2) InputVoltage *= 1.1;
 
   ////////////////////////////////////////////////////////////////////////
@@ -63,7 +63,7 @@ void logicAnalyze() {
 
 
   //********************Nothing*********************
-  if (InputVoltage == 0 && ADCres >= 2490 && ADCres < 2660) {  //Nothing ADCres > 2600 && ADCres < 2660
+  if (InputVoltage == 0 && ADCres >= 2490 && ADCres < 2700) {  // adc0 = 191 ----- gndadc = 2583
     digitalWrite(buzzer, 0);
     tft.fillCircle(70, 190, 20, ILI9488_WHITE);   //gnd
     tft.fillCircle(200, 190, 20, ILI9488_WHITE);  //+12
@@ -195,12 +195,12 @@ void logicAnalyze() {
   // tft.setCursor(155, 130);
   // tft.println(text);
 
-  // Serial1.print("adc0:");
-  // Serial1.print(adc0);
-  // Serial1.print(" /Voltage:");
-  // Serial1.print(voltageADC0);
-  // Serial1.print("/---/gndAdc:");
-  // Serial1.println(ADCZero);
+  Serial1.print("adc0:");
+  Serial1.print(adc0);
+  Serial1.print(" /gndAdc:");
+  Serial1.print(gndAdc);
+  Serial1.print("/ADCres:");
+  Serial1.println(ADCres);
 }
 
 void logicKeypad() {

@@ -1,0 +1,573 @@
+###############################################################################
+#
+# IAR ELF Linker V9.60.3.422/W64 for ARM                  03/Jun/2025  23:13:09
+# Copyright 2007-2024 IAR Systems AB.
+#
+#    Output file  =
+#        F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Exe\ili9488.out
+#    Map file     =
+#        F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\List\ili9488.map
+#    Command line =
+#        -f "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Exe\ili9488.out.rsp"
+#        ("F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\lcd_13264118317236994320.dir\Font.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\lcd_13264118317236994320.dir\ILI9488_SPI.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\Core_13247989168731456611.dir\main.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\EWARM_18443280873093131863.dir\startup_stm32f103xe.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_cortex.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_dma.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_exti.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_flash.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_flash_ex.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_gpio.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_gpio_ex.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\Core_13247989168731456611.dir\stm32f1xx_hal_msp.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_pwr.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_rcc.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_rcc_ex.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_spi.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_tim.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_tim_ex.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir\stm32f1xx_hal_uart.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\Core_13247989168731456611.dir\stm32f1xx_it.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\CMSIS_6603591812247902717.dir\system_stm32f1xx.o"
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Obj\lcd_13264118317236994320.dir\xpt2046.o"
+#        --no_out_extension -o "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Exe\ili9488.out" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\List\ili9488.map" --config
+#        "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM/stm32f103xe_flash.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale --cpu=Cortex-M3
+#        --fpu=None) --dependencies=n "F:\ELECTRONIC\sherkat\stm32ret6\Wiring
+#        Tester\IAR\ili9488\EWARM\ili9488\Exe\ili9488.out.iar_deps"
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__Heap_Handler  = NoFree
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The no free heap was selected because no calls to memory
+deallocation functions were found in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x807'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address  Alignment    Size  Object
+  -------            ----         -------  ---------    ----  ------
+"A0":                                                  0x130
+  .intvec            ro code   0x800'0000          4   0x130  startup_stm32f103xe.o [3]
+                             - 0x800'0130              0x130
+
+"P1":                                                 0x1984
+  .text              ro code   0x800'0130          4   0x4a2  stm32f1xx_hal_rcc.o [4]
+  .text              ro code   0x800'05d2          2    0x3a  packbits_init_single.o [7]
+  .text              ro code   0x800'060c          4     0xc  stm32f1xx_hal.o [4]
+  .text              ro code   0x800'0618          4    0x40  stm32f1xx_hal.o [4]
+  .text              ro code   0x800'0658          4    0xa0  stm32f1xx_hal_cortex.o [4]
+  .text              ro code   0x800'06f8          4   0x3b8  ILI9488_SPI.o [5]
+  .text              ro code   0x800'0ab0          4   0x350  stm32f1xx_hal_spi.o [4]
+  .text              ro code   0x800'0e00          4   0x1f8  stm32f1xx_hal_gpio.o [4]
+  .text              ro code   0x800'0ff8          4    0x28  stm32f1xx_hal.o [4]
+  .text              ro code   0x800'1020          4    0x50  no_free_heap0.o [6]
+  .text              ro code   0x800'1070          4   0x130  stm32f1xx_hal_msp.o [2]
+  .text              ro code   0x800'11a0          4    0x2c  xgetmemchunk.o [6]
+  .text              ro code   0x800'11cc          4    0x12  ABImemset_small.o [7]
+  .text              ro code   0x800'11e0          4   0x290  stm32f1xx_hal_tim.o [4]
+  .text              ro code   0x800'1470          4   0x22c  main.o [2]
+  .text              ro code   0x800'169c          4    0x24  stm32f1xx_hal.o [4]
+  .text              ro code   0x800'16c0          4    0xf8  stm32f1xx_hal_uart.o [4]
+  .text              ro code   0x800'17b8          4    0x78  stm32f1xx_hal_tim_ex.o [4]
+  .text              ro code   0x800'1830          4     0x6  ABImemclr4.o [7]
+  .text              ro code   0x800'1838          4    0x32  ABImemset48.o [7]
+  .text              ro code   0x800'186a          2    0x38  zero_init3.o [7]
+  .text              ro code   0x800'18a4          4    0x28  data_init.o [7]
+  .iar.init_table    const     0x800'18cc          4    0x20  - Linker created -
+  .text              ro code   0x800'18ec          4    0x1e  cmain.o [7]
+  .text              ro code   0x800'190a          2     0x4  low_level_init.o [6]
+  .text              ro code   0x800'190e          2     0x4  exit.o [6]
+  .text              ro code   0x800'1914          4     0xa  cexit.o [7]
+  .text              ro code   0x800'1920          4    0x14  exit.o [8]
+  .text              ro code   0x800'1934          4    0x1c  cstartup_M.o [7]
+  .text              ro code   0x800'1950          2    0x14  stm32f1xx_it.o [2]
+  .text              ro code   0x800'1964          4    0x10  stm32f1xx_hal.o [4]
+  .text              ro code   0x800'1974          4    0x14  system_stm32f1xx.o [1]
+  .text              ro code   0x800'1988          4    0x10  startup_stm32f103xe.o [3]
+  .rodata            const     0x800'1998          4     0x8  system_stm32f1xx.o [1]
+  .text              ro code   0x800'19a0          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19a4          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19a8          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19ac          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19b0          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19b4          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19b8          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19bc          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19c0          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19c4          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19c8          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19cc          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19d0          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19d4          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19d8          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19dc          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19e0          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19e4          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19e8          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19ec          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19f0          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19f4          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19f8          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'19fc          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a00          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a04          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a08          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a0c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a10          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a14          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a18          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a1c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a20          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a24          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a28          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a2c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a30          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a34          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a38          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a3c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a40          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a44          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a48          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a4c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a50          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a54          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a58          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a5c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a60          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a64          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a68          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a6c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a70          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a74          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a78          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a7c          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a80          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a84          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a88          2     0x4  startup_stm32f103xe.o [3]
+  .text              ro code   0x800'1a8c          2     0x4  startup_stm32f103xe.o [3]
+  .rodata            const     0x800'1a90                0x0  zero_init3.o [7]
+  .rodata            const     0x800'1a90                0x0  packbits_init_single.o [7]
+  Initializer bytes  const     0x800'1a90               0x24  <for P2-1>
+                             - 0x800'1ab4             0x1984
+
+"P2", part 1 of 3:                                      0x46
+  P2-1                        0x2000'0000               0x46  <Init block>
+    .data            inited   0x2000'0000          4    0x30  Font.o [5]
+    .data            inited   0x2000'0030          4     0xc  stm32f1xx_hal.o [4]
+    .data            inited   0x2000'003c          4     0x4  system_stm32f1xx.o [1]
+    .data            inited   0x2000'0040          2     0x6  ILI9488_SPI.o [5]
+                            - 0x2000'0046               0x46
+
+"P2", part 2 of 3:                                      0xf0
+  .bss               zero     0x2000'0048          4    0xe8  main.o [2]
+  .bss               zero     0x2000'0130          4     0x4  no_free_heap0.o [6]
+  .bss               zero     0x2000'0134          4     0x4  xgetmemchunk.o [6]
+                            - 0x2000'0138               0xf0
+
+"P2", part 3 of 3:                                     0x600
+  CSTACK                      0x2000'0138          8   0x400  <Block>
+    CSTACK           uninit   0x2000'0138              0x400  <Block tail>
+  HEAP                        0x2000'0538          8   0x200  <Block>
+    HEAP             uninit   0x2000'0538              0x200  <Block tail>
+                            - 0x2000'0738              0x600
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'1ab4   0x807'ffff  0x7'e54c
+  0x2000'0046  0x2000'0047       0x2
+  0x2000'0738  0x2000'ffff    0xf8c8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xf0:
+          0x2000'0048  0xf0
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x24 (51% of destination):
+           0x800'1a90  0x24
+    1 destination range, total size 0x46:
+          0x2000'0000  0x46
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\CMSIS_6603591812247902717.dir: [1]
+    system_stm32f1xx.o           20       10        4
+    -------------------------------------------------
+    Total:                       20       10        4
+
+F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\Core_13247989168731456611.dir: [2]
+    main.o                      556               232
+    stm32f1xx_hal_msp.o         304
+    stm32f1xx_it.o               20
+    -------------------------------------------------
+    Total:                      880               232
+
+F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\EWARM_18443280873093131863.dir: [3]
+    startup_stm32f103xe.o       560
+    -------------------------------------------------
+    Total:                      560
+
+F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir: [4]
+    stm32f1xx_hal.o             168        6       12
+    stm32f1xx_hal_cortex.o      160
+    stm32f1xx_hal_gpio.o        504
+    stm32f1xx_hal_rcc.o       1'186
+    stm32f1xx_hal_spi.o         848
+    stm32f1xx_hal_tim.o         656
+    stm32f1xx_hal_tim_ex.o      120
+    stm32f1xx_hal_uart.o        248
+    -------------------------------------------------
+    Total:                    3'890        6       12
+
+F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\lcd_13264118317236994320.dir: [5]
+    Font.o                                24       48
+    ILI9488_SPI.o               952        4        6
+    -------------------------------------------------
+    Total:                      952       28       54
+
+dl7M_tlf.a: [6]
+    exit.o                        4
+    low_level_init.o              4
+    no_free_heap0.o              80                 4
+    xgetmemchunk.o               44                 4
+    -------------------------------------------------
+    Total:                      132                 8
+
+rt7M_tl.a: [7]
+    ABImemclr4.o                  6
+    ABImemset48.o                50
+    ABImemset_small.o            18
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 28
+    data_init.o                  40
+    packbits_init_single.o       58
+    zero_init3.o                 56
+    -------------------------------------------------
+    Total:                      296
+
+shb_l.a: [8]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         10
+    Linker created                        32    1'536
+-----------------------------------------------------
+    Grand Total:              6'760       76    1'846
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'18cc          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'18ec          --   Gb  - Linker created -
+?main                    0x800'18ed         Code  Gb  cmain.o [7]
+ADC1_2_IRQHandler        0x800'19e9         Code  Wk  startup_stm32f103xe.o [3]
+ADC3_IRQHandler          0x800'1a5d         Code  Wk  startup_stm32f103xe.o [3]
+AHBPrescTable            0x800'1978   0x10  Data  Gb  system_stm32f1xx.o [1]
+APBPrescTable            0x800'1998    0x8  Data  Gb  system_stm32f1xx.o [1]
+BkColor                 0x2000'001c    0x4  Data  Gb  Font.o [5]
+BusFault_Handler         0x800'1957    0x2  Code  Gb  stm32f1xx_it.o [2]
+CAN1_RX1_IRQHandler      0x800'19f5         Code  Wk  startup_stm32f103xe.o [3]
+CAN1_SCE_IRQHandler      0x800'19f9         Code  Wk  startup_stm32f103xe.o [3]
+CSTACK$$Base            0x2000'0138          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0538          --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                         0x800'19cd         Code  Wk  startup_stm32f103xe.o [3]
+DMA1_Channel2_IRQHandler
+                         0x800'19d1         Code  Wk  startup_stm32f103xe.o [3]
+DMA1_Channel3_IRQHandler
+                         0x800'19d5         Code  Wk  startup_stm32f103xe.o [3]
+DMA1_Channel4_IRQHandler
+                         0x800'19d9         Code  Wk  startup_stm32f103xe.o [3]
+DMA1_Channel5_IRQHandler
+                         0x800'19dd         Code  Wk  startup_stm32f103xe.o [3]
+DMA1_Channel6_IRQHandler
+                         0x800'19e1         Code  Wk  startup_stm32f103xe.o [3]
+DMA1_Channel7_IRQHandler
+                         0x800'19e5         Code  Wk  startup_stm32f103xe.o [3]
+DMA2_Channel1_IRQHandler
+                         0x800'1a81         Code  Wk  startup_stm32f103xe.o [3]
+DMA2_Channel2_IRQHandler
+                         0x800'1a85         Code  Wk  startup_stm32f103xe.o [3]
+DMA2_Channel3_IRQHandler
+                         0x800'1a89         Code  Wk  startup_stm32f103xe.o [3]
+DMA2_Channel4_5_IRQHandler
+                         0x800'1a8d         Code  Wk  startup_stm32f103xe.o [3]
+DebugMon_Handler         0x800'195d    0x2  Code  Gb  stm32f1xx_it.o [2]
+Direction               0x2000'0040    0x1  Data  Lc  ILI9488_SPI.o [5]
+EXTI0_IRQHandler         0x800'19b9         Code  Wk  startup_stm32f103xe.o [3]
+EXTI15_10_IRQHandler     0x800'1a41         Code  Wk  startup_stm32f103xe.o [3]
+EXTI1_IRQHandler         0x800'19bd         Code  Wk  startup_stm32f103xe.o [3]
+EXTI2_IRQHandler         0x800'19c1         Code  Wk  startup_stm32f103xe.o [3]
+EXTI3_IRQHandler         0x800'19c5         Code  Wk  startup_stm32f103xe.o [3]
+EXTI4_IRQHandler         0x800'19c9         Code  Wk  startup_stm32f103xe.o [3]
+EXTI9_5_IRQHandler       0x800'19fd         Code  Wk  startup_stm32f103xe.o [3]
+Error_Handler            0x800'1699    0x4  Code  Gb  main.o [2]
+FLASH_IRQHandler         0x800'19b1         Code  Wk  startup_stm32f103xe.o [3]
+FSMC_IRQHandler          0x800'1a61         Code  Wk  startup_stm32f103xe.o [3]
+FgColor                 0x2000'0018    0x4  Data  Gb  Font.o [5]
+FontFixed               0x2000'0003    0x1  Data  Gb  Font.o [5]
+FontHeight              0x2000'0009    0x1  Data  Gb  Font.o [5]
+FontPointer             0x2000'0014    0x4  Data  Gb  Font.o [5]
+FontSpaceX              0x2000'000c    0x1  Data  Gb  Font.o [5]
+FontSpaceY              0x2000'000d    0x1  Data  Gb  Font.o [5]
+FontWidth               0x2000'0008    0x1  Data  Gb  Font.o [5]
+FontXScale              0x2000'000a    0x1  Data  Gb  Font.o [5]
+FontYScale              0x2000'000b    0x1  Data  Gb  Font.o [5]
+HAL_Delay                0x800'0ff9   0x28  Code  Wk  stm32f1xx_hal.o [4]
+HAL_GPIO_Init            0x800'0e01  0x1b2  Code  Gb  stm32f1xx_hal_gpio.o [4]
+HAL_GPIO_WritePin        0x800'0fb3    0x8  Code  Gb  stm32f1xx_hal_gpio.o [4]
+HAL_GetTick              0x800'060d    0xc  Code  Wk  stm32f1xx_hal.o [4]
+HAL_IncTick              0x800'1965   0x10  Code  Wk  stm32f1xx_hal.o [4]
+HAL_Init                 0x800'169d   0x20  Code  Gb  stm32f1xx_hal.o [4]
+HAL_InitTick             0x800'0619   0x40  Code  Wk  stm32f1xx_hal.o [4]
+HAL_MspInit              0x800'1071   0x38  Code  Gb  stm32f1xx_hal_msp.o [2]
+HAL_NVIC_SetPriority     0x800'0687   0x3a  Code  Gb  stm32f1xx_hal_cortex.o [4]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'0673   0x14  Code  Gb  stm32f1xx_hal_cortex.o [4]
+HAL_RCC_ClockConfig      0x800'042f   0xf4  Code  Gb  stm32f1xx_hal_rcc.o [4]
+HAL_RCC_GetPCLK1Freq     0x800'056d   0x10  Code  Gb  stm32f1xx_hal_rcc.o [4]
+HAL_RCC_GetPCLK2Freq     0x800'057d    0xe  Code  Gb  stm32f1xx_hal_rcc.o [4]
+HAL_RCC_GetSysClockFreq
+                         0x800'0539   0x34  Code  Gb  stm32f1xx_hal_rcc.o [4]
+HAL_RCC_GetSysClockFreq::aPLLMULFactorTable
+                         0x800'05c0   0x10  Data  Lc  stm32f1xx_hal_rcc.o [4]
+HAL_RCC_GetSysClockFreq::aPredivFactorTable
+                         0x800'05d0    0x2  Data  Lc  stm32f1xx_hal_rcc.o [4]
+HAL_RCC_OscConfig        0x800'0131  0x2f4  Code  Gb  stm32f1xx_hal_rcc.o [4]
+HAL_SPI_Init             0x800'0ab1   0xaa  Code  Gb  stm32f1xx_hal_spi.o [4]
+HAL_SPI_MspInit          0x800'10a9   0x4a  Code  Gb  stm32f1xx_hal_msp.o [2]
+HAL_SPI_Transmit         0x800'0b5b  0x118  Code  Gb  stm32f1xx_hal_spi.o [4]
+HAL_SYSTICK_Config       0x800'06c1   0x22  Code  Gb  stm32f1xx_hal_cortex.o [4]
+HAL_TIMEx_MasterConfigSynchronization
+                         0x800'17b9   0x62  Code  Gb  stm32f1xx_hal_tim_ex.o [4]
+HAL_TIM_Base_Init        0x800'11e1   0x1a  Code  Gb  stm32f1xx_hal_tim.o [4]
+HAL_TIM_Base_MspInit     0x800'10f3   0x22  Code  Gb  stm32f1xx_hal_msp.o [2]
+HAL_TIM_Base_Start_IT    0x800'11fb   0x66  Code  Gb  stm32f1xx_hal_tim.o [4]
+HAL_TIM_ConfigClockSource
+                         0x800'12ad   0xac  Code  Gb  stm32f1xx_hal_tim.o [4]
+HAL_UART_Init            0x800'16c1   0x20  Code  Gb  stm32f1xx_hal_uart.o [4]
+HAL_UART_MspInit         0x800'1115   0x62  Code  Gb  stm32f1xx_hal_msp.o [2]
+HEAP$$Base              0x2000'0538          --   Gb  - Linker created -
+HEAP$$Limit             0x2000'0738          --   Gb  - Linker created -
+HardFault_Handler        0x800'1953    0x2  Code  Gb  stm32f1xx_it.o [2]
+I2C1_ER_IRQHandler       0x800'1a21         Code  Wk  startup_stm32f103xe.o [3]
+I2C1_EV_IRQHandler       0x800'1a1d         Code  Wk  startup_stm32f103xe.o [3]
+I2C2_ER_IRQHandler       0x800'1a29         Code  Wk  startup_stm32f103xe.o [3]
+I2C2_EV_IRQHandler       0x800'1a25         Code  Wk  startup_stm32f103xe.o [3]
+ILI9488_Draw_Colour_Burst
+                         0x800'09e9   0x8e  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_Fill_Screen      0x800'0a77   0x2a  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_Init             0x800'0839  0x1a0  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_Reset            0x800'07ad   0x2e  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_SPI_Send         0x800'06f9    0xc  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_Set_Address      0x800'075f   0x4e  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_Set_Rotation     0x800'07e9   0x50  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_Write_Command    0x800'070f   0x12  Code  Gb  ILI9488_SPI.o [5]
+ILI9488_Write_Data       0x800'072b    0xc  Code  Gb  ILI9488_SPI.o [5]
+LCD_HEIGHT              0x2000'0042    0x2  Data  Gb  ILI9488_SPI.o [5]
+LCD_WIDTH               0x2000'0044    0x2  Data  Gb  ILI9488_SPI.o [5]
+MemManage_Handler        0x800'1955    0x2  Code  Gb  stm32f1xx_it.o [2]
+NMI_Handler              0x800'1951    0x2  Code  Gb  stm32f1xx_it.o [2]
+NonTransparence         0x2000'0004    0x1  Data  Gb  Font.o [5]
+PVD_IRQHandler           0x800'19a5         Code  Wk  startup_stm32f103xe.o [3]
+PendSV_Handler           0x800'195f    0x2  Code  Gb  stm32f1xx_it.o [2]
+RCC_IRQHandler           0x800'19b5         Code  Wk  startup_stm32f103xe.o [3]
+RTC_Alarm_IRQHandler     0x800'1a45         Code  Wk  startup_stm32f103xe.o [3]
+RTC_IRQHandler           0x800'19ad         Code  Wk  startup_stm32f103xe.o [3]
+Region$$Table$$Base      0x800'18cc          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'18ec          --   Gb  - Linker created -
+Reset_Handler            0x800'1989         Code  Wk  startup_stm32f103xe.o [3]
+Reverse                 0x2000'0002    0x1  Data  Gb  Font.o [5]
+SDIO_IRQHandler          0x800'1a65         Code  Wk  startup_stm32f103xe.o [3]
+SPI1_IRQHandler          0x800'1a2d         Code  Wk  startup_stm32f103xe.o [3]
+SPI2_IRQHandler          0x800'1a31         Code  Wk  startup_stm32f103xe.o [3]
+SPI3_IRQHandler          0x800'1a6d         Code  Wk  startup_stm32f103xe.o [3]
+SPI_EndRxTxTransaction   0x800'0dc5   0x2c  Code  Lc  stm32f1xx_hal_spi.o [4]
+SPI_WaitFlagStateUntilTimeout
+                         0x800'0d0f   0xb6  Code  Lc  stm32f1xx_hal_spi.o [4]
+SVC_Handler              0x800'195b    0x2  Code  Gb  stm32f1xx_it.o [2]
+SysTick_Handler          0x800'1961    0x4  Code  Gb  stm32f1xx_it.o [2]
+SystemClock_Config       0x800'1637   0x62  Code  Gb  main.o [2]
+SystemCoreClock         0x2000'003c    0x4  Data  Gb  system_stm32f1xx.o [1]
+SystemInit               0x800'1975    0x2  Code  Gb  system_stm32f1xx.o [1]
+TAMPER_IRQHandler        0x800'19a9         Code  Wk  startup_stm32f103xe.o [3]
+TFTHeight               0x2000'002c    0x4  Data  Gb  Font.o [5]
+TFTWidth                0x2000'0028    0x4  Data  Gb  Font.o [5]
+TIM1_BRK_IRQHandler      0x800'1a01         Code  Wk  startup_stm32f103xe.o [3]
+TIM1_CC_IRQHandler       0x800'1a0d         Code  Wk  startup_stm32f103xe.o [3]
+TIM1_TRG_COM_IRQHandler
+                         0x800'1a09         Code  Wk  startup_stm32f103xe.o [3]
+TIM1_UP_IRQHandler       0x800'1a05         Code  Wk  startup_stm32f103xe.o [3]
+TIM2_IRQHandler          0x800'1a11         Code  Wk  startup_stm32f103xe.o [3]
+TIM3_IRQHandler          0x800'1a15         Code  Wk  startup_stm32f103xe.o [3]
+TIM4_IRQHandler          0x800'1a19         Code  Wk  startup_stm32f103xe.o [3]
+TIM5_IRQHandler          0x800'1a69         Code  Wk  startup_stm32f103xe.o [3]
+TIM6_IRQHandler          0x800'1a79         Code  Wk  startup_stm32f103xe.o [3]
+TIM7_IRQHandler          0x800'1a7d         Code  Wk  startup_stm32f103xe.o [3]
+TIM8_BRK_IRQHandler      0x800'1a4d         Code  Wk  startup_stm32f103xe.o [3]
+TIM8_CC_IRQHandler       0x800'1a59         Code  Wk  startup_stm32f103xe.o [3]
+TIM8_TRG_COM_IRQHandler
+                         0x800'1a55         Code  Wk  startup_stm32f103xe.o [3]
+TIM8_UP_IRQHandler       0x800'1a51         Code  Wk  startup_stm32f103xe.o [3]
+TIM_Base_SetConfig       0x800'136b   0x82  Code  Gb  stm32f1xx_hal_tim.o [4]
+TIM_ETR_SetConfig        0x800'1457   0x14  Code  Gb  stm32f1xx_hal_tim.o [4]
+TIM_ITRx_SetConfig       0x800'1447   0x10  Code  Lc  stm32f1xx_hal_tim.o [4]
+TIM_TI1_ConfigInputStage
+                         0x800'1405   0x1e  Code  Lc  stm32f1xx_hal_tim.o [4]
+TIM_TI2_ConfigInputStage
+                         0x800'1423   0x24  Code  Lc  stm32f1xx_hal_tim.o [4]
+UART4_IRQHandler         0x800'1a71         Code  Wk  startup_stm32f103xe.o [3]
+UART5_IRQHandler         0x800'1a75         Code  Wk  startup_stm32f103xe.o [3]
+UART_SetConfig           0x800'1739   0x78  Code  Lc  stm32f1xx_hal_uart.o [4]
+USART1_IRQHandler        0x800'1a35         Code  Wk  startup_stm32f103xe.o [3]
+USART2_IRQHandler        0x800'1a39         Code  Wk  startup_stm32f103xe.o [3]
+USART3_IRQHandler        0x800'1a3d         Code  Wk  startup_stm32f103xe.o [3]
+USBWakeUp_IRQHandler     0x800'1a49         Code  Wk  startup_stm32f103xe.o [3]
+USB_HP_CAN1_TX_IRQHandler
+                         0x800'19ed         Code  Wk  startup_stm32f103xe.o [3]
+USB_LP_CAN1_RX0_IRQHandler
+                         0x800'19f1         Code  Wk  startup_stm32f103xe.o [3]
+UsageFault_Handler       0x800'1959    0x2  Code  Gb  stm32f1xx_it.o [2]
+WWDG_IRQHandler          0x800'19a1         Code  Wk  startup_stm32f103xe.o [3]
+__NVIC_SetPriority       0x800'0659   0x1a  Code  Lc  stm32f1xx_hal_cortex.o [4]
+__aeabi_memclr4          0x800'1831         Code  Gb  ABImemclr4.o [7]
+__cmain                  0x800'18ed         Code  Gb  cmain.o [7]
+__data_GetMemChunk       0x800'11a1   0x2c  Code  Gb  xgetmemchunk.o [6]
+__data_GetMemChunk::start
+                        0x2000'0134    0x4  Data  Lc  xgetmemchunk.o [6]
+__exit                   0x800'1921   0x14  Code  Gb  exit.o [8]
+__iar_Memset4_word       0x800'1839         Code  Gb  ABImemset48.o [7]
+__iar_Memset8_word       0x800'1839         Code  Gb  ABImemset48.o [7]
+__iar_data_init3         0x800'18a5   0x28  Code  Gb  data_init.o [7]
+__iar_packbits_init_single3
+                         0x800'05d3   0x3a  Code  Gb  packbits_init_single.o [7]
+__iar_program_start      0x800'1935         Code  Gb  cstartup_M.o [7]
+__iar_small_Memset       0x800'11cd         Code  Gb  ABImemset_small.o [7]
+__iar_small_Memset_word
+                         0x800'11cd         Code  Gb  ABImemset_small.o [7]
+__iar_small_memset       0x800'11cd         Code  Gb  ABImemset_small.o [7]
+__iar_zero_init3         0x800'186b   0x38  Code  Gb  zero_init3.o [7]
+__low_level_init         0x800'190b    0x4  Code  Gb  low_level_init.o [6]
+__no_free_malloc         0x800'1021   0x4a  Code  Gb  no_free_heap0.o [6]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f103xe.o [3]
+_call_main               0x800'18f9         Code  Gb  cmain.o [7]
+_exit                    0x800'1915         Code  Gb  cexit.o [7]
+charwidth               0x2000'0007    0x1  Data  Gb  Font.o [5]
+cursorX                 0x2000'0020    0x4  Data  Gb  Font.o [5]
+cursorY                 0x2000'0024    0x4  Data  Gb  Font.o [5]
+exit                     0x800'190f    0x4  Code  Gb  exit.o [6]
+firstchar               0x2000'0005    0x1  Data  Gb  Font.o [5]
+fontSize                0x2000'0012    0x2  Data  Gb  Font.o [5]
+hspi1                   0x2000'0048   0x58  Data  Gb  main.o [2]
+htim1                   0x2000'00e8   0x48  Data  Gb  main.o [2]
+huart1                  0x2000'00a0   0x48  Data  Gb  main.o [2]
+lastchar                0x2000'0006    0x1  Data  Gb  Font.o [5]
+main                     0x800'1471  0x198  Code  Gb  main.o [2]
+nextLet                 0x2000'0010    0x1  Data  Gb  Font.o [5]
+p_rotation              0x2000'0001    0x1  Data  Gb  Font.o [5]
+peLETTER                0x2000'000e    0x1  Data  Gb  Font.o [5]
+prevLet                 0x2000'000f    0x1  Data  Gb  Font.o [5]
+qs                      0x2000'0130    0x4  Data  Lc  no_free_heap0.o [6]
+rot                     0x2000'0000    0x1  Data  Gb  Font.o [5]
+uwTick                  0x2000'0034    0x4  Data  Gb  stm32f1xx_hal.o [4]
+uwTickFreq              0x2000'0030    0x1  Data  Gb  stm32f1xx_hal.o [4]
+uwTickPrio              0x2000'0038    0x4  Data  Gb  stm32f1xx_hal.o [4]
+
+
+[1] = F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\CMSIS_6603591812247902717.dir
+[2] = F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\Core_13247989168731456611.dir
+[3] = F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\EWARM_18443280873093131863.dir
+[4] = F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\STM32F1xx_HAL_Driver_9701002599162248031.dir
+[5] = F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\ili9488\EWARM\ili9488\Obj\lcd_13264118317236994320.dir
+[6] = dl7M_tlf.a
+[7] = rt7M_tl.a
+[8] = shb_l.a
+
+  6'760 bytes of readonly  code memory
+     76 bytes of readonly  data memory
+  1'846 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
