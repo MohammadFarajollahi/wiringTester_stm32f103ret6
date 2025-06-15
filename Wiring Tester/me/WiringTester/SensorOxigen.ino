@@ -18,19 +18,33 @@ void SensorOxigen() {
     tft.setCursor(0, 230);
     tft.println(text);
     ////////
-    if (PwmVoltage >= 12) {
+    if (PwmVoltage >= 6) {
+      tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
       releAnalyzer();
-      text = "Probe Warning";
+      tft.setTextSize(2);
+      text = "OVER VOLTAGE Warning";
       tft.setTextColor(ILI9488_RED);
-      tft.fillRect(0, 150, 160, 20, ILI9488_BLACK);
-      tft.setCursor(0, 150);
+      tft.fillRect(0, 100, 300, 40, ILI9488_BLACK);
+      tft.setCursor(0, 100);
       tft.println(text);
-      for (int i = 0; i <= 20; i++) {
-        digitalWrite(buzzer, !digitalRead(buzzer));
-        delay(20);
-      }
-      delay(200);
+      digitalWrite(buzzer, 1);
+      delay(100);
       digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(1000);
+      digitalWrite(buzzer, 0);
+      delay(2000);
+      ExitToMenu = 1;
+      BuzzerBIGbig();
     }
   }
   oxygenKey();
@@ -47,8 +61,8 @@ void oxygenKey() {
     //***********Duty Setting************
     if (key == '6') {
       BuzzerBIGbig();
-      dutyCycle += .1;
-      if (dutyCycle < .1) dutyCycle = .1;
+      dutyCycle += .5;
+      if (dutyCycle < .5) dutyCycle = .5;
       if (dutyCycle >= 20) dutyCycle = 20;
       delay(20);
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
@@ -56,8 +70,8 @@ void oxygenKey() {
 
     if (key == '4') {
       BuzzerBIGbig();
-      dutyCycle -= .1;
-      if (dutyCycle < .1) dutyCycle = .1;
+      dutyCycle -= .5;
+      if (dutyCycle < .5) dutyCycle = .5;
       if (dutyCycle >= 20) dutyCycle = 20;
       delay(20);
       setupPWM(myTimer1, 1, pwmFrequency, dutyCycle);
@@ -68,7 +82,7 @@ void oxygenKey() {
     tft.drawLine(10, 290, 250, 290, ILI9488_WHITE);
     tft.drawLine(250, 259, 250, 290, ILI9488_WHITE);
 
-    int pwmOut = map(dutyCycle, 1, 20, 11, 235); 
+    int pwmOut = map(dutyCycle, 1, 20, 11, 235);
     tft.fillRect(11, 260, 235, 30, ILI9488_BLACK);
     tft.fillRect(11, 260, pwmOut, 30, ILI9488_GREEN);
 

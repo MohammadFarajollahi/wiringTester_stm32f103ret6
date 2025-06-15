@@ -1,4 +1,4 @@
-
+int current_alarm;
 
 void Thermometer() {
 
@@ -22,6 +22,41 @@ void Thermometer() {
   tft.fillRect(0, 100, 300, 40, ILI9488_BLACK);
   tft.setCursor(0, 100);
   tft.println(text);
+
+  if (current < 4)current_alarm=0;
+
+  if (current >= 8) {
+    ++current_alarm;
+    if (current_alarm >= 10) {
+      current_alarm = 0;
+      tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
+      releAnalyzer();
+      tft.setTextSize(2);
+      text = "OVER Current Warning";
+      tft.setTextColor(ILI9488_CYAN);
+      tft.fillRect(0, 100, 300, 40, ILI9488_BLACK);
+      tft.setCursor(0, 100);
+      tft.println(text);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(2000);
+      ExitToMenu = 1;
+      BuzzerBIGbig();
+    }
+  }
 
   char key = getKey();  // خواندن کلید
   if (key != '\0') {

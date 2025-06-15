@@ -30,7 +30,7 @@ void VoltMEter() {
   if (average >= 2800) average /= 78;
   InputVoltage = average;
   InputVoltage *= voltCalib;
-  if (adc0 <= 200 && adc0 >= 190) InputVoltage = 0;
+  if (adc0 <= 220 && adc0 >= 150) InputVoltage = 0;
   if (InputVoltage < 1.2) InputVoltage *= 1.1;
   tft.setTextSize(3);
   text = "Voltage:" + String(InputVoltage, 2) + "V";

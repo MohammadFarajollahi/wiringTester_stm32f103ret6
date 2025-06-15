@@ -1,5 +1,5 @@
 F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\ili9488_spi\BrowseInfo\ili9488_14742993431243390435.dir\ILI9488_SPI.pbi: \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\lcd\ILI9488_SPI.c \
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\lcd\ILI9488_SPI.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\..\Core\Inc\main.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\..\Core\Inc\stm32f1xx_hal_conf.h \
@@ -36,4 +36,4 @@ F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\ili9488_spi\BrowseI
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM\..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\lcd\ILI9488_SPI.h
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\lcd\ILI9488_SPI.c

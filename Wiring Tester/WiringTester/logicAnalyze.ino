@@ -150,7 +150,7 @@ void logicAnalyze() {
 
   ///////////////////////////SHOW LCD/////////////////////////
   //******RES******
-  if (ADCres > 1470) {
+  if (ADCres > 1470) {//شستشس
     resistant *= 1.06;
     if (ADCres >= 2500) text = "Res: OL";
     if (resistant >= 1000 && ADCres < 2500) text = "Res:" + String(resistant / 1000, 1) + "K";

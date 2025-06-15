@@ -18,19 +18,33 @@ void OilSensor() {
     tft.setCursor(0, 230);
     tft.println(text);
     ////////
-    if (PwmVoltage >= 12) {
+ if (PwmVoltage >= 6) {
+      tft.fillRect(0, 50, 300, 320, ILI9488_BLACK);
       releAnalyzer();
-      text = "Probe Warning";
+      tft.setTextSize(2);
+      text = "OVER VOLTAGE Warning";
       tft.setTextColor(ILI9488_RED);
-      tft.fillRect(0, 150, 160, 20, ILI9488_BLACK);
-      tft.setCursor(0, 150);
+      tft.fillRect(0, 100, 300, 40, ILI9488_BLACK);
+      tft.setCursor(0, 100);
       tft.println(text);
-      for (int i = 0; i <= 20; i++) {
-        digitalWrite(buzzer, !digitalRead(buzzer));
-        delay(20);
-      }
-      delay(200);
+      digitalWrite(buzzer, 1);
+      delay(100);
       digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(100);
+      digitalWrite(buzzer, 0);
+      delay(100);
+      digitalWrite(buzzer, 1);
+      delay(1000);
+      digitalWrite(buzzer, 0);
+      delay(2000);
+      ExitToMenu = 1;
+      BuzzerBIGbig();
     }
   }
   oilKey();

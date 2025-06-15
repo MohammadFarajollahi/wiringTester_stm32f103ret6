@@ -1473,51 +1473,6 @@
             </file>
         </group>
         <group>
-            <name>ili9488</name>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\AF12x16.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\AF12x16DF.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\AF8x8.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\AF9x10.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\AF9x11.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\f10x20.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\Font.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\Font.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\ILI9488_SPI.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\ILI9488_SPI.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\image.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\PE_Map.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\xpt2046.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\lcd\xpt2046.h</name>
-            </file>
-        </group>
-        <group>
             <name>User</name>
             <group>
                 <name>Core</name>
@@ -1535,6 +1490,9 @@
                 </file>
             </group>
         </group>
+        <configuration>
+            <name>ili9488_spi</name>
+        </configuration>
     </group>
     <group>
         <name>Drivers</name>
@@ -1592,5 +1550,56 @@
                 <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c</name>
             </file>
         </group>
+    </group>
+    <group>
+        <name>ili9488</name>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\AF12x16.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\AF12x16DF.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\AF8x8.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\AF9x10.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\AF9x11.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\f10x20.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\Font.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\Font.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\ILI9488_SPI.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\ILI9488_SPI.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\image.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\PE_Map.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\startShow.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\startShow.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\xpt2046.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\lcd\xpt2046.h</name>
+        </file>
     </group>
 </project>

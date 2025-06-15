@@ -41,7 +41,7 @@ void wirecheck() {
   if (average >= 2800) average /= 78;
   InputVoltage = average;
   InputVoltage *= voltCalib;
-  if (adc0 <= 200 && adc0 >= 180) InputVoltage = 0;
+  if (adc0 <= 220 && adc0 >= 170) InputVoltage = 0;
   if (InputVoltage < 1.2) InputVoltage *= 1.1;
 
   ////////////////////////////////////////////////////////////////////////
@@ -63,7 +63,7 @@ void wirecheck() {
 
 
   //********************Nothing*********************
-  if (InputVoltage == 0 && ADCres >= 2490 && ADCres < 2660) {  //Nothing ADCres > 2600 && ADCres < 2660
+  if (InputVoltage == 0 && ADCres >= 2490 && ADCres < 2700) {  //Nothing ADCres > 2600 && ADCres < 2660
     digitalWrite(buzzer, 0);
     tft.fillCircle(70, 190, 20, ILI9488_WHITE);   //gnd
     tft.fillCircle(200, 190, 20, ILI9488_WHITE);  //+12

@@ -21,12 +21,14 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
 #include "stdio.h"
 #include "ILI9488_SPI.h"
 #include "XPT2046.h"
 #include "Font.h"
 #include "AF12x16.h"
 #include "image.h"
+#include "startShow.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -53,6 +55,9 @@ UART_HandleTypeDef huart1;
 /* USER CODE BEGIN PV */
 char str[100];
 uint16_t x,y;
+int i;
+char test[100];
+int len;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -67,8 +72,7 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-char test[100];
-int len;
+
 void show_uart( char *ss)
 {
   strcpy(test, ss);
@@ -87,7 +91,7 @@ int main(void)
 {
   
   /* USER CODE BEGIN 1 */
-  
+  SystemInit();
   /* USER CODE END 1 */
   
   /* MCU Configuration--------------------------------------------------------*/
@@ -112,89 +116,79 @@ int main(void)
   MX_TIM1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  show_uart("start");
   HAL_TIM_Base_Start_IT(&htim1);
-  show_uart("1");
   ILI9488_Init();
-  show_uart("2");
-  ILI9488_Fill_Screen(BLUE);
-  show_uart("3");
-  LcdFont(AF12x16);
-  SetLetter(E_LETTER);
-  LcdFontXScale(1);
-  LcdFontYScale(1);
-  ILI9488_Set_Rotation(0);
-  drawImage(140,225,30,30,logo);
-  HAL_Delay(2000);
   
+  StartShow();
+ 
   LcdFontXScale(2);
   LcdFontYScale(2);
   
   // ILI9488_Set_Rotation(0);
-  ILI9488_Fill_Screen(BLUE);
+  ILI9488_Fill_Screen(WHITE);
   SetLetter(P_LETTER);
-  DrawStringAt(0,0," محمد فرج الهی ",WHITE,RED);
-  DrawStringAt(1,0," فونت فارسی ",WHITE,BLACK);
+  DrawStringAt(0,0,"محمد فرج الهی",WHITE,RED);
+  DrawStringAt(1,0,"ردیاب پاوان",WHITE,BLACK);
   SetLetter(E_LETTER);
   DrawStringAt(3,0," pavantech.ir ",BLACK,WHITE);
   DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
   DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
   HAL_Delay(3000);
-   LcdFontXScale(3);
+  LcdFontXScale(3);
   LcdFontYScale(3);
-    ILI9488_Fill_Screen(BLACK);
+  ILI9488_Fill_Screen(BLACK);
   SetLetter(P_LETTER);
-  DrawStringAt(0,0," سلام سینا ",WHITE,BLACK);
-  DrawStringAt(1,0," فونت چطوره؟ ",WHITE,BLACK);
+  DrawStringAt(0,0," پاوان تکنولوژی ",WHITE,BLACK);
+  DrawStringAt(1,0," ردیاب خودرو ",WHITE,BLACK);
   SetLetter(E_LETTER);
   DrawStringAt(3,0," pavantech.ir ",BLACK,WHITE);
   DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
   DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
   HAL_Delay(1000);
   
-//  ILI9488_Set_Rotation(1);
-//  ILI9488_Fill_Screen(BLUE);
-//  SetLetter(P_LETTER);
-//  DrawStringAt(0,0," به نام خدا ",WHITE,RED);
-//  DrawStringAt(1,0," فونت فارسی ",WHITE,BLACK);
-//  SetLetter(E_LETTER);
-//  DrawStringAt(3,0," micronik.ir ",BLACK,WHITE);
-//  DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
-//  DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
-//  HAL_Delay(1000);
-//  
-//  ILI9488_Set_Rotation(2);
-//  ILI9488_Fill_Screen(BLUE);
-//  SetLetter(P_LETTER);
-//  DrawStringAt(0,0," به نام خدا ",WHITE,RED);
-//  DrawStringAt(1,0," فونت فارسی ",WHITE,BLACK);
-//  SetLetter(E_LETTER);
-//  DrawStringAt(3,0," micronik.ir ",BLACK,WHITE);
-//  DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
-//  DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
-//  HAL_Delay(1000);
-//  
-//  ILI9488_Set_Rotation(3);
-//  ILI9488_Fill_Screen(BLUE);
-//  SetLetter(P_LETTER);
-//  DrawStringAt(0,0," به نام خدا ",WHITE,RED);
-//  DrawStringAt(1,0," فونت فارسی ",WHITE,BLACK);
-//  SetLetter(E_LETTER);
-//  DrawStringAt(3,0," micronik.ir ",BLACK,WHITE);
-//  DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
-//  DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
-//  HAL_Delay(1000);
+  //  ILI9488_Set_Rotation(1);
+  //  ILI9488_Fill_Screen(BLUE);
+  //  SetLetter(P_LETTER);
+  //  DrawStringAt(0,0," ?? ??? ??? ",WHITE,RED);
+  //  DrawStringAt(1,0," ???? ????? ",WHITE,BLACK);
+  //  SetLetter(E_LETTER);
+  //  DrawStringAt(3,0," micronik.ir ",BLACK,WHITE);
+  //  DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
+  //  DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
+  //  HAL_Delay(1000);
+  //  
+  //  ILI9488_Set_Rotation(2);
+  //  ILI9488_Fill_Screen(BLUE);
+  //  SetLetter(P_LETTER);
+  //  DrawStringAt(0,0," ?? ??? ??? ",WHITE,RED);
+  //  DrawStringAt(1,0," ???? ????? ",WHITE,BLACK);
+  //  SetLetter(E_LETTER);
+  //  DrawStringAt(3,0," micronik.ir ",BLACK,WHITE);
+  //  DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
+  //  DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
+  //  HAL_Delay(1000);
+  //  
+  //  ILI9488_Set_Rotation(3);
+  //  ILI9488_Fill_Screen(BLUE);
+  //  SetLetter(P_LETTER);
+  //  DrawStringAt(0,0," ?? ??? ??? ",WHITE,RED);
+  //  DrawStringAt(1,0," ???? ????? ",WHITE,BLACK);
+  //  SetLetter(E_LETTER);
+  //  DrawStringAt(3,0," micronik.ir ",BLACK,WHITE);
+  //  DrawStringAt(4,0," TFT ILI9488 ",WHITE,MAROON);
+  //  DrawStringAt(5,0," STM32F103 ",WHITE,PINK);
+  //  HAL_Delay(1000);
   
   ILI9488_Set_Rotation(0);
   ILI9488_Fill_Screen(WHITE);
   ILI9488_Draw_Fill_Rectangle(15 , 420 , 60  ,30 , BLUE);
-   HAL_Delay(100);
+  HAL_Delay(100);
   ILI9488_Draw_Fill_Rectangle(85 , 420 , 60 ,30 , GREEN);
-   HAL_Delay(100);
+  HAL_Delay(100);
   ILI9488_Draw_Fill_Rectangle(155 , 420 , 60  ,30 , YELLOW);
-   HAL_Delay(100);
+  HAL_Delay(100);
   ILI9488_Draw_Fill_Rectangle(225 , 420 , 60  ,30 , RED);
-   HAL_Delay(100);
+  HAL_Delay(100);
   /* USER CODE END 2 */
   
   /* Infinite loop */

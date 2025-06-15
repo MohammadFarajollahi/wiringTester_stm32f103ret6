@@ -21,6 +21,8 @@ F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM/../Drivers/CMSIS/De
 -I
 F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\EWARM/../Drivers/CMSIS/Include
 -I
+F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\lcd
+-I
 C:\iar\ewarm-9.60.3\arm\inc\c\aarch32
 -I
 C:\iar\ewarm-9.60.3\arm\inc
@@ -36,6 +38,8 @@ F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\Drivers\STM32F1xx_HAL_Dri
 F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\Drivers\CMSIS\Device\ST\STM32F1xx\Include
 -I
 F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\Drivers\CMSIS\Include
+-I
+F:\ELECTRONIC\sherkat\stm32ret6\STM32F103_KEIL_ili9488\lcd
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

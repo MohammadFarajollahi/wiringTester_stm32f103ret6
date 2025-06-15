@@ -1416,6 +1416,7 @@ void KeyPad1() {
       digitalWrite(buzzer, 0);
       mainMenu++;
       mainMenuChange = 1;
+      MenuSelect = 1;
     }
 
     // if (key == 'B') {
@@ -1626,6 +1627,7 @@ void KeyPad2() {
       digitalWrite(buzzer, 0);
       mainMenu--;
       mainMenuChange = 1;
+      MenuSelect = 1;
     }
 
     if (mainMenu > 2) mainMenu = 2;

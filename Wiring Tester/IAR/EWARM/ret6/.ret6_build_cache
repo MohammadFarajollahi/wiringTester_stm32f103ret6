@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\EWARM\ret6\Exe\ret6.out</Path>
+            <Output>
+                <Path>F:\ELECTRONIC\sherkat\stm32ret6\Wiring Tester\IAR\EWARM\ret6\List\ret6.map</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\Users\Mohammad\Desktop\ret6\EWARM\ret6\Exe\ret6.out</Path>
+            <Output>
+                <Path>C:\Users\Mohammad\Desktop\ret6\EWARM\ret6\List\ret6.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

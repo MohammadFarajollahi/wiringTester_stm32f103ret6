@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\ili9488DMA_stm32f407\Exe\ili9488DMA_stm32f407.out</Path>
+            <Output>
+                <Path>F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\ili9488DMA_stm32f407\List\ili9488DMA_stm32f407.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

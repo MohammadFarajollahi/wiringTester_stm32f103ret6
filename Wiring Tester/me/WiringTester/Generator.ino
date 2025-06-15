@@ -17,7 +17,7 @@ void Generator() {
   // اعمال مقدار اولیه Offset برای دقت بهتر
   float current = (voltage - offset) / SENSITIVITY;
   current *= 1.65;
-  //current *= 2.551724137931034;  // FOR 30A
+  current *= 2.551724137931034;  // FOR 30A
   current *= amperCalib;
   if (current < 0) current *= -1;
   tft.setTextSize(2);
