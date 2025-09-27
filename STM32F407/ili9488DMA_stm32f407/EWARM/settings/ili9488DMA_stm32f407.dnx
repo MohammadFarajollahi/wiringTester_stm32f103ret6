@@ -31,10 +31,10 @@
     <StLinkDriver>
         <stlinkserialNo>55FF70065075565425101587</stlinkserialNo>
         <stlinkfoundProbes />
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <CStepIntDis>_ 0</CStepIntDis>
         <stlinkResetStyle>0</stlinkResetStyle>
         <stlinkResetStrategy>2</stlinkResetStrategy>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
     </StLinkDriver>
     <Trace1>
         <Enabled>0</Enabled>

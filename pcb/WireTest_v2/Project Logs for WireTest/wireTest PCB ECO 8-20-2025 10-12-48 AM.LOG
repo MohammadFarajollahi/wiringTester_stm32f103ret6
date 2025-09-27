@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=outSimulation+5 Pin=11-1
+Removed Member From Class: ClassName=WireTest Member=11
+Change Component Comment : Designator=C? Old Comment=1uF New Comment=400U
+Change Component Designator: OldDesignator=C? NewDesignator=CO
+Added Pin To Net: NetName=outSimulation+5 Pin=CO-1
+Added Pin To Net: NetName=NetBC9_3 Pin=BC9-3
+Added Pin To Net: NetName=NetBC9_3 Pin=CO-2
+Added Net: Name=NetBC9_3
+Added Room: Name=WireTest

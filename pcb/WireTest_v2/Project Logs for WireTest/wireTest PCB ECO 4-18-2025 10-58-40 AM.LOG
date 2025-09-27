@@ -1,0 +1,100 @@
+Change Component Designator: OldDesignator=1 NewDesignator=9
+Change Component Designator: OldDesignator=2 NewDesignator=1
+Change Component Designator: OldDesignator=3 NewDesignator=2
+Change Component Designator: OldDesignator=4 NewDesignator=3
+Change Component Designator: OldDesignator=5 NewDesignator=12
+Change Component Designator: OldDesignator=6 NewDesignator=17
+Change Component Designator: OldDesignator=7 NewDesignator=4
+Change Component Designator: OldDesignator=8 NewDesignator=5
+Change Component Designator: OldDesignator=9 NewDesignator=6
+Change Component Designator: OldDesignator=10 NewDesignator=7
+Change Component Designator: OldDesignator=11 NewDesignator=8
+Change Component Designator: OldDesignator=12 NewDesignator=19
+Change Component Designator: OldDesignator=13 NewDesignator=10
+Change Component Designator: OldDesignator=14 NewDesignator=11
+Change Component Designator: OldDesignator=15 NewDesignator=13
+Change Component Designator: OldDesignator=16 NewDesignator=14
+Change Component Designator: OldDesignator=17 NewDesignator=15
+Change Component Designator: OldDesignator=18 NewDesignator=16
+Change Component Designator: OldDesignator=19 NewDesignator=18
+Change Component Designator: OldDesignator=22 NewDesignator=23
+Change Component Designator: OldDesignator=23 NewDesignator=22
+Change Component Designator: OldDesignator=31 NewDesignator=32
+Change Component Designator: OldDesignator=32 NewDesignator=33
+Change Component Designator: OldDesignator=33 NewDesignator=34
+Change Component Designator: OldDesignator=36 NewDesignator=38
+Change Component Designator: OldDesignator=37 NewDesignator=39
+Change Component Designator: OldDesignator=38 NewDesignator=40
+Change Component Designator: OldDesignator=39 NewDesignator=31
+Change Component Designator: OldDesignator=40 NewDesignator=41
+Change Component Designator: OldDesignator=46 NewDesignator=36
+Change Component Designator: OldDesignator=47 NewDesignator=46
+Change Component Designator: OldDesignator=48 NewDesignator=37
+Change Component Designator: OldDesignator=49 NewDesignator=47
+Change Component Designator: OldDesignator=50 NewDesignator=48
+Change Component Designator: OldDesignator=51 NewDesignator=49
+Change Component Designator: OldDesignator=54 NewDesignator=50
+Change Component Designator: OldDesignator=55 NewDesignator=51
+Change Component Designator: OldDesignator=56 NewDesignator=55
+Change Component Designator: OldDesignator=57 NewDesignator=56
+Change Component Designator: OldDesignator=57 NewDesignator=62
+Change Component Designator: OldDesignator=58 NewDesignator=54
+Change Component Designator: OldDesignator=58 NewDesignator=63
+Change Component Designator: OldDesignator=59 NewDesignator=57
+Change Component Designator: OldDesignator=60 NewDesignator=58
+Change Component Designator: OldDesignator=61 NewDesignator=59
+Change Component Designator: OldDesignator=62 NewDesignator=60
+Change Component Designator: OldDesignator=63 NewDesignator=61
+Change Component Designator: OldDesignator=BC13 NewDesignator=BC12
+Change Component Designator: OldDesignator=BC14 NewDesignator=BC13
+Change Component Designator: OldDesignator=BC15 NewDesignator=BC14
+Change Component Designator: OldDesignator=BC16 NewDesignator=BC15
+Change Component Designator: OldDesignator=buzzer NewDesignator=buzzer1
+Change Component Designator: OldDesignator=P3 NewDesignator=P5
+Change Component Designator: OldDesignator=P4 NewDesignator=P3
+Change Component Designator: OldDesignator=P4 NewDesignator=P7
+Change Component Designator: OldDesignator=P4 NewDesignator=P8
+Change Component Designator: OldDesignator=P5 NewDesignator=P6
+Change Component Designator: OldDesignator=P6 NewDesignator=P4
+Change Net Name : Old Net Name=Net4_1 New Net Name=Net3_1
+Change Net Name : Old Net Name=Net5_1 New Net Name=Net12_1
+Change Net Name : Old Net Name=Net11_2 New Net Name=Net8_2
+Change Net Name : Old Net Name=Net12_1 New Net Name=Net19_1
+Change Net Name : Old Net Name=Net12_3 New Net Name=Net19_3
+Change Net Name : Old Net Name=Net12_6 New Net Name=Net19_6
+Change Net Name : Old Net Name=Net16_2 New Net Name=Net14_2
+Change Net Name : Old Net Name=Net17_1 New Net Name=Net15_1
+Change Net Name : Old Net Name=Net18_1 New Net Name=Net16_1
+Change Net Name : Old Net Name=Net31_1 New Net Name=Net32_1
+Change Net Name : Old Net Name=Net32_2 New Net Name=Net33_2
+Change Net Name : Old Net Name=Net33_1 New Net Name=Net34_1
+Change Net Name : Old Net Name=Net36_1 New Net Name=Net38_1
+Change Net Name : Old Net Name=Net37_2 New Net Name=Net39_2
+Change Net Name : Old Net Name=Net38_2 New Net Name=Net40_2
+Change Net Name : Old Net Name=Net40_1 New Net Name=Net41_1
+Change Net Name : Old Net Name=Net46_1 New Net Name=Net36_1
+Change Net Name : Old Net Name=Net47_1 New Net Name=Net46_1
+Change Net Name : Old Net Name=Net51_1 New Net Name=Net49_1
+Change Net Name : Old Net Name=Net54_1 New Net Name=Net50_1
+Change Net Name : Old Net Name=Net55_1 New Net Name=Net51_1
+Change Net Name : Old Net Name=Net56_2 New Net Name=Net55_2
+Change Net Name : Old Net Name=Net57_1 New Net Name=Net62_1
+Change Net Name : Old Net Name=Net57_2 New Net Name=Net56_2
+Change Net Name : Old Net Name=Net58_1 New Net Name=Net63_1
+Change Net Name : Old Net Name=Net58_2 New Net Name=Net54_2
+Change Net Name : Old Net Name=Net59_1 New Net Name=Net57_1
+Change Net Name : Old Net Name=Net60_2 New Net Name=Net58_2
+Change Net Name : Old Net Name=Net62_1 New Net Name=Net60_1
+Change Net Name : Old Net Name=NetBC16_3 New Net Name=NetBC15_3
+Added Pin To Net: NetName=Net62_2 Pin=62-2
+Added Pin To Net: NetName=Net62_2 Pin=P7-2
+Added Pin To Net: NetName=Net62_2 Pin=P7-3
+Added Net: Name=Net62_2
+Added Pin To Net: NetName=Net63_2 Pin=63-2
+Added Pin To Net: NetName=Net63_2 Pin=P8-2
+Added Pin To Net: NetName=Net63_2 Pin=P8-3
+Added Net: Name=Net63_2
+Added Member To Class: ClassName=WireTest Member=Component 34 1k
+Added Member To Class: ClassName=WireTest Member=Component 41 4k7
+Added Member To Class: ClassName=WireTest Member=Component P7 433
+Added Member To Class: ClassName=WireTest Member=Component P8 315

@@ -1,10 +1,5 @@
 F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\ili9488DMA_stm32f407\BrowseInfo\LIB_14489651562532224302.dir\z_displ_ILI9XXX.pbi: \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_touch_XPT2046_menu.h \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_touch_XPT2046_test.h \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_displ_ILI9XXX_test.h \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_touch_XPT2046.h \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_displ_ILI9XXX.h \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\fonts.h \
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_displ_ILI9XXX.c \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\..\Core\Inc\main.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\..\Core\Inc\stm32f4xx_hal_conf.h \
@@ -44,9 +39,14 @@ F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\ili9488DMA_
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\EWARM\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\fonts.h \
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_displ_ILI9XXX.h \
   C:\iar\ewarm-9.60.3\arm\inc\c\string.h \
   C:\iar\ewarm-9.60.3\arm\inc\c\DLib_Product_string.h \
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_touch_XPT2046.h \
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_displ_ILI9XXX_test.h \
   C:\iar\ewarm-9.60.3\arm\inc\c\stdio.h \
   C:\iar\ewarm-9.60.3\arm\inc\c\stdlib.h \
   C:\iar\ewarm-9.60.3\arm\inc\c\DLib_Product_stdlib.h \
-  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_displ_ILI9XXX.c
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_touch_XPT2046_test.h \
+  F:\ELECTRONIC\sherkat\stm32ret6\STM32F407\ili9488DMA_stm32f407\LIB\z_touch_XPT2046_menu.h

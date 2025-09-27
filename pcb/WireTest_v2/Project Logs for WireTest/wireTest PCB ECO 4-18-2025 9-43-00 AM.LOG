@@ -1,0 +1,28 @@
+Change Component Designator: OldDesignator=40 NewDesignator=51
+Change Component Designator: OldDesignator=51 NewDesignator=52
+Change Component Designator: OldDesignator=52 NewDesignator=53
+Change Component Designator: OldDesignator=53 NewDesignator=54
+Change Component Designator: OldDesignator=54 NewDesignator=55
+Change Component Designator: OldDesignator=55 NewDesignator=56
+Change Component Designator: OldDesignator=56 NewDesignator=57
+Change Component Designator: OldDesignator=57 NewDesignator=58
+Change Component Designator: OldDesignator=58 NewDesignator=59
+Change Component Designator: OldDesignator=59 NewDesignator=60
+Change Component Designator: OldDesignator=60 NewDesignator=61
+Change Component Designator: OldDesignator=61 NewDesignator=62
+Change Component Designator: OldDesignator=62 NewDesignator=63
+Change Net Name : Old Net Name=Net53_1 New Net Name=Net54_1
+Change Net Name : Old Net Name=Net54_1 New Net Name=Net55_1
+Change Net Name : Old Net Name=Net55_2 New Net Name=Net56_2
+Change Net Name : Old Net Name=Net56_2 New Net Name=Net57_2
+Change Net Name : Old Net Name=Net57_2 New Net Name=Net58_2
+Change Net Name : Old Net Name=Net58_1 New Net Name=Net59_1
+Change Net Name : Old Net Name=Net59_2 New Net Name=Net60_2
+Change Net Name : Old Net Name=Net61_1 New Net Name=Net62_1
+Added Pin To Net: NetName=Net51_1 Pin=51-1
+Added Pin To Net: NetName=Net51_1 Pin=ams3-2
+Added Pin To Net: NetName=Net51_1 Pin=ams3-4
+Added Pin To Net: NetName=Net51_1 Pin=C3-1
+Added Pin To Net: NetName=Net51_1 Pin=P4-1
+Added Net: Name=Net51_1
+Added Member To Class: ClassName=WireTest Member=Component 63 4k7

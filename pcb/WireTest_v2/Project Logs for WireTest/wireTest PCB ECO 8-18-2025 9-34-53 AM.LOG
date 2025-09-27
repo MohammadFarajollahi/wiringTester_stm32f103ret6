@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=led1-2
+Removed Pin From Net: NetName=GND Pin=led2-2
+Removed Pin From Net: NetName=VCC Pin=P7-1
+Removed Pin From Net: NetName=GND Pin=P7-4
+Removed Pin From Net: NetName=VCC Pin=P8-1
+Removed Pin From Net: NetName=GND Pin=P8-4
+Removed Member From Class: ClassName=WireTest Member=68
+Removed Member From Class: ClassName=WireTest Member=69
+Removed Member From Class: ClassName=WireTest Member=led1
+Removed Member From Class: ClassName=WireTest Member=led2
+Removed Member From Class: ClassName=WireTest Member=P7
+Removed Member From Class: ClassName=WireTest Member=P8
+Added Member To Class: ClassName=WireTest Member=Component 54 10k
+Added Member To Class: ClassName=WireTest Member=Component 55 1k
+Added Room: Name=WireTest

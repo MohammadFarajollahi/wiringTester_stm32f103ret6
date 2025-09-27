@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=56-2
+Removed Member From Class: ClassName=WireTest Member=56
+Added Pin To Net: NetName=GND Pin=U3-60
+Added Member To Class: ClassName=WireTest Member=Component 54 10k
+Added Member To Class: ClassName=WireTest Member=Component 55 1k
+Added Member To Class: ClassName=WireTest Member=Component P4 kbd
+Added Member To Class: ClassName=WireTest Member=Component U1 LM358
+Added Room: Name=WireTest

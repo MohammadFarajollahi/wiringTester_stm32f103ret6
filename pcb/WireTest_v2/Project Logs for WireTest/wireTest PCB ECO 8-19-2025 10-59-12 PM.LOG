@@ -1,0 +1,625 @@
+Removed Pin From Net: NetName=pa15 Pin=9-1
+Removed Pin From Net: NetName=VCC Pin=9-2
+Removed Pin From Net: NetName=GND Pin=11-1
+Removed Pin From Net: NetName=pa0 Pin=11-2
+Removed Pin From Net: NetName=freq Pin=12-2
+Removed Pin From Net: NetName=pa0 Pin=13-1
+Removed Pin From Net: NetName=in1 Pin=13-2
+Removed Pin From Net: NetName=pa1 Pin=15-2
+Removed Pin From Net: NetName=VCC Pin=16-2
+Removed Pin From Net: NetName=GND Pin=17-2
+Removed Pin From Net: NetName=GND Pin=18-2
+Removed Pin From Net: NetName=in1 Pin=22-2
+Removed Pin From Net: NetName=VCC Pin=23-1
+Removed Pin From Net: NetName=pa4 Pin=23-2
+Removed Pin From Net: NetName=pc13 Pin=26-2
+Removed Pin From Net: NetName=pc12 Pin=27-2
+Removed Pin From Net: NetName=pc8 Pin=28-2
+Removed Pin From Net: NetName=pc9 Pin=29-2
+Removed Pin From Net: NetName=pc10 Pin=30-2
+Removed Pin From Net: NetName=+12in Pin=35-2
+Removed Pin From Net: NetName=pb1 Pin=36-1
+Removed Pin From Net: NetName=pc6 Pin=37-2
+Removed Pin From Net: NetName=ads Pin=39-2
+Removed Pin From Net: NetName=3.3ads Pin=40-1
+Removed Pin From Net: NetName=ads Pin=40-2
+Removed Pin From Net: NetName=+5v Pin=41-2
+Removed Pin From Net: NetName=GND Pin=42-1
+Removed Pin From Net: NetName=GND Pin=43-1
+Removed Pin From Net: NetName=GND Pin=44-1
+Removed Pin From Net: NetName=outSimulation+5 Pin=44-2
+Removed Pin From Net: NetName=pb6 Pin=45-2
+Removed Pin From Net: NetName=outSimulation+5 Pin=49-1
+Removed Pin From Net: NetName=pa8 Pin=50-2
+Removed Pin From Net: NetName=outSimulation+5 Pin=51-1
+Removed Pin From Net: NetName=pc1 Pin=51-2
+Removed Pin From Net: NetName=GND Pin=52-1
+Removed Pin From Net: NetName=pc1 Pin=52-2
+Removed Pin From Net: NetName=+12in Pin=54-1
+Removed Pin From Net: NetName=GND Pin=57-1
+Removed Pin From Net: NetName=VCC Pin=58-1
+Removed Pin From Net: NetName=pa14 Pin=58-2
+Removed Pin From Net: NetName=VCC Pin=59-1
+Removed Pin From Net: NetName=pa13 Pin=59-2
+Removed Pin From Net: NetName=pa9 Pin=61-1
+Removed Pin From Net: NetName=pa10 Pin=62-1
+Removed Pin From Net: NetName=scl Pin=65-1
+Removed Pin From Net: NetName=3.3ads Pin=65-2
+Removed Pin From Net: NetName=pb0 Pin=66-2
+Removed Pin From Net: NetName=sda Pin=67-1
+Removed Pin From Net: NetName=3.3ads Pin=67-2
+Removed Member From Class: ClassName=WireTest Member=18
+Removed Member From Class: ClassName=WireTest Member=19
+Removed Member From Class: ClassName=WireTest Member=22
+Removed Member From Class: ClassName=WireTest Member=23
+Removed Member From Class: ClassName=WireTest Member=26
+Removed Member From Class: ClassName=WireTest Member=27
+Removed Member From Class: ClassName=WireTest Member=28
+Removed Member From Class: ClassName=WireTest Member=29
+Removed Member From Class: ClassName=WireTest Member=30
+Removed Member From Class: ClassName=WireTest Member=35
+Removed Member From Class: ClassName=WireTest Member=36
+Removed Member From Class: ClassName=WireTest Member=37
+Removed Member From Class: ClassName=WireTest Member=38
+Removed Member From Class: ClassName=WireTest Member=39
+Removed Member From Class: ClassName=WireTest Member=40
+Removed Member From Class: ClassName=WireTest Member=41
+Removed Member From Class: ClassName=WireTest Member=42
+Removed Member From Class: ClassName=WireTest Member=43
+Removed Member From Class: ClassName=WireTest Member=44
+Removed Member From Class: ClassName=WireTest Member=45
+Removed Member From Class: ClassName=WireTest Member=46
+Removed Member From Class: ClassName=WireTest Member=47
+Removed Member From Class: ClassName=WireTest Member=48
+Removed Member From Class: ClassName=WireTest Member=49
+Removed Member From Class: ClassName=WireTest Member=50
+Removed Member From Class: ClassName=WireTest Member=51
+Removed Member From Class: ClassName=WireTest Member=52
+Removed Member From Class: ClassName=WireTest Member=53
+Removed Member From Class: ClassName=WireTest Member=55
+Removed Member From Class: ClassName=WireTest Member=57
+Removed Member From Class: ClassName=WireTest Member=58
+Removed Member From Class: ClassName=WireTest Member=59
+Removed Member From Class: ClassName=WireTest Member=60
+Removed Member From Class: ClassName=WireTest Member=61
+Removed Member From Class: ClassName=WireTest Member=62
+Removed Member From Class: ClassName=WireTest Member=64
+Removed Member From Class: ClassName=WireTest Member=65
+Removed Member From Class: ClassName=WireTest Member=66
+Removed Member From Class: ClassName=WireTest Member=67
+Change Component Designator: OldDesignator=10 NewDesignator=8
+Change Component Designator: OldDesignator=19 NewDesignator=9
+Change Component Designator: OldDesignator=34 NewDesignator=10
+Change Component Designator: OldDesignator=47 NewDesignator=11
+Change Component Designator: OldDesignator=53 NewDesignator=13
+Change Component Designator: OldDesignator=54 NewDesignator=14
+Change Component Designator: OldDesignator=55 NewDesignator=12
+Change Component Designator: OldDesignator=55 NewDesignator=15
+Change Component Designator: OldDesignator=60 NewDesignator=16
+Change Component Designator: OldDesignator=64 NewDesignator=17
+Change Component Designator: OldDesignator=BC10 NewDesignator=BC7
+Change Component Designator: OldDesignator=BC11 NewDesignator=BC8
+Change Component Designator: OldDesignator=BC12 NewDesignator=BC9
+Change Component Designator: OldDesignator=BC13 NewDesignator=BC10
+Change Component Designator: OldDesignator=BC14 NewDesignator=BC11
+Change Component Designator: OldDesignator=BC15 NewDesignator=BC12
+Change Component Designator: OldDesignator=BC16 NewDesignator=BC13
+Change Component Designator: OldDesignator=Buzzer NewDesignator=Buzzer1
+Change Component Designator: OldDesignator=D3 NewDesignator=D1
+Change Component Designator: OldDesignator=D5 NewDesignator=D2
+Change Component Designator: OldDesignator=D6 NewDesignator=D3
+Change Component Designator: OldDesignator=D7 NewDesignator=D4
+Change Component Designator: OldDesignator=D8 NewDesignator=D5
+Change Component Designator: OldDesignator=D9 NewDesignator=D6
+Change Component Designator: OldDesignator=D13 NewDesignator=D7
+Change Component Designator: OldDesignator=D14 NewDesignator=D8
+Change Component Designator: OldDesignator=rele11 NewDesignator=rele8
+Added Component: Designator=R1(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R9(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R10(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R11(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R12(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R13(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R14(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R15(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R16(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R17(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R18(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R19(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R20(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R21(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R22(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R23(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R24(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R25(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R26(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R27(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R28(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R29(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R30(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R31(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R32(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R33(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R34(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R35(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R36(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R37(RESC2012X65N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Comment_1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CRGCQ0805F10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CRGCQ0805F10K/TE+Connectivity/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=pa10 Pin=P6-1
+Added Pin To Net: NetName=pa9 Pin=P6-2
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=pa0 Pin=R1-2
+Added Pin To Net: NetName=pa15 Pin=R2-1
+Added Pin To Net: NetName=VCC Pin=R2-2
+Added Pin To Net: NetName=freq Pin=R3-2
+Added Pin To Net: NetName=pa0 Pin=R4-1
+Added Pin To Net: NetName=in1 Pin=R4-2
+Added Pin To Net: NetName=pa1 Pin=R5-1
+Added Pin To Net: NetName=VCC Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R8-2
+Added Pin To Net: NetName=in1 Pin=R9-2
+Added Pin To Net: NetName=pa4 Pin=R10-1
+Added Pin To Net: NetName=VCC Pin=R10-2
+Added Pin To Net: NetName=pc13 Pin=R11-2
+Added Pin To Net: NetName=pc12 Pin=R12-2
+Added Pin To Net: NetName=pc8 Pin=R13-2
+Added Pin To Net: NetName=pc9 Pin=R14-2
+Added Pin To Net: NetName=pc10 Pin=R15-2
+Added Pin To Net: NetName=+12in Pin=R16-2
+Added Pin To Net: NetName=pb1 Pin=R17-2
+Added Pin To Net: NetName=+5v Pin=R18-1
+Added Pin To Net: NetName=pc6 Pin=R19-1
+Added Pin To Net: NetName=ads Pin=R21-1
+Added Pin To Net: NetName=GND Pin=R22-1
+Added Pin To Net: NetName=outSimulation+5 Pin=R23-1
+Added Pin To Net: NetName=GND Pin=R23-2
+Added Pin To Net: NetName=ads Pin=R24-1
+Added Pin To Net: NetName=3.3ads Pin=R24-2
+Added Pin To Net: NetName=GND Pin=R25-1
+Added Pin To Net: NetName=pb6 Pin=R27-1
+Added Pin To Net: NetName=outSimulation+5 Pin=R28-2
+Added Pin To Net: NetName=pc1 Pin=R29-1
+Added Pin To Net: NetName=outSimulation+5 Pin=R29-2
+Added Pin To Net: NetName=pa8 Pin=R30-2
+Added Pin To Net: NetName=pc1 Pin=R32-1
+Added Pin To Net: NetName=GND Pin=R32-2
+Added Pin To Net: NetName=+12in Pin=R33-2
+Added Pin To Net: NetName=GND Pin=R34-1
+Added Pin To Net: NetName=+12in Pin=R34-2
+Added Pin To Net: NetName=3.3ads Pin=R35-1
+Added Pin To Net: NetName=scl Pin=R35-2
+Added Pin To Net: NetName=pb0 Pin=R36-1
+Added Pin To Net: NetName=3.3ads Pin=R37-1
+Added Pin To Net: NetName=sda Pin=R37-2
+Change Net Name : Old Net Name=Net19_1 New Net Name=Net9_1
+Change Net Name : Old Net Name=Net19_3 New Net Name=Net9_3
+Change Net Name : Old Net Name=Net19_6 New Net Name=Net9_6
+Change Net Name : Old Net Name=Net47_2 New Net Name=Net11_2
+Change Net Name : Old Net Name=Net53_1 New Net Name=Net13_1
+Change Net Name : Old Net Name=Net55_1 New Net Name=Net15_1
+Change Net Name : Old Net Name=Net60_2 New Net Name=Net16_2
+Change Net Name : Old Net Name=Net64_2 New Net Name=Net17_2
+Change Net Name : Old Net Name=NetBC11_3 New Net Name=NetBC8_3
+Change Net Name : Old Net Name=NetBC16_3 New Net Name=NetBC13_3
+Change Net Name : Old Net Name=NetD14_A New Net Name=NetD8_A
+Added Pin To Net: NetName=NetBC1_1 Pin=BC1-1
+Added Pin To Net: NetName=NetBC1_1 Pin=R3-1
+Added Pin To Net: NetName=NetBC1_1 Pin=R7-1
+Added Net: Name=NetBC1_1
+Added Pin To Net: NetName=NetBC2_1 Pin=BC2-1
+Added Pin To Net: NetName=NetBC2_1 Pin=R11-1
+Added Net: Name=NetBC2_1
+Added Pin To Net: NetName=NetBC3_1 Pin=BC3-1
+Added Pin To Net: NetName=NetBC3_1 Pin=R12-1
+Added Net: Name=NetBC3_1
+Added Pin To Net: NetName=NetBC4_1 Pin=BC4-1
+Added Pin To Net: NetName=NetBC4_1 Pin=R13-1
+Added Net: Name=NetBC4_1
+Added Pin To Net: NetName=NetBC5_1 Pin=BC5-1
+Added Pin To Net: NetName=NetBC5_1 Pin=R14-1
+Added Net: Name=NetBC5_1
+Added Pin To Net: NetName=NetBC6_1 Pin=BC6-1
+Added Pin To Net: NetName=NetBC6_1 Pin=R15-1
+Added Net: Name=NetBC6_1
+Added Pin To Net: NetName=NetBC7_1 Pin=BC7-1
+Added Pin To Net: NetName=NetBC7_1 Pin=R16-1
+Added Pin To Net: NetName=NetBC7_1 Pin=R20-2
+Added Net: Name=NetBC7_1
+Added Pin To Net: NetName=NetBC7_3 Pin=BC7-3
+Added Pin To Net: NetName=NetBC7_3 Pin=Q1-1
+Added Pin To Net: NetName=NetBC7_3 Pin=R25-2
+Added Net: Name=NetBC7_3
+Added Pin To Net: NetName=NetBC8_1 Pin=BC8-1
+Added Pin To Net: NetName=NetBC8_1 Pin=R19-2
+Added Net: Name=NetBC8_1
+Added Pin To Net: NetName=NetBC9_1 Pin=BC9-1
+Added Pin To Net: NetName=NetBC9_1 Pin=R17-1
+Added Net: Name=NetBC9_1
+Added Pin To Net: NetName=NetBC10_1 Pin=BC10-1
+Added Pin To Net: NetName=NetBC10_1 Pin=R18-2
+Added Pin To Net: NetName=NetBC10_1 Pin=R26-1
+Added Net: Name=NetBC10_1
+Added Pin To Net: NetName=NetBC10_3 Pin=BC10-3
+Added Pin To Net: NetName=NetBC10_3 Pin=R31-1
+Added Net: Name=NetBC10_3
+Added Pin To Net: NetName=NetBC11_1 Pin=BC11-1
+Added Pin To Net: NetName=NetBC11_1 Pin=R27-2
+Added Net: Name=NetBC11_1
+Added Pin To Net: NetName=NetBC11_3 Pin=BC11-3
+Added Pin To Net: NetName=NetBC11_3 Pin=R20-1
+Added Net: Name=NetBC11_3
+Added Pin To Net: NetName=NetBC12_1 Pin=BC12-1
+Added Pin To Net: NetName=NetBC12_1 Pin=R30-1
+Added Net: Name=NetBC12_1
+Added Pin To Net: NetName=NetBC12_3 Pin=BC12-3
+Added Pin To Net: NetName=NetBC12_3 Pin=R26-2
+Added Net: Name=NetBC12_3
+Added Pin To Net: NetName=NetBC13_1 Pin=BC13-1
+Added Pin To Net: NetName=NetBC13_1 Pin=R36-2
+Added Net: Name=NetBC13_1
+Added Pin To Net: NetName=NetD1_C Pin=D1-C
+Added Pin To Net: NetName=NetD1_C Pin=DZ3-2
+Added Pin To Net: NetName=NetD1_C Pin=R9-1
+Added Net: Name=NetD1_C
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=NetL1_2 Pin=R28-1
+Added Pin To Net: NetName=NetL1_2 Pin=rele8-2
+Added Net: Name=NetL1_2
+Added Pin To Net: NetName=NetP1_7 Pin=P1-7
+Added Pin To Net: NetName=NetP1_7 Pin=R21-2
+Added Net: Name=NetP1_7
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=NetR5_2 Pin=U1-7
+Added Net: Name=NetR5_2
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=NetR6_1 Pin=R8-1
+Added Pin To Net: NetName=NetR6_1 Pin=U1-5
+Added Net: Name=NetR6_1
+Added Pin To Net: NetName=NetR22_2 Pin=R22-2
+Added Pin To Net: NetName=NetR22_2 Pin=R31-2
+Added Pin To Net: NetName=NetR22_2 Pin=U2-2
+Added Net: Name=NetR22_2
+Added Pin To Net: NetName=NetR33_1 Pin=R33-1
+Added Pin To Net: NetName=NetR33_1 Pin=U3-10
+Added Net: Name=NetR33_1
+Added Member To Class: ClassName=WireTest Member=Component R1 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R2 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R3 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R4 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R5 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R6 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R7 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R8 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R9 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R10 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R11 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R12 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R13 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R14 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R15 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R16 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R17 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R18 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R19 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R20 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R21 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R22 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R23 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R24 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R25 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R26 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R27 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R28 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R29 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R30 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R31 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R32 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R33 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R34 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R35 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R36 3-2176341-7
+Added Member To Class: ClassName=WireTest Member=Component R37 3-2176341-7
+Added Room: Name=WireTest

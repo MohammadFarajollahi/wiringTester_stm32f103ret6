@@ -1,0 +1,8 @@
+Change Component Comment : Designator=38 Old Comment=22P New Comment=100n
+Added Member To Class: ClassName=WireTest Member=Component 1 10k
+Added Member To Class: ClassName=WireTest Member=Component 5 4k7
+Added Member To Class: ClassName=WireTest Member=Component 6 10k
+Added Member To Class: ClassName=WireTest Member=Component BC1 BC817
+Added Member To Class: ClassName=WireTest Member=Component D5 1N4148
+Added Member To Class: ClassName=WireTest Member=Component P1 ADS
+Added Room: Name=WireTest

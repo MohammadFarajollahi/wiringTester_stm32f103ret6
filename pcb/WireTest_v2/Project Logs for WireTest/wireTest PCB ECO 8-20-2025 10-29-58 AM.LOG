@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=+5v Pin=D8-C
+Removed Member From Class: ClassName=WireTest Member=D8
+Added Pin To Net: NetName=+5v Pin=P5-3
+Added Member To Class: ClassName=WireTest Member=Component Q1 IRF3205
+Added Room: Name=WireTest

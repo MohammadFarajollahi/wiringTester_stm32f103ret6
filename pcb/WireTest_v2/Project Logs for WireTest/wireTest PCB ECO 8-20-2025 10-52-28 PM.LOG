@@ -1,0 +1,9 @@
+Added Component: Designator=cc1(CAPC3413X12N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "CAP SMD 0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=cc1-1
+Added Pin To Net: NetName=VCC Pin=cc1-2
+Added Member To Class: ClassName=WireTest Member=Component cc1 100NA
+Added Room: Name=WireTest

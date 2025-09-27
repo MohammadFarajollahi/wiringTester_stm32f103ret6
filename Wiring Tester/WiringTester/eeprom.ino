@@ -9,18 +9,54 @@ void readEEprom() {
   Serial1.println("");
   Serial1.println("----------ReadEEPROM--------------");
   Serial1.print("volt:");
-  Serial1.println(String(voltCalib,3));
+  Serial1.println(String(voltCalib, 3));
   Serial1.print("resAnaliz:");
-  Serial1.println(String(resAnalizerCalib,3));
+  Serial1.println(String(resAnalizerCalib, 3));
   Serial1.print("amper:");
-  Serial1.println(String(amperCalib,3));
+  Serial1.println(String(amperCalib, 3));
   Serial1.print("ohmeter:");
-  Serial1.println(String(resAnalizerCalib,3));
+  Serial1.println(String(resAnalizerCalib, 3));
   Serial1.print("temp:");
-  Serial1.println(String(tempCalib,3));
+  Serial1.println(String(tempCalib, 3));
   Serial1.print("voltSensor:");
-  Serial1.println(String(voltSensorCalib,3));
+  Serial1.println(String(voltSensorCalib, 3));
   Serial1.println("-----------------------------");
+
+  if (voltCalib == 0 || voltCalib > 200) {
+    EEPROMwrite(0, "1");  //volt
+    delay(10);
+    EEPROMwrite(10, "1");  //resAnalizer
+    delay(10);
+    EEPROMwrite(20, "1");  //amper
+    delay(10);
+    EEPROMwrite(30, "1");  //ohmeter
+    delay(10);
+    EEPROMwrite(40, "1");  //temp
+    delay(10);
+    EEPROMwrite(50, "1");  //voltSensor
+    delay(10);
+    voltCalib = EEPROMread(0, 9).toFloat();
+    resAnalizerCalib = EEPROMread(10, 19).toFloat();
+    amperCalib = EEPROMread(20, 29).toFloat();
+    ohmeterCalib = EEPROMread(30, 39).toFloat();
+    tempCalib = EEPROMread(40, 49).toFloat();
+    voltSensorCalib = EEPROMread(50, 59).toFloat();
+    Serial1.println("");
+    Serial1.println("----------ReadEEPROM--------------");
+    Serial1.print("volt:");
+    Serial1.println(String(voltCalib, 3));
+    Serial1.print("resAnaliz:");
+    Serial1.println(String(resAnalizerCalib, 3));
+    Serial1.print("amper:");
+    Serial1.println(String(amperCalib, 3));
+    Serial1.print("ohmeter:");
+    Serial1.println(String(resAnalizerCalib, 3));
+    Serial1.print("temp:");
+    Serial1.println(String(tempCalib, 3));
+    Serial1.print("voltSensor:");
+    Serial1.println(String(voltSensorCalib, 3));
+    Serial1.println("-----------------------------");
+  }
 }
 
 void eepromfirst() {
@@ -92,7 +128,7 @@ boolean eeprom_write_bytes(int startAddr, const byte* array, int numBytes) {
 
   if (!eeprom_is_addr_ok(startAddr) || !eeprom_is_addr_ok(startAddr + numBytes)) {
     return false;
-     Serial1.println("EEprom Error1");
+    Serial1.println("EEprom Error1");
   }
 
   for (i = 0; i < numBytes; i++) {

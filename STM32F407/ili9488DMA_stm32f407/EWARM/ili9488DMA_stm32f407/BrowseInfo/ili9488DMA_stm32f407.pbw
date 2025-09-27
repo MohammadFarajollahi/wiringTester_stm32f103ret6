@@ -294092,7 +294092,7 @@
     "display": "logo",
     "location": {
       "column": "15",
-      "line": "5",
+      "line": "7",
       "path": "F:\\ELECTRONIC\\sherkat\\stm32ret6\\STM32F407\\ili9488DMA_stm32f407\\LIB\\image.h"
     },
     "name": "logo",

@@ -1,0 +1,112 @@
+Change Component Designator: OldDesignator=58 NewDesignator=59
+Change Component Designator: OldDesignator=59 NewDesignator=60
+Change Component Designator: OldDesignator=60 NewDesignator=62
+Change Component Designator: OldDesignator=P4 NewDesignator=P5
+Added Component: Designator=58(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=61(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC16(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=In+2(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P4(HDR2X5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P6(HDR1X8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12in Pin=58-2
+Added Pin To Net: NetName=GND Pin=BC16-2
+Added Pin To Net: NetName=VCC Pin=P4-1
+Added Pin To Net: NetName=GND Pin=P4-2
+Added Pin To Net: NetName=pa6 Pin=P4-4
+Added Pin To Net: NetName=pa0 Pin=U3-14
+Added Pin To Net: NetName=pa1 Pin=U3-15
+Added Pin To Net: NetName=Net23_2 Pin=U3-20
+Added Pin To Net: NetName=pa6 Pin=U3-22
+Change Net Name : Old Net Name=Net23_2 New Net Name=pa4
+Change Net Name : Old Net Name=Net58_2 New Net Name=Net59_2
+Added Pin To Net: NetName=Net58_1 Pin=58-1
+Added Pin To Net: NetName=Net58_1 Pin=In+2-1
+Added Net: Name=Net58_1
+Added Pin To Net: NetName=Net61_1 Pin=61-1
+Added Pin To Net: NetName=Net61_1 Pin=BC16-1
+Added Net: Name=Net61_1
+Added Pin To Net: NetName=NetBC16_3 Pin=BC16-3
+Added Pin To Net: NetName=NetBC16_3 Pin=In+2-2
+Added Net: Name=NetBC16_3
+Added Pin To Net: NetName=pa2 Pin=P4-8
+Added Pin To Net: NetName=pa2 Pin=U3-16
+Added Net: Name=pa2
+Added Pin To Net: NetName=pa3 Pin=P4-7
+Added Pin To Net: NetName=pa3 Pin=U3-17
+Added Net: Name=pa3
+Added Pin To Net: NetName=pa5 Pin=P4-5
+Added Pin To Net: NetName=pa5 Pin=U3-21
+Added Net: Name=pa5
+Added Pin To Net: NetName=pa7 Pin=P4-3
+Added Pin To Net: NetName=pa7 Pin=U3-23
+Added Net: Name=pa7
+Added Pin To Net: NetName=pb0 Pin=61-2
+Added Net: Name=pb0
+Added Pin To Net: NetName=pb8 Pin=P6-1
+Added Pin To Net: NetName=pb8 Pin=U3-61
+Added Net: Name=pb8
+Added Pin To Net: NetName=pb9 Pin=P6-2
+Added Pin To Net: NetName=pb9 Pin=U3-62
+Added Net: Name=pb9
+Added Pin To Net: NetName=pb10 Pin=P6-3
+Added Pin To Net: NetName=pb10 Pin=U3-29
+Added Net: Name=pb10
+Added Pin To Net: NetName=pb11 Pin=P6-4
+Added Pin To Net: NetName=pb11 Pin=U3-30
+Added Net: Name=pb11
+Added Pin To Net: NetName=pb12 Pin=P6-5
+Added Pin To Net: NetName=pb12 Pin=U3-33
+Added Net: Name=pb12
+Added Pin To Net: NetName=pb13 Pin=P6-6
+Added Pin To Net: NetName=pb13 Pin=U3-34
+Added Net: Name=pb13
+Added Pin To Net: NetName=pb14 Pin=P6-7
+Added Pin To Net: NetName=pb14 Pin=U3-35
+Added Net: Name=pb14
+Added Pin To Net: NetName=pb15 Pin=P6-8
+Added Pin To Net: NetName=pb15 Pin=U3-36
+Added Net: Name=pb15
+Added Pin To Net: NetName=pc4 Pin=P4-10
+Added Net: Name=pc4
+Added Member To Class: ClassName=WireTest Member=Component 22 1k
+Added Member To Class: ClassName=WireTest Member=Component 61 2k2
+Added Member To Class: ClassName=WireTest Member=Component 62 4k7
+Added Member To Class: ClassName=WireTest Member=Component BC16 BC817
+Added Member To Class: ClassName=WireTest Member=Component D5 1N4148
+Added Member To Class: ClassName=WireTest Member=Component In+2 in+12
+Added Member To Class: ClassName=WireTest Member=Component P5 Uart
+Added Member To Class: ClassName=WireTest Member=Component P6 kbd
+Added Room: Name=WireTest

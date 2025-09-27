@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=VCC Pin=R24-2
+Added Member To Class: ClassName=WireTest Member=Component Buzzer1 Buzzer
+Added Room: Name=WireTest

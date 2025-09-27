@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=15 NewDesignator=cr
+Change Component Designator: OldDesignator=R34 NewDesignator=rr
+Change Net Name : Old Net Name=Net15_1 New Net Name=Netcr_1
+Added Member To Class: ClassName=WireTest Member=Component rr 3-2176341-7
+Added Room: Name=WireTest

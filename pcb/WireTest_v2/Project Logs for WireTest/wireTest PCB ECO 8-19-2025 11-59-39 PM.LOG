@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=P2-1
+Removed Pin From Net: NetName=3.3ads Pin=P2-2
+Removed Pin From Net: NetName=scl Pin=P2-3
+Removed Pin From Net: NetName=sda Pin=P2-4
+Removed Member From Class: ClassName=WireTest Member=P2
+Added Room: Name=WireTest

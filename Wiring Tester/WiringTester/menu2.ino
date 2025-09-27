@@ -1500,6 +1500,7 @@ void KeyPad1() {
     }
 
     if (key == '0') {
+      digitalWrite(rele5, !digitalRead(rele5));
       digitalWrite(buzzer, 1);
       delay(500);
       digitalWrite(buzzer, 0);
@@ -1693,6 +1694,10 @@ void KeyPad2() {
       tft.setTextColor(ILI9488_GREEN);
       tft.println("<-");
       MenuSelect = 8;
+    }
+
+    if (key == '0') {
+      digitalWrite(rele5, !digitalRead(rele5));
     }
 
     // if (key == '9') {

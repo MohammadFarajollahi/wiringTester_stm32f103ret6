@@ -1,0 +1,181 @@
+Removed Pin From Net: NetName=outSelonoeid Pin=rele9-6
+Removed Pin From Net: NetName=GND Pin=rele9-11
+Change Component Designator: OldDesignator=31 NewDesignator=32
+Change Component Designator: OldDesignator=32 NewDesignator=33
+Change Component Designator: OldDesignator=33 NewDesignator=34
+Change Component Designator: OldDesignator=34 NewDesignator=35
+Change Component Designator: OldDesignator=35 NewDesignator=36
+Change Component Designator: OldDesignator=36 NewDesignator=37
+Change Component Designator: OldDesignator=37 NewDesignator=38
+Change Component Designator: OldDesignator=38 NewDesignator=39
+Change Component Designator: OldDesignator=39 NewDesignator=40
+Change Component Designator: OldDesignator=40 NewDesignator=41
+Change Component Designator: OldDesignator=41 NewDesignator=42
+Change Component Designator: OldDesignator=42 NewDesignator=43
+Change Component Designator: OldDesignator=43 NewDesignator=44
+Change Component Designator: OldDesignator=44 NewDesignator=45
+Change Component Designator: OldDesignator=45 NewDesignator=46
+Change Component Designator: OldDesignator=46 NewDesignator=47
+Change Component Designator: OldDesignator=47 NewDesignator=48
+Change Component Designator: OldDesignator=48 NewDesignator=49
+Change Component Designator: OldDesignator=49 NewDesignator=50
+Change Component Designator: OldDesignator=50 NewDesignator=51
+Change Component Designator: OldDesignator=51 NewDesignator=52
+Change Component Designator: OldDesignator=52 NewDesignator=53
+Change Component Designator: OldDesignator=53 NewDesignator=54
+Change Component Designator: OldDesignator=54 NewDesignator=55
+Change Component Designator: OldDesignator=55 NewDesignator=56
+Change Component Designator: OldDesignator=56 NewDesignator=57
+Change Component Designator: OldDesignator=57 NewDesignator=58
+Change Component Designator: OldDesignator=58 NewDesignator=59
+Change Component Designator: OldDesignator=59 NewDesignator=60
+Change Component Designator: OldDesignator=60 NewDesignator=61
+Change Component Designator: OldDesignator=61 NewDesignator=62
+Change Component Designator: OldDesignator=62 NewDesignator=63
+Change Component Designator: OldDesignator=63 NewDesignator=64
+Change Component Designator: OldDesignator=64 NewDesignator=65
+Change Component Designator: OldDesignator=65 NewDesignator=66
+Change Component Designator: OldDesignator=66 NewDesignator=67
+Change Component Designator: OldDesignator=67 NewDesignator=68
+Change Component Designator: OldDesignator=68 NewDesignator=69
+Change Component Designator: OldDesignator=69 NewDesignator=70
+Change Component Designator: OldDesignator=70 NewDesignator=71
+Change Component Designator: OldDesignator=71 NewDesignator=72
+Change Component Designator: OldDesignator=72 NewDesignator=73
+Change Component Designator: OldDesignator=73 NewDesignator=74
+Change Component Designator: OldDesignator=BC9 NewDesignator=BC10
+Change Component Designator: OldDesignator=BC10 NewDesignator=BC11
+Change Component Designator: OldDesignator=BC11 NewDesignator=BC12
+Change Component Designator: OldDesignator=BC12 NewDesignator=BC13
+Change Component Designator: OldDesignator=BC13 NewDesignator=BC14
+Change Component Designator: OldDesignator=BC14 NewDesignator=BC15
+Change Component Designator: OldDesignator=BC15 NewDesignator=BC16
+Change Component Designator: OldDesignator=D12 NewDesignator=D13
+Change Component Designator: OldDesignator=D13 NewDesignator=D14
+Change Component Designator: OldDesignator=rele10 NewDesignator=rele11
+Added Component: Designator=31(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC9(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=D12(Diode 1n4148 SMD)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Inbutton2(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Inbutton3(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Inbutton4(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=rele10(RELAY_9-1393792-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "V23105-A5301-A201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/V23105-A5301-A201/TE+Connectivity+Potter+%2526+Brumfield+Relays/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=BC9-2
+Change Net Name : Old Net Name=Net32_1 New Net Name=Net33_1
+Change Net Name : Old Net Name=Net33_2 New Net Name=Net34_2
+Change Net Name : Old Net Name=Net34_1 New Net Name=Net35_1
+Change Net Name : Old Net Name=Net35_1 New Net Name=Net36_1
+Change Net Name : Old Net Name=Net36_1 New Net Name=Net37_1
+Change Net Name : Old Net Name=Net38_1 New Net Name=Net39_1
+Change Net Name : Old Net Name=Net39_2 New Net Name=Net40_2
+Change Net Name : Old Net Name=Net40_2 New Net Name=Net41_2
+Change Net Name : Old Net Name=Net42_1 New Net Name=Net43_1
+Change Net Name : Old Net Name=Net43_1 New Net Name=Net44_1
+Change Net Name : Old Net Name=Net44_2 New Net Name=Net45_2
+Change Net Name : Old Net Name=Net45_2 New Net Name=Net46_2
+Change Net Name : Old Net Name=Net46_2 New Net Name=Net47_2
+Change Net Name : Old Net Name=Net47_1 New Net Name=Net48_1
+Change Net Name : Old Net Name=Net50_1 New Net Name=Net51_1
+Change Net Name : Old Net Name=Net51_2 New Net Name=Net52_2
+Change Net Name : Old Net Name=Net52_1 New Net Name=Net53_1
+Change Net Name : Old Net Name=Net53_1 New Net Name=Net54_1
+Change Net Name : Old Net Name=Net57_2 New Net Name=Net58_2
+Change Net Name : Old Net Name=Net58_2 New Net Name=Net59_2
+Change Net Name : Old Net Name=Net59_2 New Net Name=Net60_2
+Change Net Name : Old Net Name=Net60_1 New Net Name=Net61_1
+Change Net Name : Old Net Name=Net61_2 New Net Name=Net62_2
+Change Net Name : Old Net Name=Net63_1 New Net Name=Net64_1
+Change Net Name : Old Net Name=Net65_1 New Net Name=Net66_1
+Change Net Name : Old Net Name=Net65_2 New Net Name=Net66_2
+Change Net Name : Old Net Name=Net66_1 New Net Name=Net67_1
+Change Net Name : Old Net Name=Net66_2 New Net Name=Net67_2
+Change Net Name : Old Net Name=Net68_1 New Net Name=Net69_1
+Change Net Name : Old Net Name=Net69_1 New Net Name=Net70_1
+Change Net Name : Old Net Name=Net71_1 New Net Name=Net72_1
+Change Net Name : Old Net Name=Net71_2 New Net Name=Net72_2
+Change Net Name : Old Net Name=Net73_1 New Net Name=Net74_1
+Change Net Name : Old Net Name=NetBC10_3 New Net Name=NetBC11_3
+Change Net Name : Old Net Name=NetBC15_3 New Net Name=NetBC16_3
+Change Net Name : Old Net Name=NetD13_A New Net Name=NetD14_A
+Added Pin To Net: NetName=Net31_1 Pin=31-1
+Added Pin To Net: NetName=Net31_1 Pin=BC9-1
+Added Net: Name=Net31_1
+Added Pin To Net: NetName=NetBC9_3 Pin=BC9-3
+Added Pin To Net: NetName=NetBC9_3 Pin=D12-1
+Added Pin To Net: NetName=NetBC9_3 Pin=rele10-1
+Added Net: Name=NetBC9_3
+Added Pin To Net: NetName=NetD12_2 Pin=D12-2
+Added Pin To Net: NetName=NetD12_2 Pin=rele10-16
+Added Net: Name=NetD12_2
+Added Pin To Net: NetName=NetInbutton2_1 Pin=Inbutton2-1
+Added Pin To Net: NetName=NetInbutton2_1 Pin=rele9-6
+Added Net: Name=NetInbutton2_1
+Added Pin To Net: NetName=NetInbutton2_2 Pin=Inbutton2-2
+Added Pin To Net: NetName=NetInbutton2_2 Pin=rele9-11
+Added Net: Name=NetInbutton2_2
+Added Pin To Net: NetName=NetInbutton3_1 Pin=Inbutton3-1
+Added Pin To Net: NetName=NetInbutton3_1 Pin=rele10-11
+Added Net: Name=NetInbutton3_1
+Added Pin To Net: NetName=NetInbutton3_2 Pin=Inbutton3-2
+Added Pin To Net: NetName=NetInbutton3_2 Pin=rele10-9
+Added Net: Name=NetInbutton3_2
+Added Pin To Net: NetName=NetInbutton4_1 Pin=Inbutton4-1
+Added Pin To Net: NetName=NetInbutton4_1 Pin=rele10-6
+Added Net: Name=NetInbutton4_1
+Added Pin To Net: NetName=NetInbutton4_2 Pin=Inbutton4-2
+Added Pin To Net: NetName=NetInbutton4_2 Pin=rele10-8
+Added Net: Name=NetInbutton4_2
+Added Pin To Net: NetName=Netrele9_8 Pin=rele9-8
+Added Pin To Net: NetName=Netrele9_8 Pin=rele10-4
+Added Net: Name=Netrele9_8
+Added Pin To Net: NetName=Netrele9_9 Pin=rele9-9
+Added Pin To Net: NetName=Netrele9_9 Pin=rele10-13
+Added Net: Name=Netrele9_9
+Added Pin To Net: NetName=pd2 Pin=31-2
+Added Pin To Net: NetName=pd2 Pin=U3-54
+Added Net: Name=pd2
+Added Member To Class: ClassName=WireTest Member=Component 74 10k
+Added Member To Class: ClassName=WireTest Member=Component BC16 BC817
+Added Member To Class: ClassName=WireTest Member=Component D14 SS14
+Added Member To Class: ClassName=WireTest Member=Component Inbutton2 Inbutton
+Added Member To Class: ClassName=WireTest Member=Component Inbutton3 Inbutton
+Added Member To Class: ClassName=WireTest Member=Component Inbutton4 Inbutton
+Added Member To Class: ClassName=WireTest Member=Component rele11 rele2B
+Added Room: Name=WireTest

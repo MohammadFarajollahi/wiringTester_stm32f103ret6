@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=NetBC4_3 Pin=rele5-1
+Removed Pin From Net: NetName=Netrele3_2 Pin=rele5-4
+Removed Pin From Net: NetName=in1 Pin=rele5-6
+Removed Pin From Net: NetName=GND Pin=rele5-11
+Removed Pin From Net: NetName=+5v Pin=rele5-16
+Removed Pin From Net: NetName=NetBC5_3 Pin=rele6-1
+Removed Pin From Net: NetName=outSimulation+5 Pin=rele6-6
+Removed Pin From Net: NetName=ads Pin=rele6-8
+Removed Pin From Net: NetName=GND Pin=rele6-9
+Removed Pin From Net: NetName=GND Pin=rele6-11
+Removed Pin From Net: NetName=+5v Pin=rele6-16
+Change Component Footprint: Designator=rele5 Old Footprint=RELAY_9-1393792-3 New Footprint=Relay 15.40x12.10x13.10
+Change Component Footprint: Designator=rele6 Old Footprint=RELAY_9-1393792-3 New Footprint=Relay 15.40x12.10x13.10
+Change Component Comment : Designator=rele5 Old Comment=rele3 New Comment=rele2B
+Change Component Comment : Designator=rele6 Old Comment=rele4 New Comment=rele2B
+Change component parameters: Designator = "rele5"; Footprint = "Relay 15.40x12.10x13.10"; UniqueID = "\ROXKLMOU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Company"; Value = "E.P.I.L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design_Date"; Value = "2011/10/31"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Designer"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Change component parameters: Designator = "rele6"; Footprint = "Relay 15.40x12.10x13.10"; UniqueID = "\NVOTCXLW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Company"; Value = "E.P.I.L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Design_Date"; Value = "2011/10/31"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Designer"; Value = "Ali Hafizi"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=rele4-2
+Added Pin To Net: NetName=Netrele3_2 Pin=rele5-1
+Added Pin To Net: NetName=in1 Pin=rele5-2
+Added Pin To Net: NetName=NetBC4_3 Pin=rele5-4
+Added Pin To Net: NetName=+5v Pin=rele5-5
+Added Pin To Net: NetName=outSimulation+5 Pin=rele6-2
+Added Pin To Net: NetName=ads Pin=rele6-3
+Added Pin To Net: NetName=NetBC5_3 Pin=rele6-4
+Added Pin To Net: NetName=+5v Pin=rele6-5
+Added Pin To Net: NetName=Netrele5_3 Pin=rele5-3
+Added Pin To Net: NetName=Netrele5_3 Pin=rele6-1
+Added Net: Name=Netrele5_3
+Added Room: Name=WireTest

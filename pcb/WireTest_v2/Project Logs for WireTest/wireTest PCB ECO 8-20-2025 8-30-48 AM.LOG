@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=VCC Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Member From Class: ClassName=WireTest Member=C3
+Change Component Description : Designator=U2 Old Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP New Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP | Microchip Technology Inc. TC4420CPA
+Added Room: Name=WireTest

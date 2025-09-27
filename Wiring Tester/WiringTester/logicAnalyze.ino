@@ -150,7 +150,7 @@ void logicAnalyze() {
 
   ///////////////////////////SHOW LCD/////////////////////////
   //******RES******
-  if (ADCres > 1470) {//شستشس
+  if (ADCres > 1470) {  //شستشس
     resistant *= 1.06;
     if (ADCres >= 2500) text = "Res: OL";
     if (resistant >= 1000 && ADCres < 2500) text = "Res:" + String(resistant / 1000, 1) + "K";
@@ -232,6 +232,10 @@ void logicKeypad() {
       ExitToMenu = 1;
       eepromReset = 0;
       BuzzerBIGbig();
+    }
+
+    if (key == '0') {
+      digitalWrite(rele5, !digitalRead(rele5));
     }
 
     if (key == 'D') {

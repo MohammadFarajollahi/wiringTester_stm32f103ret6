@@ -10,7 +10,7 @@ void wirecheck() {
     gndAdc += analogRead(PA1);
     ADCres += analogRead(PA4);
     //ADCZero += analogRead(PA6);
-    delayMicroseconds(400);
+    delayMicroseconds(500);
     //delay(1);
   }
   //ADCZero /= sampleCount;

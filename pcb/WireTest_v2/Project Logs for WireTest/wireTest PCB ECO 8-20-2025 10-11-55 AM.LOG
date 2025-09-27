@@ -1,0 +1,9 @@
+Added Component: Designator=C?(cap 01)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Adding Date"; Value = "1387/12/20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Saeid Jorablo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Organazation"; Value = "ControTec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "16V"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=WireTest Member=Component C? 1uF
+Added Room: Name=WireTest

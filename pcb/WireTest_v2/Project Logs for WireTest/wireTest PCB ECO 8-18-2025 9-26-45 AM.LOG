@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=GND Pin=70-1
+Removed Pin From Net: NetName=VCC Pin=70-2
+Removed Pin From Net: NetName=GND Pin=71-2
+Removed Pin From Net: NetName=pa12 Pin=72-2
+Removed Pin From Net: NetName=pa11 Pin=73-2
+Removed Pin From Net: NetName=GND Pin=76-2
+Removed Pin From Net: NetName=GND Pin=U4-2
+Removed Pin From Net: NetName=VCC Pin=U4-3
+Removed Member From Class: ClassName=WireTest Member=70
+Removed Member From Class: ClassName=WireTest Member=71
+Removed Member From Class: ClassName=WireTest Member=72
+Removed Member From Class: ClassName=WireTest Member=73
+Removed Member From Class: ClassName=WireTest Member=74
+Removed Member From Class: ClassName=WireTest Member=75
+Removed Member From Class: ClassName=WireTest Member=76
+Removed Member From Class: ClassName=WireTest Member=buzzer2
+Removed Member From Class: ClassName=WireTest Member=U4
+Change Component Description : Designator=U2 Old Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP New Description=Microchip MOSFET Power Driver 6A 4.5 to 18V Non-Inverting 8-Pin PDIP | Microchip Technology Inc. TC4420CPA
+Added Member To Class: ClassName=WireTest Member=Component 54 10k
+Added Member To Class: ClassName=WireTest Member=Component 55 1k
+Added Room: Name=WireTest

@@ -1,0 +1,32 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~WireTest.PrjPcb|ReportField=ProjectFullPath~F:\ELECTRONIC\sherkat\stm32ret6\pcb\WireTest\WireTest.PrjPcb|ReportField=Title~Bill of Materials For Project [WireTest.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~46|ReportField=ReportTime~5:27:27 PM|ReportField=ReportDate~4/13/2025|ReportField=ReportDateTime~4/13/2025 5:27:27 PM|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~4/13/2025|ReportField=CurrentTime~4:08:47 PM|ReportField=Date~|ReportField=DocumentFullPathAndName~F:\ELECTRONIC\sherkat\stm32ret6\pcb\WireTest\WireTest.SchDoc|ReportField=DocumentName~WireTest.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~4/13/2025|ReportField=Organization~|ReportField=ProjectName~WireTest.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~WireTest.PrjPcb|ReportField=DataSourceFullPath~F:\ELECTRONIC\sherkat\stm32ret6\pcb\WireTest\WireTest.PrjPcb|ReportField=PCBConfigurationName~Sources|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|CURRENT-ACS712ELCTR-05B-T(SOIC8-5X4MM)|Current Sensor 5A 1 Channel Hall Effect, Open Loop Bidirectional 8-SOIC _0.154, 3.90mm Width_||SOIC8-1.27-5X4MM|CURRENT-ACS712ELCTR-05B-T(SOIC8-5X4MM)|1
+2|4k7|RES 1206|4k7, 4k8|RESC4817X04N|RES 1206 0.25W|2
+3|10k6|RES 1206|10k6|RESC4817X04N|RES 1206 0.25W|1
+4|10k|RES 1206|10k, 10k2, 10k3, 10k4, 10k5, 10k7, 10kt1, 10kt2|RESC4817X04N|RES 1206 0.25W|8
+5|100NA|CAP 0805|100NA|CAPC3413X12N|CAP SMD 0805|1
+6|100NL|CAP 0805|100NL|CAPC3413X12N|CAP SMD 0805|1
+7|100NL2|CAP 0805|100NL2|CAPC3413X12N|CAP SMD 0805|1
+8|100UH|Inductor 4.7µH SMD 3x3.2mm|100UH|Inductor SMD 3x3.2mm|Inductor 4.7µH SMD 3x3.2mm|1
+9|1000UA|Cap electrolitic radial|1000UA|Cap electrolitic radial 8x12-3.5|Cap ELECTROLITIC TOTAL SIZE|1
+10|1000Ul|Cap electrolitic radial|1000Ul|Cap electrolitic radial 8x12-3.5|Cap ELECTROLITIC TOTAL SIZE|1
+11|2596||2596|TO170P1524X483-6N|LM2596S-5.0|1
+12|ams|x.x Volt, 800mA Low-Dropout Linear Regulator, 4-pin SOT-223|ams|MP04A_N|LM1117IMP-x.x|1
+13|BC807|PNP General-purpose Transistor|BC807|SOT23_BEC_N|BC807|1
+14|BC817|45 V, 500 mA NPN general-purpose transistors|BC817, BC818, BC819, BC820, BC821, BC822, BC823, BC824|SOT23_N|BC817|8
+15|1uF|Cap electrolitic radial|C?|Cap electrolitic radial 8x12-3.5|Cap ELECTROLITIC TOTAL SIZE|1
+16|Din|Diode DIP Package|Din|Diode 1W Stand|Diode DIP Package|1
+17|in+12|Header, 2-Pin|In+12|HDR1X2|Header 2|1
+18|Inbutton|Header, 2-Pin|Inbutton|HDR1X2|Header 2|1
+19|PinIN|Header, 2-Pin|pinIN|HDR1X2|Header 2|1
+20|IRF3205PBF|N-Channel 55V 110A _Tc_ 200W _Tc_ Through Hole TO-220AB|Q|TO254P1067X483X3124-3P|IRF3205PBF|1
+21|rele1A|Relay_SPDT POWER NEEDLE|rele1A|Relay 15.40x12.10x13.10|RELAY General|1
+22|rele1B|Relay_SPDT POWER NEEDLE|rele1B|Relay 15.40x12.10x13.10|RELAY General|1
+23|rele2A|Relay_SPDT POWER NEEDLE|rele2A|Relay 15.40x12.10x13.10|RELAY General|1
+24|rele2B|Relay_SPDT POWER NEEDLE|rele2B|Relay 15.40x12.10x13.10|RELAY General|1
+25|rele3|Industrial Control, Relays, I/O Modules, spdt, relay, Relays and Accessories|rele3|RELAY_9-1393792-3|V23105A5301A201|1
+26|rele4|Industrial Control, Relays, I/O Modules, spdt, relay, Relays and Accessories|rele4|RELAY_9-1393792-3|V23105A5301A201|1
+27|rele5|Industrial Control, Relays, I/O Modules, spdt, relay, Relays and Accessories|rele5|RELAY_9-1393792-3|V23105A5301A201|1
+28|rele6|Industrial Control, Relays, I/O Modules, spdt, relay, Relays and Accessories|rele6|RELAY_9-1393792-3|V23105A5301A201|1
+29|rele7|Industrial Control, Relays, I/O Modules, spdt, relay, Relays and Accessories|rele7|RELAY_9-1393792-3|V23105A5301A201|1
+30|ss14L|Diode DIP Package|ss14L|Diode 1N4007 SMD|Diode DIP Package|1
+31|STM32F103RET6|ARMÂ® CortexÂ®-M3 STM32F1 Microcontroller IC 32-Bit 72MHz 512KB (512K x 8) FLASH 64-LQFP (10x10)|U?|QFP50P1200X1200X160-64N|STM32F103RET6|1

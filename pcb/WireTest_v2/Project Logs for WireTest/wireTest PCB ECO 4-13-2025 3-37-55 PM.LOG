@@ -1,0 +1,23 @@
+Change Component Designator: OldDesignator=10k NewDesignator=10k2
+Change Component Designator: OldDesignator=10k NewDesignator=10k3
+Change Component Designator: OldDesignator=10k NewDesignator=10k4
+Change Component Designator: OldDesignator=10k NewDesignator=10k5
+Added Pin To Net: NetName=Net10k2_1 Pin=10k2-1
+Added Pin To Net: NetName=Net10k2_1 Pin=BC820-1
+Added Net: Name=Net10k2_1
+Added Pin To Net: NetName=Net10k3_1 Pin=10k3-1
+Added Pin To Net: NetName=Net10k3_1 Pin=BC821-1
+Added Net: Name=Net10k3_1
+Added Pin To Net: NetName=Net10k4_1 Pin=10k4-1
+Added Pin To Net: NetName=Net10k4_1 Pin=BC822-1
+Added Net: Name=Net10k4_1
+Added Pin To Net: NetName=Net10k5_1 Pin=10k5-1
+Added Pin To Net: NetName=Net10k5_1 Pin=BC823-1
+Added Net: Name=Net10k5_1
+Added Member To Class: ClassName=WireTest Member=Component 10k2 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k3 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k4 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k5 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k

@@ -1,0 +1,225 @@
+Removed Pin From Net: NetName=Net10k_1 Pin=Q?-1
+Removed Member From Class: ClassName=WireTest Member=Q?
+Added Component: Designator=10k(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=10k(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=10k(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=10k(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=10k(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=10k(RESC4817X04N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC818(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC819(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC820(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC821(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC822(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC823(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Component: Designator=BC824(SOT23_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.nxp.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "3-Pin SOT-23 Package 0.95 mm Pitch, 2.3 mm Lead Span"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SOT23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-2-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net10k_1 Pin=BC818-1
+Added Pin To Net: NetName=GND Pin=BC818-2
+Added Pin To Net: NetName=GND Pin=BC819-2
+Added Pin To Net: NetName=GND Pin=BC820-2
+Added Pin To Net: NetName=GND Pin=BC821-2
+Added Pin To Net: NetName=GND Pin=BC822-2
+Added Pin To Net: NetName=GND Pin=BC823-2
+Added Pin To Net: NetName=GND Pin=BC824-2
+Added Pin To Net: NetName=+12in Pin=rele2A-3
+Added Pin To Net: NetName=NetBC818_3 Pin=BC818-3
+Added Pin To Net: NetName=NetBC818_3 Pin=rele1A-4
+Added Pin To Net: NetName=NetBC818_3 Pin=rele1B-4
+Added Net: Name=NetBC818_3
+Added Pin To Net: NetName=NetBC819_3 Pin=BC819-3
+Added Pin To Net: NetName=NetBC819_3 Pin=rele2A-4
+Added Pin To Net: NetName=NetBC819_3 Pin=rele2B-4
+Added Net: Name=NetBC819_3
+Added Pin To Net: NetName=NetBC820_3 Pin=BC820-3
+Added Pin To Net: NetName=NetBC820_3 Pin=rele3-1
+Added Net: Name=NetBC820_3
+Added Pin To Net: NetName=NetBC821_3 Pin=BC821-3
+Added Pin To Net: NetName=NetBC821_3 Pin=rele4-1
+Added Net: Name=NetBC821_3
+Added Pin To Net: NetName=NetBC822_3 Pin=BC822-3
+Added Pin To Net: NetName=NetBC822_3 Pin=rele5-1
+Added Net: Name=NetBC822_3
+Added Pin To Net: NetName=NetBC823_3 Pin=BC823-3
+Added Pin To Net: NetName=NetBC823_3 Pin=rele6-1
+Added Net: Name=NetBC823_3
+Added Pin To Net: NetName=NetBC824_3 Pin=BC824-3
+Added Pin To Net: NetName=NetBC824_3 Pin=rele7-1
+Added Net: Name=NetBC824_3
+Added Pin To Net: NetName=Netrele2A_2 Pin=rele2A-2
+Added Pin To Net: NetName=Netrele2A_2 Pin=rele3-4
+Added Net: Name=Netrele2A_2
+Added Pin To Net: NetName=Netrele2B_2 Pin=rele2B-2
+Added Pin To Net: NetName=Netrele2B_2 Pin=rele3-13
+Added Net: Name=Netrele2B_2
+Added Pin To Net: NetName=Netrele3_8 Pin=rele3-8
+Added Pin To Net: NetName=Netrele3_8 Pin=rele4-4
+Added Net: Name=Netrele3_8
+Added Pin To Net: NetName=Netrele3_9 Pin=rele3-9
+Added Pin To Net: NetName=Netrele3_9 Pin=rele4-13
+Added Net: Name=Netrele3_9
+Added Pin To Net: NetName=Netrele4_8 Pin=rele4-8
+Added Pin To Net: NetName=Netrele4_8 Pin=rele5-4
+Added Net: Name=Netrele4_8
+Added Pin To Net: NetName=Netrele4_9 Pin=rele4-9
+Added Pin To Net: NetName=Netrele4_9 Pin=rele5-13
+Added Net: Name=Netrele4_9
+Added Pin To Net: NetName=Netrele5_8 Pin=rele5-8
+Added Pin To Net: NetName=Netrele5_8 Pin=rele6-4
+Added Net: Name=Netrele5_8
+Added Pin To Net: NetName=Netrele5_9 Pin=rele5-9
+Added Pin To Net: NetName=Netrele5_9 Pin=rele6-13
+Added Net: Name=Netrele5_9
+Added Pin To Net: NetName=Netrele6_8 Pin=rele6-8
+Added Pin To Net: NetName=Netrele6_8 Pin=rele7-4
+Added Net: Name=Netrele6_8
+Added Pin To Net: NetName=Netrele6_9 Pin=rele6-9
+Added Pin To Net: NetName=Netrele6_9 Pin=rele7-13
+Added Net: Name=Netrele6_9
+Added Pin To Net: NetName=outSelonoeid Pin=Q-2
+Added Pin To Net: NetName=outSelonoeid Pin=rele2B-3
+Added Net: Name=outSelonoeid
+Added Pin To Net: NetName=pc5 Pin=10k-2
+Added Net: Name=pc5
+Added Pin To Net: NetName=pc8 Pin=10k-2
+Added Net: Name=pc8
+Added Pin To Net: NetName=pc9 Pin=10k-2
+Added Net: Name=pc9
+Added Pin To Net: NetName=pc10 Pin=10k-2
+Added Net: Name=pc10
+Added Pin To Net: NetName=pc11 Pin=10k-2
+Added Net: Name=pc11
+Added Pin To Net: NetName=pc12 Pin=10k-2
+Added Net: Name=pc12
+Added Pin To Net: NetName=pc13 Pin=10k-2
+Added Net: Name=pc13
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component 10k
+Added Member To Class: ClassName=WireTest Member=Component BC818 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC819 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC820 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC821 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC822 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC823 BC817
+Added Member To Class: ClassName=WireTest Member=Component BC824 BC817
+Added Room: Name=WireTest

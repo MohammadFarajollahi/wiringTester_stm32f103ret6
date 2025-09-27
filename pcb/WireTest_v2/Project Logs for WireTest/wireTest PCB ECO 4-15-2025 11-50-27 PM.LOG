@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=pc6 Pin=U3-37
+Added Pin To Net: NetName=pc7 Pin=U3-38
+Added Pin To Net: NetName=pc8 Pin=U3-39
+Added Pin To Net: NetName=pc9 Pin=U3-40
+Added Room: Name=WireTest
